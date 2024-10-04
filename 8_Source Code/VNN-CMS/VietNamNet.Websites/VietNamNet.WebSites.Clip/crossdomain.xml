@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cross-domain-policy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.adobe.com/xml/schemas/PolicyFile.xsd">
+  <allow-access-from domain="clip.vietnamnet.vn"/>
+	<allow-access-from domain="image.clip.vietnamnet.vn"/>
+	<allow-access-from domain="api.clip.vietnamnet.vn"/>
+	<allow-access-from domain="search.clip.vietnamnet.vn"/>
+	<allow-access-from domain="static.clip.vietnamnet.vn"/>
+	<allow-access-from domain="tracking.clip.vietnamnet.vn"/>
+	<site-control permitted-cross-domain-policies="master-only"/>
+	<allow-http-request-headers-from domain="*.clip.vietnamnet.vn" headers="*" secure="true"/>
+	<allow-http-request-headers-from domain="*.vietnamnet.vn" headers="*" secure="true"/>
+</cross-domain-policy>

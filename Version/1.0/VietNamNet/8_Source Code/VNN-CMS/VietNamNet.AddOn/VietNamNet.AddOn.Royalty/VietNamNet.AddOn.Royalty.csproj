@@ -1,0 +1,235 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA223213-9339-4CC3-AF65-7A28AFB83862}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.AddOn.Royalty</RootNamespace>
+    <AssemblyName>VietNamNet.AddOn.Royalty</AssemblyName>
+    <SccProjectName>VietNamNet.AddOn.Royalty</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="Telerik.Web.UI, Version=2009.2.701.20, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.CMS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.CMS.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Common, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Module, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.System, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="UserControls\AuditTrail.ascx" />
+    <Content Include="UserControls\ErrorMessage.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\BaseUserControls.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\RoyaltyBasePageView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\RoyaltyBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FundsManager\ArticlesList.aspx.cs">
+      <DependentUpon>ArticlesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FundsManager\ArticlesList.aspx.designer.cs">
+      <DependentUpon>ArticlesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FundsManager\EditFund.aspx.cs">
+      <DependentUpon>EditFund.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FundsManager\EditFund.aspx.designer.cs">
+      <DependentUpon>EditFund.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FundsManager\FundByArticle.aspx.cs">
+      <DependentUpon>FundByArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FundsManager\FundByArticle.aspx.designer.cs">
+      <DependentUpon>FundByArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popup.Master.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup.Master.designer.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ReportsByGroup.aspx.cs">
+      <DependentUpon>ReportsByGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportsByGroup.aspx.designer.cs">
+      <DependentUpon>ReportsByGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportsByUser.aspx.cs">
+      <DependentUpon>ReportsByUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportsByUser.aspx.designer.cs">
+      <DependentUpon>ReportsByUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TypesManager\TypesList.aspx.cs">
+      <DependentUpon>TypesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TypesManager\TypesList.aspx.designer.cs">
+      <DependentUpon>TypesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TypesManager\TypesEdit.aspx.cs">
+      <DependentUpon>TypesEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TypesManager\TypesEdit.aspx.designer.cs">
+      <DependentUpon>TypesEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ArticleInfo.ascx.cs">
+      <DependentUpon>ArticleInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ArticleInfo.ascx.designer.cs">
+      <DependentUpon>ArticleInfo.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Popup.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FundsManager\ArticlesList.aspx" />
+    <Content Include="FundsManager\EditFund.aspx" />
+    <Content Include="FundsManager\FundByArticle.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Message.config" />
+    <Content Include="Reports\ReportsByGroup.aspx" />
+    <Content Include="Reports\ReportsByUser.aspx" />
+    <Content Include="Reports\Reports.aspx" />
+    <Content Include="Scripts\Default.js" />
+    <Content Include="Scripts\swfobject.js" />
+    <Content Include="Styles\Classical.css" />
+    <Content Include="Styles\Common.css" />
+    <Content Include="Styles\Default.css" />
+    <Content Include="Styles\Standard.css" />
+    <Content Include="TypesManager\TypesList.aspx" />
+    <Content Include="TypesManager\TypesEdit.aspx" />
+    <Content Include="UserControls\ArticleInfo.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Core\VietNamNet.AddOn.Royalty.Core\VietNamNet.AddOn.Royalty.Core.csproj">
+      <Project>{6CD292DE-6321-4385-AD07-56FFEE01AA5A}</Project>
+      <Name>VietNamNet.AddOn.Royalty.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2475</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

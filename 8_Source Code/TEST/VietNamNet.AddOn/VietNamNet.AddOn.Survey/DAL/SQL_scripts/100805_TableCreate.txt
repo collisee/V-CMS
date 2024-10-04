@@ -1,0 +1,110 @@
+USE [VietNamNet_Survey]
+GO
+/****** Object:  Table [dbo].[Surveys]    Script Date: 08/05/2010 16:01:53 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Surveys](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Question] [nvarchar](500) NOT NULL,
+	[OptionType] [char](1) NOT NULL,
+	[CreatedBy] [nvarchar](50) NOT NULL,
+	[CreatedOn] [datetime] NOT NULL CONSTRAINT [DF_Surveys_CreatedOn]  DEFAULT (getdate()),
+	[ModifiedBy] [nvarchar](50) NOT NULL,
+	[ModifiOn] [datetime] NOT NULLCONSTRAINT [DF_Surveys_ModifiOn]  DEFAULT (getdate()),
+	[IsDeleted] [bit] NOT NULL default 0,
+	[IsActive] [bit] NOT NULL  default 1,
+	[Status] [tinyint] NOT NULL default 0
+ CONSTRAINT [PK_Surveys] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+ 
+
+
+CREATE TABLE [dbo].[SurveyOptions](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+      [SurveyId] [int] NOT NULL,
+
+	[OptionName] [nvarchar](500)  ,
+	[ViewOrder] [int]  ,
+
+[Notes] [nvarchar](500) default 0,
+[IsCorrect] [bit] default 0,
+
+	[CreatedBy] [nvarchar](50)  ,
+	[CreatedOn] [datetime]  CONSTRAINT [DF_SurveyOptions_CreatedOn]  DEFAULT (getdate()),
+	[ModifiedBy] [nvarchar](50)  ,
+	[ModifiOn] [datetime]  CONSTRAINT [DF_SurveyOptions_ModifiOn]  DEFAULT (getdate()),
+	[IsDeleted] [bit] default 0,
+	[IsActive] [bit] default 1,
+ CONSTRAINT [PK_SurveyOptions] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO 
+
+
+
+
+CREATE TABLE [dbo].[SurveyResults](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+      [SurveyOptionId] [int] NOT NULL,
+
+ [Notes] [nvarchar](500) default 0,
+ 
+
+	[CreatedBy] [nvarchar](50)  ,
+	[CreatedOn] [datetime]  CONSTRAINT [DF_SurveyResults_CreatedOn]  DEFAULT (getdate()),
+	[ModifiedBy] [nvarchar](50)  ,
+	[ModifiOn] [datetime]  CONSTRAINT [DF_SurveyResults_ModifiOn]  DEFAULT (getdate()),
+	[IsDeleted] [bit] default 0,
+	[IsActive] [bit] default 1,
+ CONSTRAINT [PK_SurveyResults] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO 
+
+
+
+
+
+
+
+
+CREATE TABLE [dbo].[SurveyPublish](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+[SurveyId] [int] NOT NULL,
+
+      [ArticleId] [int] NULL,
+ [CategoryId] [int] NULL,
+ 
+[StartDate] [datetime] NOT NULL DEFAULT (getdate()),
+[ExpireDate] [datetime]  NOT NULL,
+[Security] [tinyint] NOT NULL,
+ 
+	[CreatedBy] [nvarchar](50)  ,
+	[CreatedOn] [datetime]  CONSTRAINT [DF_SurveyPublish_CreatedOn]  DEFAULT (getdate()),
+	[ModifiedBy] [nvarchar](50)  ,
+	[ModifiOn] [datetime]  CONSTRAINT [DF_SurveyPublish_ModifiOn]  DEFAULT (getdate()),
+	[IsDeleted] [bit] NOT NULL default 0,
+	[IsActive] [bit] NOT NULL  default 1,
+	[Status] [tinyint] NOT NULL default 0
+CONSTRAINT [PK_SurveyPublish] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO 

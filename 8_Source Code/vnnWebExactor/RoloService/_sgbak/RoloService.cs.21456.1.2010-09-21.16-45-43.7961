@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.ServiceProcess;
+using System.Text;
+
+namespace RoloService
+{
+    partial class RoloService : ServiceBase
+    {
+        public RoloService()
+        {
+            InitializeComponent();
+            this.ServiceName = "RoloService";
+            this.eventLog1.Log = "Application";
+
+            // These Flags set whether or not to handle that specific
+
+            //  type of event. Set to true if you need it, false otherwise.
+
+            this.CanHandlePowerEvent = true;
+            this.CanHandleSessionChangeEvent = true;
+            this.CanPauseAndContinue = true;
+            this.CanShutdown = true;
+            this.CanStop = true;
+
+        }
+ 
+        protected override void OnStart(string[] args)
+        {
+            GetContentFromRolo.Utils utils = null;
+            try
+            {
+                utils = new GetContentFromRolo.Utils();
+                String timeInterval = utils.GetAppSetting("TimeInterval") ?? "";
+                utils = null;
+                if (!timeInterval.Equals(""))
+                {
+                    timer1.Interval = Convert.ToInt16(timeInterval) * 60000;
+                    timer1.Enabled = true;
+                }
+                else
+                {
+                    timer1.Enabled = false;
+                }
+                eventLog1.WriteEntry("Rolo Service started");
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+            
+        }
+
+        protected override void OnStop()
+        {
+            eventLog1.WriteEntry("Rolo Service stoped");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            eventLog1.WriteEntry("Rolo Service starting get DATA at: " + DateTime.Now.ToString());
+            CrawlDataFromRolo();
+            eventLog1.WriteEntry("Rolo Service finished get DATA at: " + DateTime.Now.ToString());
+        }
+        private void CrawlDataFromRolo()
+        {
+            
+           new GetContentFromRolo.Main().GetContentFromRolo();
+           
+        }
+    }
+}

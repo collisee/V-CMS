@@ -1,0 +1,481 @@
+
+
+/*
+jive-userbar.css - v0.2 - October 13, 2006
+styles for all pages throughout Clearspace (where the userbar is used, so not popups).
+*/
+
+/* user bar */
+#jive-userbar {
+	clear: both;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+    }
+
+.jive-userbar-login-welcome {
+    display: block;
+    padding-top: 14px;
+    }
+
+/* user login */
+#jive-userbar-login {
+	padding: 0 0 0 26px;
+	white-space: nowrap;
+	float: left;
+	}
+
+.jive-userbar-login-form {
+	float: left;
+	padding: 5px;
+    margin-top: 9px;
+    border: 1px solid #d0d0d0;
+	-moz-border-radius: 5px;
+
+    }
+
+.jive-userbar-login-guest {
+	font-size: 8pt;
+
+    color: #333;
+	margin: 2px 13px 0 0;
+	padding: 0 13px 0 0;
+	background: transparent url(../images/jive-userbar-user-div.gif) no-repeat right;
+	float: left;
+	}
+
+.jive-userbar-login-username,
+.jive-userbar-login-password,
+.jive-userbar-login-auto {
+	font-size: 8pt;
+    line-height: 8pt;
+    }
+.jive-userbar-login-username,
+.jive-userbar-login-password {
+	font-weight: bold;
+	}
+.jive-userbar-login-password a {
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 7pt;
+	float: left;
+	padding: 3px 0 0 2px;
+	}
+.jive-userbar-login-username input,
+.jive-userbar-login-password input {
+	font-size: 8pt;
+	margin: 0 10px 0 4px;
+	float: left;
+	width: 80px;
+	}
+.jive-userbar-login-username label,
+.jive-userbar-login-password label {
+	float: left;
+	padding-top: 2px;
+	}
+
+.jive-userbar-login-auto {
+	margin: 0 8px 0 0;
+	float: left;
+	}
+html > body .jive-userbar-login-auto {
+	padding-top: 2px;
+	}
+.jive-userbar-login-auto input {
+	margin: 0;
+	}
+.jive-userbar-login-submit input,
+.jive-cancel-button {
+	border: 1px solid #bcbcbc;
+	font-size: 8pt;
+	background: transparent url(../images/jive-formbtn-bg.gif) repeat-x;
+	color: #333;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	}
+.jive-cancel-button {
+	margin-left: 5px;
+}
+.jive-userbar-login-new,
+.jive-userbar-login-loginlink {
+	font-size: 8pt;
+	margin: 2px 10px 0 0;
+	float: left;
+	}
+.jive-userbar-login-loginlink {
+	margin-right:15px;
+	}
+
+
+/* currently user & avatar */
+
+
+/* sidebar - right-hand side */
+#jive-userbar-right {
+    position: absolute;
+    right: 0;
+    float: right;
+	font-size: 8pt;
+    padding: 0 22px 0 0;
+	}
+
+/* print */
+#jive-userbar-print {
+	font-size: 8pt;
+	padding: 0 15px 0 0;
+    width: 2px;
+    overflow: hidden;
+	float: left;
+    }
+#jive-userbar-print a {
+    display: block;
+    background: transparent url(../images/jive-icon-printprev-16x16.gif) no-repeat left;
+	padding: 3px 0 3px 20px;
+
+    color: #777;
+	text-decoration: none;
+    }
+#jive-userbar-print a:hover {
+	text-decoration: underline;
+	}
+
+/* begin user links */
+#jive-userbar-droplink {
+	float: left;
+	padding-top: 13px;
+	}
+#jive-userbar-droplink a {
+    float: left;
+    margin: 0 5px 0 13px;
+	padding: 3px 0 4px 0;
+	text-decoration: none;
+	font-weight: bold;
+    font-size : 8pt;
+    color: #666;
+	background: transparent url(../images/jive-userbar-arrowdown.gif) no-repeat right;
+	outline: none;
+	}
+#jive-userbar-droplink a:hover {
+	background: transparent url(../images/jive-userbar-arrowdown-b.gif) no-repeat right;
+    color: #000;
+	cursor: pointer;
+    }
+#jive-userbar-droplink a:hover span {
+    text-decoration: underline;
+	}
+#jive-userbar-droplink a span.jive-userbar-inbox,
+#jive-userbar-droplink a span.jive-userbar-inboxnew,
+#jive-userbar-droplink a span.jive-userbar-create,
+#jive-userbar-droplink a span.jive-userbar-toolbox,
+#jive-userbar-droplink a span.jive-userbar-toolboxnew,
+#jive-userbar-droplink a span.jive-userbar-history,
+#jive-userbar-droplink a span.jive-userbar-navigation {
+	margin: 0;
+	padding: 3px 10px 3px 22px;
+	}
+#jive-userbar-droplink a span.jive-userbar-inbox {
+	background: transparent url(../images/jive-icon-accept-16x16.gif) no-repeat left;
+	}
+#jive-userbar-droplink a span.jive-userbar-inboxnew {
+	background: transparent url(../images/jive-icon-accept-16x16.gif) no-repeat left;
+	color: #da6e16;
+	}
+#jive-userbar-droplink a span.jive-userbar-create {
+	background: transparent url(../images/jive-icon-create-16x16.gif) no-repeat left;
+	}
+#jive-userbar-droplink a span.jive-userbar-toolbox {
+	background: transparent url(../images/jive-icon-profile-16x16.gif) no-repeat left;
+	}
+#jive-userbar-droplink a span.jive-userbar-toolboxnew {
+	background: transparent url(../images/jive-icon-profile-new-16x16.gif) no-repeat left;
+    color: #da6e16;
+    }
+#jive-userbar-droplink a span.jive-userbar-history {
+	background: transparent url(../images/jive-icon-history-16x16.gif) no-repeat left;
+	}
+#jive-userbar-droplink a span.jive-userbar-navigation {
+	background: transparent url(../images/jive-icon-community-16x16.gif) no-repeat left;
+	}
+#jive-userbar-droplink a.jive-userbar-droplink-on {
+	color: #000;
+    background: transparent url(../images/jive-userbar-arrowdown-b.gif) no-repeat right;
+    }
+
+
+
+/* begin menu panels */
+.jive-userbar-menu {
+	float: left;
+	position: absolute;
+	left: 0;
+	margin: 0;
+    margin-top : -1px;
+    padding: 11px 11px 8px 11px;
+	font-size: 8pt;
+	background: #f0f0f0 url(../images/jive-userbar-user-menubg.gif) repeat-x top;
+	border: 1px solid #d2d2d2;
+	border-top: none;
+	z-index: 800;
+    }
+.jive-userbar-menu h3 {
+	font-size: 10pt;
+	color: #333;
+	margin: 5px 0 4px 0;
+	padding: 0 0 3px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #bebebe;
+    }
+.jive-userbar-menu .jive-recent-label {
+    background : url("../images/arrow-down-blue-16x16.gif") no-repeat top right;
+}
+.jive-userbar-menu ul {
+	list-style-type: none;
+	margin: 2px 0 4px 0;
+	padding: 0;
+	}
+.jive-userbar-menu ul li {
+	margin: 0;
+	padding: 2px 0;
+    }
+.jive-userbar-menu ul li a {
+	display: block;
+
+    color : #333;
+    padding: 4px 4px 4px 25px;
+    background-position: 3px;
+    }
+/* exists so that we can programmatically set hover / unhover stats */
+.jive-userbar-menu-hover {
+    text-decoration: underline;
+    background-color: #f9f9f9;
+}
+.jive-userbar-menu-nohover {
+    text-decoration: none;
+}
+
+
+
+html>body .jive-userbar-menu ul li a {
+	float: none;
+	}
+.jive-userbar-menu a:link,
+.jive-userbar-menu a:visited {
+	text-decoration: none;
+	}
+.jive-userbar-menu a:hover {
+	text-decoration: underline;
+    background-color: #f9f9f9;
+    }
+.jive-userbar-menu a span {
+	color: #333;
+	}
+.jive-userbar-menu a span strong {
+	color: #f06b00;
+	}
+
+/* inbox menu */
+.jive-userbar-menu-inbox {
+
+	}
+
+/* create menu */
+.jive-userbar-menu-create {
+
+	}
+/* toolbox menu */
+.jive-userbar-menu-toolbox {
+
+	}
+/* history menu */
+.jive-userbar-menu-history {
+
+	}
+
+/* nav menu */
+.jive-userbar-menu-navigation {
+
+	}
+
+.jive-userbar-menu h3.jive-link-community {
+    padding-left: 22px;
+    background-position: 4px;
+    margin-top: 7px;
+    }
+
+.jive-link-tag {
+    background-position: 7px 6px !important;
+    }
+
+#jive-userbar-community-tree {
+    overflow: auto;
+    max-height: 500px;
+    max-width: 350px;
+    /* IE doesn't listen to max/min-width, so an 'expression' hack is used. */
+	_width: expression(document.body.clientWidth > 350? "350px": "auto") !important;
+}
+#jive-userbar-community-tree A, #jive-userbar-community-tree IMG {
+    outline: none;
+}
+#jive-userbar-community-tree A:HOVER {
+    background-color: transparent;
+}
+#jive-userbar-community-tree table {
+    padding: 2px 2px;
+}
+
+#jive-userbar-community-tree table tr td.dhtmlTreeControl {
+    padding-left: 12px;
+    }
+
+#jive-userbar-community-tree {
+    display: block;
+    }
+#jive-userbar-community-tree #domRoot {
+    display: block;
+    }
+#jive-userbar-community-tree #domRoot div {
+    display: block;
+    clear: both;
+    }
+#jive-userbar-community-tree #domRoot div table {
+    clear: both;
+    width: auto !important;
+    }
+#jive-userbar-community-tree #domRoot div table tr td {
+    width: auto !important;
+    }
+
+/* VMware customizations */
+/* BEGIN USER BAR */
+#jive-userbar {
+    background: none;
+	float: right;
+	height: auto;
+	margin: 0;
+	top: 164px;
+}
+#jive-userbar-user {
+	float: right;
+	margin: 28px 1px 0 0;
+	height: 14px;
+}
+a.btn-logout {
+	background: #3399cc url(../images/btn-logout.gif) no-repeat scroll 0% 0%;
+	float: right;
+	height: 22px;
+	margin: 10px 0px 0px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 72px;
+}
+strong.title {
+	color: #999999;
+	font-weight: normal;
+}
+#site-tools ul a.hover,
+.ad-nav ul a.hover {
+	color: #4C4E52;
+	text-decoration: underline;
+}
+#user-section-nav {
+	float: right;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+	position:absolute;
+	right:0;
+	text-align:right;
+	top:0;
+}
+/* primary navigation drop down menus */
+div.drop-down h3 {
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	padding: 7px 12px;
+	width: 140px;
+}
+li.wide div.drop-down h3 {
+	width: 226px;
+}
+div.visual-entry ul li.wide div.drop-down {
+	width: 256px;
+}
+div.visual-entry ul li.wide div.drop-down div.t {
+	background: transparent url(../images/bg-page-entry-drop-top-wide.png) no-repeat scroll 0 0;
+}
+div.visual-entry ul li.wide div.drop-down div.c {
+	background: transparent url(../images/bg-page-entry-drop-strip-wide.png) repeat-y scroll 0 0;
+}
+div.visual-entry ul li.wide div.drop-down div.b {
+	background: transparent url(../images/bg-page-entry-drop-bottom-wide.png) no-repeat scroll 0 0;
+}
+div.visual-entry ul li.wide div.drop-down ul li a {
+	width: 226px;
+}
+#jiveUserMenu3Link {
+	color: #3399CC;
+	font-weight: bold;
+}
+div.visual-entry ul li.user span.jive-userbar-toolboxnew,
+div.visual-entry ul li.user a.jive-link-inboxnew,
+div.visual-entry ul li.user a.jive-link-wiki-approval {
+	color: #D9541E;
+	font-weight: bold;
+}
+/* SEARCH */
+#jive-userbar-search {
+	background: transparent url(../images/bg-communities-search-box.gif) no-repeat scroll top left;
+	height: 147px;
+	margin: 0 0 15px 0;
+	padding: 0;
+	width: 220px;
+}
+#jive-userbar-search form {
+	background: transparent url(../images/bg-communities-search-box-bottom.gif) no-repeat scroll bottom left;
+	display: block;
+	height: 126px;
+	padding: 16px 0 5px 20px;
+}
+#jive-userbar-search label {
+	color: #FFF;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	padding: 0 0 12px 0;
+}
+#jive-userbar-search select.jive-search-community {
+	float: left;
+	margin: 0;
+	width: 160px;
+}
+#jive-userbar-search input.jive-userbar-search-field {
+	border: 1px solid #bebebe;
+	color: #4d4e53;
+	float: left;
+	height: 14px;
+	margin: 8px 0 12px 0;
+	padding: 4px;  
+	width: 170px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+#jive-userbar-search input.btn-search-submit {
+	background: transparent url(../images/bg-communities-search-box-button.png) no-repeat scroll top left;
+	height: 24px;
+	margin: 0 16px 0 0;
+	padding: 0;
+	width: 72px;
+}
+#jive-userbar-search a.advanced {
+	color: #ffffff;
+	float: left;
+	font-size: 11px;
+	margin: 0;
+	padding: 6px 0 0 0;
+}
+/* END USER BAR */

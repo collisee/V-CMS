@@ -1,0 +1,12 @@
+*{margin:0;padding:0;}
+body{background:#FFF;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;font-size-adjust:none;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;margin:0 auto;padding:0;}
+a{color:#952929;text-decoration:none;}
+a:hover{color:#e43030;text-decoration:underline;}
+img{border:0;}
+.clear{clear:both;color:#FFF;font-size:0;height:0;line-height:0;}
+td{padding:4px;}
+
+.wrapper{width:650px;margin:0 auto;}
+
+.lich-td-title{background:url(vnn_tt_min_h.gif) repeat-x center center;}
+.scorelink{font-weight:bold;}

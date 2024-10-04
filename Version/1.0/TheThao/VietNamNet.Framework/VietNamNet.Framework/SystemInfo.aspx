@@ -1,0 +1,1 @@
+﻿<%@ Page MasterPageFile="~/Default.Master" Language="C#" AutoEventWireup="true" CodeBehind="SystemInfo.aspx.cs" Inherits="VietNamNet.Framework.SystemInfo" Title="VietNamNet Framework - Thông tin hệ thống" %>

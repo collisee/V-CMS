@@ -1,0 +1,13 @@
+<Modules>
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="mscorlib" />
+  <Module PersistentId="CD085827-E0B9-4ECD-836A-B66029DF7B5A" ModuleId="Html2Xml" />
+  <Module PersistentId="1F5D946D-1016-421F-934A-C1540F8CD433" ModuleId="VNN_WEBEXTR" />
+  <Module PersistentId="48A41D9C-264E-4466-A57A-737B4FD87A87" ModuleId="VNN_WEBEXTRACTOR" />
+  <Module PersistentId="FC9E8EDA-1130-4991-9AB3-A144B3BC2840" ModuleId="FtpClient" />
+  <Module PersistentId="012DA711-2F3B-4025-9FB0-6EE1E4481BD2" ModuleId="VNN_WEBEXTRACTSVC" />
+  <Module PersistentId="A0AE7654-4307-4AB0-A481-E5E476682071" ModuleId="DAL" />
+  <Module PersistentId="70315737-840A-49F0-AD59-25B433B021FB" ModuleId="vnnRssFramework" />
+  <Module PersistentId="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C" ModuleId="GetContentFromRolo" />
+  <Module PersistentId="B076B13D-37D6-49DA-89EC-9B5981D99FE0" ModuleId="Test" />
+  <Module PersistentId="88D50A9F-6ED3-43EB-88E8-14C32EA36331" ModuleId="RoloService" />
+</Modules>

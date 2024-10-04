@@ -1,0 +1,134 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Framework", "VietNamNet.Framework\VietNamNet.Framework.csproj", "{374910C4-5F80-4166-A519-82CAF469D830}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Framework.AJAX", "VietNamNet.Framework.AJAX\VietNamNet.Framework.AJAX.csproj", "{5D2824D5-7977-4A9A-98AF-010B9E89FB04}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Framework.Biz", "VietNamNet.Framework.Biz\VietNamNet.Framework.Biz.csproj", "{C658561E-AD12-4E11-973E-A834D74B96A9}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Framework.Common", "VietNamNet.Framework.Common\VietNamNet.Framework.Common.csproj", "{6616D57A-1C08-425C-8AAB-7437FC3BA800}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Framework.DAO.MSSQL", "VietNamNet.Framework.DAO.MSSQL\VietNamNet.Framework.DAO.MSSQL.csproj", "{2ACFBF32-633C-4124-808C-41DBA5AAC536}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Framework.ImageUtility", "VietNamNet.Framework.ImageUtility\VietNamNet.Framework.ImageUtility.csproj", "{145CB3CC-7A93-4C17-AC68-62A32B218545}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Framework.Mobile", "VietNamNet.Framework.Mobile\VietNamNet.Framework.Mobile.csproj", "{5205CD15-F70F-4B60-B782-81D9D454A779}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Framework.Module", "VietNamNet.Framework.Module\VietNamNet.Framework.Module.csproj", "{499104BB-A1EF-4EAB-9BB1-37171CCC09D0}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Framework.System", "VietNamNet.Framework.System\VietNamNet.Framework.System.csproj", "{273154BA-EC93-4EB8-A64C-ACEC4B0CAD96}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Framework.Tracking", "VietNamNet.Framework.Tracking\VietNamNet.Framework.Tracking.csproj", "{E93496EB-6ADC-429B-85B3-542BEA034867}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.CMS", "VietNamNet.CMS\VietNamNet.CMS.csproj", "{41A9CE37-5486-4F18-844F-14419A5D96A3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.CMS.MediaManager", "VietNamNet.CMS.MediaManager\VietNamNet.CMS.MediaManager.csproj", "{86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{374910C4-5F80-4166-A519-82CAF469D830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374910C4-5F80-4166-A519-82CAF469D830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374910C4-5F80-4166-A519-82CAF469D830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374910C4-5F80-4166-A519-82CAF469D830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D2824D5-7977-4A9A-98AF-010B9E89FB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D2824D5-7977-4A9A-98AF-010B9E89FB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D2824D5-7977-4A9A-98AF-010B9E89FB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D2824D5-7977-4A9A-98AF-010B9E89FB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C658561E-AD12-4E11-973E-A834D74B96A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C658561E-AD12-4E11-973E-A834D74B96A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C658561E-AD12-4E11-973E-A834D74B96A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C658561E-AD12-4E11-973E-A834D74B96A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6616D57A-1C08-425C-8AAB-7437FC3BA800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6616D57A-1C08-425C-8AAB-7437FC3BA800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6616D57A-1C08-425C-8AAB-7437FC3BA800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6616D57A-1C08-425C-8AAB-7437FC3BA800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ACFBF32-633C-4124-808C-41DBA5AAC536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACFBF32-633C-4124-808C-41DBA5AAC536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACFBF32-633C-4124-808C-41DBA5AAC536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACFBF32-633C-4124-808C-41DBA5AAC536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145CB3CC-7A93-4C17-AC68-62A32B218545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145CB3CC-7A93-4C17-AC68-62A32B218545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145CB3CC-7A93-4C17-AC68-62A32B218545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145CB3CC-7A93-4C17-AC68-62A32B218545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5205CD15-F70F-4B60-B782-81D9D454A779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5205CD15-F70F-4B60-B782-81D9D454A779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5205CD15-F70F-4B60-B782-81D9D454A779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5205CD15-F70F-4B60-B782-81D9D454A779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{499104BB-A1EF-4EAB-9BB1-37171CCC09D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499104BB-A1EF-4EAB-9BB1-37171CCC09D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499104BB-A1EF-4EAB-9BB1-37171CCC09D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499104BB-A1EF-4EAB-9BB1-37171CCC09D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273154BA-EC93-4EB8-A64C-ACEC4B0CAD96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273154BA-EC93-4EB8-A64C-ACEC4B0CAD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273154BA-EC93-4EB8-A64C-ACEC4B0CAD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273154BA-EC93-4EB8-A64C-ACEC4B0CAD96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E93496EB-6ADC-429B-85B3-542BEA034867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93496EB-6ADC-429B-85B3-542BEA034867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93496EB-6ADC-429B-85B3-542BEA034867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E93496EB-6ADC-429B-85B3-542BEA034867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41A9CE37-5486-4F18-844F-14419A5D96A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41A9CE37-5486-4F18-844F-14419A5D96A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41A9CE37-5486-4F18-844F-14419A5D96A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41A9CE37-5486-4F18-844F-14419A5D96A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

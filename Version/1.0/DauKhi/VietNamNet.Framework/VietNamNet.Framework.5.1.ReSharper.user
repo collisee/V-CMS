@@ -1,0 +1,37 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="145CB3CC-7A93-4C17-AC68-62A32B218545/f:ImageUtils.cs" caret="436" fromTop="0" />
+      <File id="86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7/f:Web.config" caret="2149" fromTop="14" />
+      <File id="374910C4-5F80-4166-A519-82CAF469D830/d:Administrator/f:MenuView.aspx" caret="3809" fromTop="14" />
+      <File id="C658561E-AD12-4E11-973E-A834D74B96A9/f:BizObjectCollection.cs" caret="0" fromTop="0" />
+      <File id="C658561E-AD12-4E11-973E-A834D74B96A9/f:ConfigSerializerSectionHandler.cs" caret="0" fromTop="0" />
+      <File id="86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7/f:Default.aspx" caret="551" fromTop="10" />
+      <File id="6616D57A-1C08-425C-8AAB-7437FC3BA800/f:CAS.cs" caret="1541" fromTop="17" />
+      <File id="5D2824D5-7977-4A9A-98AF-010B9E89FB04/f:AJAXService.cs" caret="690" fromTop="26" />
+      <File id="5D2824D5-7977-4A9A-98AF-010B9E89FB04/f:AJAXServiceObject.cs" caret="1570" fromTop="28" />
+      <File id="5D2824D5-7977-4A9A-98AF-010B9E89FB04/f:AJAXServiceProvider.cs" caret="5726" fromTop="23" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7/f:Web.config" caret="2149" fromTop="14" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

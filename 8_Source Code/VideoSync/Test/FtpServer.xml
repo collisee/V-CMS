@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<VnnMedia>
+	<FtpServer>
+		<name>203.162.71.72</name>
+		<user>vnnclip</user>
+		<password>Vnn@)!)Clip</password>
+	</FtpServer>	
+	<FtpServer>
+		<name>183.91.14.3</name>
+		<user>vnnclip</user>
+		<password>Vnn@)!)Clip</password>
+	</FtpServer>
+</VnnMedia>

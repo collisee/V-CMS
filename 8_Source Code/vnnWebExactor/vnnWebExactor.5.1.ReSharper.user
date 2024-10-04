@@ -1,0 +1,338 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">False</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A0AE7654-4307-4AB0-A481-E5E476682071/f:DAL.Vcms.Source.cs" caret="889" fromTop="18" />
+      <File id="A0AE7654-4307-4AB0-A481-E5E476682071/f:App.config" caret="58" fromTop="1" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:newsGroups.xml" caret="0" fromTop="0" />
+      <File id="A0AE7654-4307-4AB0-A481-E5E476682071/f:DAL.Vcms.SPs.cs" caret="4188" fromTop="26" />
+      <File id="012DA711-2F3B-4025-9FB0-6EE1E4481BD2/f:ProjectInstaller.vb" caret="2423" fromTop="33" />
+      <File id="012DA711-2F3B-4025-9FB0-6EE1E4481BD2/f:Service1.vb" caret="3053" fromTop="33" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/d:DAL_V1/f:StoredProcedures.cs" caret="10983" fromTop="27" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:App.config" caret="1441" fromTop="26" />
+      <File id="88D50A9F-6ED3-43EB-88E8-14C32EA36331/f:App.config" caret="595" fromTop="12" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/d:DAL_V1/f:Article.cs" caret="27173" fromTop="10" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:main.cs" caret="5165" fromTop="24" />
+      <File id="1F5D946D-1016-421F-934A-C1540F8CD433/f:app.config" caret="4643" fromTop="39" />
+      <File id="48A41D9C-264E-4466-A57A-737B4FD87A87/f:Web.vb" caret="401" fromTop="13" />
+      <File id="48A41D9C-264E-4466-A57A-737B4FD87A87/f:NewsDB.vb" caret="6077" fromTop="31" />
+      <File id="48A41D9C-264E-4466-A57A-737B4FD87A87/f:GoldDB.vb" caret="708" fromTop="17" />
+      <File id="48A41D9C-264E-4466-A57A-737B4FD87A87/f:SAnalyzer.vb" caret="22365" fromTop="31" />
+      <File id="B076B13D-37D6-49DA-89EC-9B5981D99FE0/f:Program.cs" caret="1178" fromTop="22" />
+      <File id="B076B13D-37D6-49DA-89EC-9B5981D99FE0/f:App.config" caret="2304" fromTop="20" />
+      <File id="A0AE7654-4307-4AB0-A481-E5E476682071/f:DAL.Vcms.Article.cs" caret="1707" fromTop="9" />
+      <File id="48A41D9C-264E-4466-A57A-737B4FD87A87/f:SourcesDB.vb" caret="13086" fromTop="15" />
+      <File id="48A41D9C-264E-4466-A57A-737B4FD87A87/f:Extractor.vb" caret="2955" fromTop="30" />
+      <File id="88D50A9F-6ED3-43EB-88E8-14C32EA36331/f:Program.cs" caret="749" fromTop="21" />
+      <File id="88D50A9F-6ED3-43EB-88E8-14C32EA36331/f:RoloService.cs" caret="167" fromTop="5" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:NewsDB.cs" caret="5355" fromTop="13" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:Utils.cs" caret="3027" fromTop="8" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:NewsDB.cs" caret="8943" fromTop="31" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:NewsDB.cs" caret="8943" fromTop="7" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:NewsDB.cs" caret="8943" fromTop="23" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:NewsDB.cs" caret="8943" fromTop="9" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:main.cs" caret="5559" fromTop="3" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:NewsDB.cs" caret="8943" fromTop="6" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:NewsDB.cs" caret="8943" fromTop="13" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:main.cs" caret="5559" fromTop="14" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:main.cs" caret="5559" fromTop="18" />
+      <File id="88D50A9F-6ED3-43EB-88E8-14C32EA36331/f:RoloService.cs" caret="2294" fromTop="15" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:main.cs" caret="5559" fromTop="13" />
+      <File id="88D50A9F-6ED3-43EB-88E8-14C32EA36331/f:RoloService.cs" caret="2294" fromTop="1" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:main.cs" caret="5559" fromTop="8" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:main.cs" caret="5559" fromTop="11" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:main.cs" caret="5559" fromTop="16" />
+      <File id="2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C/f:main.cs" caret="5559" fromTop="22" />
+      <File id="B076B13D-37D6-49DA-89EC-9B5981D99FE0/f:Program.cs" caret="2157" fromTop="6" />
+      <File id="B076B13D-37D6-49DA-89EC-9B5981D99FE0/f:Program.cs" caret="2157" fromTop="22" />
+      <File id="B076B13D-37D6-49DA-89EC-9B5981D99FE0/f:App.config" caret="4028" fromTop="24" />
+      <File id="B076B13D-37D6-49DA-89EC-9B5981D99FE0/f:App.config" caret="4028" fromTop="32" />
+      <File id="B076B13D-37D6-49DA-89EC-9B5981D99FE0/f:App.config" caret="4028" fromTop="20" />
+      <File id="B076B13D-37D6-49DA-89EC-9B5981D99FE0/f:App.config" caret="4028" fromTop="16" />
+      <File id="B076B13D-37D6-49DA-89EC-9B5981D99FE0/f:App.config" caret="4028" fromTop="33" />
+      <File id="B076B13D-37D6-49DA-89EC-9B5981D99FE0/f:App.config" caret="4028" fromTop="19" />
+      <File id="48A41D9C-264E-4466-A57A-737B4FD87A87/f:SourcesDB.vb" caret="13086" fromTop="0" />
+      <File id="48A41D9C-264E-4466-A57A-737B4FD87A87/f:Extractor.vb" caret="13086" fromTop="30" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="IO" priority="0" />
+      <Item value="Text" priority="0" />
+      <Item value="Xml" priority="0" />
+      <Item value="public" priority="4" />
+      <Item value="String`0" priority="22" />
+      <Item value="AssemblyLoadEventArgs`0" priority="1" />
+      <Item value="try" priority="7" />
+      <Item value="return" priority="12" />
+      <Item value="strReturn" priority="0" />
+      <Item value="Net" priority="0" />
+      <Item value="Uri`0" priority="0" />
+      <Item value="new" priority="12" />
+      <Item value="Uri" priority="0" />
+      <Item value="HttpWebRequest`0" priority="1" />
+      <Item value="WebRequest`0" priority="0" />
+      <Item value="HttpWebResponse`0" priority="1" />
+      <Item value="response" priority="1" />
+      <Item value="null" priority="14" />
+      <Item value="Stream`0" priority="2" />
+      <Item value="stream" priority="1" />
+      <Item value="request" priority="0" />
+      <Item value="Encoding`0" priority="1" />
+      <Item value="encoding" priority="1" />
+      <Item value="StreamReader`0" priority="0" />
+      <Item value="streamReader" priority="1" />
+      <Item value="StreamReader" priority="0" />
+      <Item value="FileStream`0" priority="0" />
+      <Item value="StreamWriter" priority="0" />
+      <Item value="mStreamWriter" priority="0" />
+      <Item value="finally" priority="2" />
+      <Item value="if" priority="12" />
+      <Item value="is" priority="0" />
+      <Item value="NotFiniteNumberException`0" priority="2" />
+      <Item value="this" priority="5" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="ex" priority="0" />
+      <Item value="else" priority="6" />
+      <Item value="Data" priority="1" />
+      <Item value="DataSet`0" priority="3" />
+      <Item value="ds" priority="4" />
+      <Item value="XmlReader`0" priority="2" />
+      <Item value="xmlReader" priority="1" />
+      <Item value="XmlDocument`0" priority="1" />
+      <Item value="xmlDocument" priority="1" />
+      <Item value="XmlNodeReader`0" priority="1" />
+      <Item value="DataSet" priority="0" />
+      <Item value="using" priority="1" />
+      <Item value="DAL" priority="0" />
+      <Item value="GetContentFromRolo" priority="0" />
+      <Item value="Utils`0" priority="0" />
+      <Item value="utils" priority="3" />
+      <Item value="Utils" priority="0" />
+      <Item value="url" priority="1" />
+      <Item value="System" priority="2" />
+      <Item value="NewsDB`0" priority="0" />
+      <Item value="for" priority="2" />
+      <Item value="foreach" priority="5" />
+      <Item value="DataTable`0" priority="1" />
+      <Item value="dataTable" priority="3" />
+      <Item value="in" priority="2" />
+      <Item value="Console`0" priority="1" />
+      <Item value="DataRow`0" priority="0" />
+      <Item value="dataRow" priority="0" />
+      <Item value="int" priority="7" />
+      <Item value="i" priority="4" />
+      <Item value="xmlNodeList" priority="1" />
+      <Item value="xmlNode" priority="0" />
+      <Item value="Drawing" priority="1" />
+      <Item value="DateTime`0" priority="1" />
+      <Item value="dateTime" priority="0" />
+      <Item value="DateTime" priority="0" />
+      <Item value="Boolean`0" priority="4" />
+      <Item value="false" priority="4" />
+      <Item value="Image`0" priority="0" />
+      <Item value="image" priority="0" />
+      <Item value="true" priority="2" />
+      <Item value="imgName" priority="3" />
+      <Item value="Article`0" priority="1" />
+      <Item value="qry" priority="0" />
+      <Item value="Double`0" priority="1" />
+      <Item value="string" priority="2" />
+      <Item value="article" priority="0" />
+      <Item value="StoredProcedure`0" priority="0" />
+      <Item value="ServicePoint`0" priority="0" />
+      <Item value="sp" priority="0" />
+      <Item value="SPs`0" priority="1" />
+      <Item value="Main`0" priority="1" />
+      <Item value="IDataReader`0" priority="0" />
+      <Item value="dataReader" priority="0" />
+      <Item value="while" priority="0" />
+      <Item value="Convert`0" priority="0" />
+      <Item value="Int32`0" priority="2" />
+      <Item value="private" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="Directory`0" priority="1" />
+      <Item value="directory" priority="0" />
+      <Item value="as" priority="0" />
+      <Item value="strDate" priority="0" />
+      <Item value="Length" priority="1" />
+      <Item value="Object`0" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="DataColumn`0" priority="0" />
+      <Item value="break" priority="1" />
+      <Item value="VNN_WEBEXTRACTOR" priority="0" />
+      <Item value="Extractor`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.WebRequest">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.HttpWebRequest">
+      <Item value="GetResponse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="GetEncoding`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.HttpWebResponse">
+      <Item value="GetResponseStream`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamReader">
+      <Item value="ReadToEnd`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamWriter">
+      <Item value="Flush`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GetContentFromRolo.Utils">
+      <Item value="LogPath" priority="1" />
+      <Item value="GetXmlFromUrl`0" priority="0" />
+      <Item value="GetAppSetting`0" priority="7" />
+      <Item value="BuildNewsDetailLink`0" priority="2" />
+      <Item value="WriteLog`0" priority="0" />
+      <Item value="BuildImageLink`0" priority="1" />
+      <Item value="DownloadImage`0" priority="0" />
+      <Item value="SaveImageToDisk`0" priority="0" />
+      <Item value="CreateDir`0" priority="0" />
+      <Item value="StringToArray`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataSet">
+      <Item value="ReadXml`0" priority="0" />
+      <Item value="Tables" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlDocument">
+      <Item value="Save`0" priority="0" />
+      <Item value="LoadXml`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GetContentFromRolo.NewsDB">
+      <Item value="Xml2DataSet`0" priority="0" />
+      <Item value="CheckLinkExisted`0" priority="0" />
+      <Item value="InserNews`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTable">
+      <Item value="Rows" priority="0" />
+      <Item value="Columns" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataColumnCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataColumn">
+      <Item value="ColumnName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToString`0" priority="2" />
+      <Item value="Replace`0" priority="2" />
+      <Item value="Equals`0" priority="5" />
+      <Item value="Trim`0" priority="1" />
+      <Item value="ToLower`0" priority="2" />
+      <Item value="LastIndexOf`0" priority="1" />
+      <Item value="Substring`0" priority="0" />
+      <Item value="Split`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlNode">
+      <Item value="OuterXml" priority="0" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="InnerText" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlElement">
+      <Item value="ToString`0" priority="0" />
+      <Item value="InnerText" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DAL.Article">
+      <Item value="SubTitle6" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="Title" priority="0" />
+      <Item value="ImageLink" priority="0" />
+      <Item value="Lead" priority="0" />
+      <Item value="Detail" priority="0" />
+      <Item value="History" priority="0" />
+      <Item value="Status" priority="0" />
+      <Item value="ArticleTypeId" priority="0" />
+      <Item value="ArticleContentTypeId" priority="1" />
+      <Item value="CategoryId" priority="1" />
+      <Item value="SubTitle5" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DAL.Article+Columns">
+      <Item value="SubTitle6" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SubSonic.SqlQuery">
+      <Item value="ExecuteScalar`1" priority="1" />
+      <Item value="Execute`0" priority="0" />
+      <Item value="ExecuteReader`0" priority="0" />
+      <Item value="OrderAsc`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DAL.SPs">
+      <Item value="InsertNew`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SubSonic.StoredProcedure">
+      <Item value="Execute`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GetContentFromRolo.Main">
+      <Item value="GetContentFromRolo`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.IDataReader">
+      <Item value="Read`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToDouble`0" priority="0" />
+      <Item value="ToInt32`0" priority="1" />
+      <Item value="ToInt16`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.DbType">
+      <Item value="String" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Timer">
+      <Item value="Interval" priority="0" />
+      <Item value="Enabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="Exists`0" priority="0" />
+      <Item value="CreateDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Char">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DAL.Source+Columns">
+      <Item value="CategoryID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTableCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:VNN_WEBEXTRACTOR.Extractor">
+      <Item value="doAutoExtract`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,154 @@
+
+
+
+
+
+
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta HTTP-EQUIV="Pragma" content="no-cache">
+<meta HTTP-EQUIV="Cache-Control" content="no-cache" />
+<meta HTTP-EQUIV="Cache-Control" content="no-store" />
+<meta HTTP-EQUIV="Expires" content="1">
+
+            
+
+<title>VMware Account Management Login</title>
+
+	
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="robots" content="all" />
+	<meta name="copyright" content="VMware" />
+	<meta http-equiv="content-language" content="en" />
+	<title>VMware Store and Account</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/files/templates/inc/template.css" />
+	<link rel="stylesheet" type="text/css" href="/files/templates/inc/fce.css" />
+	<link rel="stylesheet" type="text/css" href="/files/templates/inc/store.css" />
+	<link rel="stylesheet" type="text/css" href="/files/templates/inc/print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="/files/templates/inc/accountslogin.css" />	
+	<link rel="stylesheet" href="/files/templates/inc/general.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="/files/templates/inc/library_framework.js"></script>
+</head>
+
+<body>
+				<div id="container">
+	<strong class="seo">VMware</strong>
+	<div id="content-container" class="wide">
+			<div id="content">
+
+	
+
+<div id="breadcrumbs">
+	
+</div>
+
+	
+<h1>VMware Account</h1>
+
+	
+	
+
+
+
+
+
+
+
+<script type='text/javascript' src='/files/templates/inc/library_framework.js'></script>
+<script type='text/javascript' src='/files/templates/inc/library.js'></script>
+<p></p>
+<div id="validationerrors" class="smallererror">
+
+	<span class="smallererror">&nbsp;</span>
+
+
+
+</div>
+<div id="loginError" class="smallererror">&nbsp;</div>
+
+<script language="javascript">
+
+function loginActionSubmit(form){
+	var errorDivObj = document.getElementById("validationerrors");
+	errorDivObj.innerHTML ="<span class='smallererror'>&nbsp;</span>";
+	var username = acctUtil.trimUserName(form.username.value);
+	var password= form.password.value;
+	var divError = "loginError";
+	if(!acctUtil.validateLogin(username,password,divError)) {
+		return false;
+	}
+	return true;
+}	
+</script>
+
+<div class="box">
+	<form name="loginForm" method="POST" action="/account/secure/login.do" onsubmit="return loginActionSubmit(this)">
+		
+		<input type="hidden" name="vmware" value="login">
+		
+		<p>If you have a VMware Store account, please sign in.</p>
+		<p>
+			E-mail address:<br />
+			<input type="text" name="username" maxlength="64" size="30" value="">
+		</p>
+		<p>
+			Password:<br />
+			<input type="password" name="password" maxlength="20" size="30" value="">
+		</p>
+		<p>
+			Forgot your password? <a href='/account/forgotPassword.do'>Click here.</a>
+		</p>
+		<p>
+			<input type="submit" value="Sign In">
+		</p>
+	</form>
+</div>
+
+<div class="box">
+		<form name="customerRegistrationForm" method="GET" action="/account/customerRegistration.do">
+		<span class="smaller">
+			If you don't have a VMware Store account, please create one. 
+		</span>
+		<p></p>
+		<span class="smaller"><input type="submit" value="Register"></span>
+	</form>
+</div>
+
+	
+
+
+	
+	</div>
+	</div>
+				<div id="top-of-page">  
+				<div id="iglobal-sites"></div>
+				<div id="iprimary-navigation"></div>
+				<div id="isite-tools"></div>
+				<div id="ilanguage"></div>
+				<div id="isearch-form"></div>
+			</div>
+			<div id="ifooter">
+			</div>	
+	</div>
+	
+<div id="custom-extras"></div>
+<script src="/app/template/" type="text/javascript" charset="UTF-8"></script>
+
+<script type="text/javascript" src="/files/templates/inc/tracking.js"></script>
+<script type="text/javascript" src="/files/templates/inc/hbx.js"></script>
+<script type="text/javascript" src="/files/elqNow/elqCfg.js"></script>
+<script type="text/javascript" src="/files/elqNow/elqImg.js"></script>
+
+
+
+
+</body>
+</html>

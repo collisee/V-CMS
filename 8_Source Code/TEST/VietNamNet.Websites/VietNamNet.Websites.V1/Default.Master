@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Codebehind="Default.master.cs" Inherits="VietNamNet.Websites.V1.Default" %>
+<%@ Register Src="UserControls/PanelHeader.ascx" TagName="PanelHeader" TagPrefix="uc" %>
+<%@ Register Src="UserControls/PanelMenu.ascx" TagName="PanelMenu" TagPrefix="uc" %>
+<%@ Register Src="UserControls/PanelHoptac.ascx" TagName="PanelHoptac" TagPrefix="uc" %>
+<%@ Register Src="UserControls/PanelFooter.ascx" TagName="PanelFooter" TagPrefix="uc" %>
+<%@ Register Src="UserControls/PanelGa.ascx" TagName="PanelGa" TagPrefix="uc" %>
+<%@ Register Src="UserControls/PanelAdvD.ascx" TagName="PanelAdvD" TagPrefix="uc" %>
+<%@ Register Src="UserControls/PanelAdvAddcode.ascx" TagName="PanelAdvAddcode" TagPrefix="uc" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title>VietNamNet</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="/css/Style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/ad_min.css" rel="stylesheet" type="text/css" />
+  <link href="/css/vnn_min.css" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript" src="/js/menu.js"></script>
+  <script type="text/javascript" src="/js/lib-min.js"></script>
+  <%--<script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>--%>
+  <%--<script type="text/javascript" src="/js/VietNamNet.Framework.JS.Advertisement.js"></script>--%>
+
+  <script type="text/javascript" src="/js/default.js"></script>
+
+</head>
+<body>
+  <form id="form1" runat="server">
+    <div id="container">
+      <div id="home-vnn">
+        <uc:PanelHeader ID="PanelHeader1" runat="server" />
+        <uc:PanelMenu ID="PanelMenu1" runat="server" CategoryAlias="theo-dong-su-kien" FirstIndexRecord="1"
+          LastIndexRecord="2" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <uc:PanelHoptac ID="PanelHoptac1" runat="server" />
+        <uc:PanelAdvD ID="PanelAdvD1" runat="server" />
+        <uc:PanelFooter ID="PanelFooter1" runat="server" />
+      </div>
+    </div>
+  </form>
+  <uc:PanelGa ID="PanelGa1" runat="server" />
+  <uc:PanelAdvAddcode ID="PanelAdvAddcode1" runat="server" />
+</body>
+</html>

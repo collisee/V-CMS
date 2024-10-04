@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Standard.master.cs" Inherits="VietNamNet.Framework.Standard" %>
+<%@ Register Src="~/UserControls/LayoutStandard/Header.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="~/UserControls/LayoutStandard/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<%@ Register Src="~/UserControls/GA.ascx" TagName="GA" TagPrefix="uc" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>VietNamNet Framework system</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Description" content="VietNamNet, framework, system, vietnam, vietnamese" />
+    <meta name="Keywords" content="VietNamNet, framework, system, vietnam, vietnamese" />
+    <meta name="Abstract" content="VietNamNet, framework, system, vietnam, vietnamese" />
+    <meta name="google-site-verification" content="" />
+    <meta name="Robots" content="index,follow,all" />
+    <meta name="Author" content="AnhDT" />
+    <meta name="Copyright" content="Copyright © 2010 AnhDT. All rights reserved." />
+    <meta name="Manager" content="AnhDT" />
+    <meta name="Designer" content="AnhDT" />
+    <meta name="Developer" content="AnhDT" />
+    <meta name="Owner" content="AnhDT" />
+    <meta name="Email" content="anhdt@VietNamNet.vn" />
+    <meta name="Language" content="Vietnamese,English" />
+    <meta name="Document-rating" content="General" />
+    <meta name="Document-distribution" content="Global" />
+    <meta name="Distribution" content="Global" />
+    <meta name="Area" content="News" />
+    <meta name="Placename" content="vietnam" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="Classification" content="Vietnam" />
+    <meta name="Rating" content="All" />
+    <link href="/Styles/Standard.css" rel="stylesheet" type="text/css" />
+    <link href="/Styles/Common.css" rel="stylesheet" type="text/css" />
+    <telerik:RadStyleSheetManager runat="server" ID="RadStyleSheet1" />
+
+    <script type="text/javascript" src="/Scripts/Default.js"></script>
+</head>
+<body>
+    <form id="frmDefault" runat="server" enctype="multipart/form-data">
+	    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+		    <Scripts>
+			    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+			    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+		    </Scripts>
+	    </telerik:RadScriptManager>
+        <telerik:RadFormDecorator runat="server" ID="RadFormDecorator1" DecoratedControls="Default,Zone" />
+        <uc:Header ID="Header1" runat="server" />
+        <div id="VietNamNet_container">
+            <asp:ContentPlaceHolder ID="cplhContainer" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <uc:Footer ID="Footer1" runat="server" />
+        <uc:GA ID="GA1" runat="server" />
+    </form>
+</body>
+</html>

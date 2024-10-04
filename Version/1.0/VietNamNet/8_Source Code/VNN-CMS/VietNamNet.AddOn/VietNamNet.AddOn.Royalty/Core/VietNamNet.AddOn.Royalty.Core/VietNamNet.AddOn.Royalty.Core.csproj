@@ -1,0 +1,90 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6CD292DE-6321-4385-AD07-56FFEE01AA5A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.AddOn.Royalty.Core</RootNamespace>
+    <AssemblyName>VietNamNet.AddOn.Royalty.Core</AssemblyName>
+    <SccProjectName>VietNamNet.AddOn.Royalty.Core</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VietNamNet.CMS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\VietNamNet.CMS.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Biz, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\VietNamNet.Framework.Biz.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Common, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\VietNamNet.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.DAO.MSSQL, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\VietNamNet.Framework.DAO.MSSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Module, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\VietNamNet.Framework.Module.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizLogic\RoyaltyFundManager.cs" />
+    <Compile Include="BizLogic\RoyaltyTypesManager.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="Common\ValueObject\RoyaltyFund.cs" />
+    <Compile Include="Common\ValueObject\RoyaltySearch.cs" />
+    <Compile Include="Common\ValueObject\RoyaltyTypes.cs" />
+    <Compile Include="DBAccess\RoyaltyFundDAO.cs" />
+    <Compile Include="DBAccess\RoyaltyTypesDAO.cs" />
+    <Compile Include="Presentation\RoyaltyFundHelper.cs" />
+    <Compile Include="Presentation\RoyaltyTypesHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBAccess\SQLScript\List.sql" />
+    <None Include="DBAccess\SQLScript\Create.sql" />
+    <None Include="DBAccess\SQLScript\Module_Royalty_1_db.sql" />
+    <None Include="DBAccess\SQLScript\Module_Royalty_2_tablecreate.sql" />
+    <None Include="DBAccess\SQLScript\Module_Royalty_3_sp.sql" />
+    <None Include="DBAccess\SQLScript\Module_Royalty_4_ModuleCreate.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,87 @@
+﻿/** Create Datafile**/
+USE [master]
+GO
+ALTER DATABASE [VietNamNet] ADD FILEGROUP [VCards]
+GO
+ALTER DATABASE [VietNamNet] ADD FILE ( NAME = N'VCards', FILENAME = N'E:\Databases\VietNamNet\VCards.ndf' , SIZE = 2048KB , FILEGROWTH = 1024KB ) TO FILEGROUP [VCards]
+GO
+
+
+
+
+/** VCards - Groups **/
+
+USE [VietNamNet]
+if not exists (select * from dbo.sysobjects where id = object_id(N'[VCardsGroups]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+	BEGIN
+		CREATE TABLE [VCardsGroups]
+		( 
+			[GroupId] [int] NOT NULL IDENTITY(1, 1),
+			GroupName nvarchar(100),
+			Description nvarchar(500), 
+			Owner int NOT NULL,
+						
+			[Created_At] [datetime] NOT NULL  DEFAULT (getdate()),
+			[Created_By] [int] NOT NULL   DEFAULT ((0)),
+			[Last_Modified_At] [datetime] NOT NULL   DEFAULT (getdate()),
+			[Last_Modified_By] [int] NOT NULL  DEFAULT ((0)),
+			[flag] [char](1)  NULL,
+		) ON [VCards]
+
+		ALTER TABLE [VCardsGroups] ADD CONSTRAINT [PK_VCardsGroups] PRIMARY KEY CLUSTERED  ([GroupId])
+			CREATE NONCLUSTERED INDEX [IX_Groups_Owner] ON [VCardsGroups] ([Owner]) 
+
+	 END
+GO
+
+
+
+/** VCards **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'[VCards]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+	BEGIN
+		CREATE TABLE [VCards]
+		( 
+			[ContactId] [int] NOT NULL IDENTITY(1, 1),
+			Fullname nvarchar(100),
+			 
+			OrgTitle nvarchar(25), 
+			OrgName nvarchar(100), 			
+			OrgUnit nvarchar(100), 
+			OrgPhone nvarchar(20), 
+			OrgMobile nvarchar(20), 
+			OrgFax nvarchar(20), 
+			OrgAdr1 nvarchar(500),OrgAdr2 nvarchar(500),
+			OrgEmail1 varchar(50),OrgEmail2 varchar(50),
+			OrgWebsite varchar(50),
+			
+			Sex tinyint default 0,
+			Bday datetime,
+			
+			HomePhone nvarchar(20), 
+			HomeMobile nvarchar(20), 
+			HomeFax nvarchar(20), 
+			HomeAdr1 nvarchar(500),HomeAdr2 nvarchar(500),
+			HomeEmail1 varchar(50),HomeEmail2 varchar(50),
+			Homepage varchar(50),
+			
+			Notes nvarchar(1000),
+			Owner int NOT NULL,
+			GroupID int,
+			
+			Scope [tinyint] NOT NULL default 0 ,
+			
+			[Created_At] [datetime] NOT NULL  DEFAULT (getdate()),
+			[Created_By] [int] NOT NULL   DEFAULT ((0)),
+			[Last_Modified_At] [datetime] NOT NULL   DEFAULT (getdate()),
+			[Last_Modified_By] [int] NOT NULL  DEFAULT ((0)),
+			[flag] [char](1)  NULL,
+		) ON [VCards]
+
+		ALTER TABLE [VCards] ADD CONSTRAINT [PK_VCards] PRIMARY KEY CLUSTERED  ([ContactId])
+			CREATE NONCLUSTERED INDEX [IX_VCards_Owner] ON [VCards] ([Owner])
+			CREATE NONCLUSTERED INDEX [IX_VCards_Scope] ON [VCards] ([Scope])
+			CREATE NONCLUSTERED INDEX [IX_VCards_Status] ON [VCards] ([Status])
+
+	 END
+GO
+

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+  <xsl:output method="html" indent="yes" />
+  <xsl:output encoding="UTF-8" />
+  <xsl:strip-space elements="*" />
+  <xsl:template match="ROWSET">
+    <!-- TTOL Vertical - BEGIN -->
+    <div class="row">
+              
+        <xsl:for-each select="ROW">
+          <xsl:if test="position() = 1">
+            <xsl:choose>
+              <xsl:when test="CATE_TYPE = 100">
+                <div class="cattext2_1">
+                  <div class="vien2 boder-img">
+                    <xsl:if test="IMAGE_FILE_NAME != 'null'">
+                      <a title="{TITLE}" href="{PAGE_URL}">
+                        <img src="/dataimages/{IMAGE_CREATE_DATE}/original/{IMAGE_FILE_NAME}"
+                          alt="{TITLE}" width="116" height="64" /></a>
+                    </xsl:if>
+                  </div>
+                  <a class="cmtitle" href="{PAGE_URL}">
+                    <xsl:value-of select="TITLE" /></a>
+                </div>
+              </xsl:when>
+              <xsl:otherwise>
+                <div class="cattext2_1">
+                  <div class="vien2 boder-img">
+                    <xsl:if test="IMAGE_FILE_NAME != 'null'">
+                      <a title="{TITLE}" href="{PAGE_URL}" target="_blank">
+                        <img src="/dataimages/{IMAGE_CREATE_DATE}/original/{IMAGE_FILE_NAME}"
+                          alt="{TITLE}" /></a>
+                    </xsl:if>
+                  </div>
+                  <a class="cmtitle" href="{PAGE_URL}" target="_blank">
+                    <xsl:value-of select="TITLE" /></a>
+                </div>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:if>
+        </xsl:for-each>
+        
+        <div class="cattext2_2">
+          <xsl:for-each select="ROW">
+            <xsl:if test="position() > 1">
+              <xsl:choose>
+                <xsl:when test="CATE_TYPE = 100">
+                  <div class="cm_item">
+                    <div class="cm_link">
+                      <a href="{PAGE_URL}">
+                        <xsl:value-of select="TITLE" /></a></div>
+                    <xsl:if test="IMAGE_FILE_NAME != 'null'">
+                      <a class="cm_img" title="{TITLE}" href="{PAGE_URL}">
+                        <img width="62" height="34" src="/dataimages/{IMAGE_CREATE_DATE}/original/{IMAGE_FILE_NAME}"
+                          alt="{TITLE}" /></a>
+                    </xsl:if>
+                    <div class="clear">
+                      ,
+                    </div>
+                  </div>
+                </xsl:when>
+                <xsl:otherwise>
+                  <div class="cm_item">
+                    <div class="cm_link">
+                      <a href="{PAGE_URL}" target="_blank">
+                        <xsl:value-of select="TITLE" /></a></div>
+                    <xsl:if test="IMAGE_FILE_NAME != 'null'">
+                      <a class="cm_img" title="{TITLE}" href="{PAGE_URL}" target="_blank">
+                        <img width="62" height="34" src="/dataimages/{IMAGE_CREATE_DATE}/original/{IMAGE_FILE_NAME}"
+                          alt="{TITLE}" /></a>
+                    </xsl:if>
+                    <div class="clear">
+                      ,
+                    </div>
+                  </div>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:if>
+          </xsl:for-each>
+        </div>
+        
+        <div class="clear">,</div>
+     </div>
+   
+  
+  </xsl:template>
+</xsl:stylesheet>

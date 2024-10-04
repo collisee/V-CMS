@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="PanelArticleTracking.ascx.cs" Inherits="VietNamNet.Websites.V1.UserControls.News.PanelArticleTracking" %>
+<div class="none" articleTracking="true" articleId="<%=ArticleId %>" categoryalias="<%=CategoryAlias %>"></div>

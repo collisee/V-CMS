@@ -1,0 +1,32 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="380D1390-98EA-48B7-8E78-7E024536F43F/d:UserControls/d:Homepage/f:PanelTopNews.ascx" caret="0" fromTop="0" />
+      <File id="380D1390-98EA-48B7-8E78-7E024536F43F/d:UserControls/f:PanelTamdiem.ascx" caret="0" fromTop="0" />
+      <File id="380D1390-98EA-48B7-8E78-7E024536F43F/f:Web.config" caret="2414" fromTop="18" />
+      <File id="380D1390-98EA-48B7-8E78-7E024536F43F/f:Default.aspx" caret="0" fromTop="0" />
+      <File id="380D1390-98EA-48B7-8E78-7E024536F43F/d:UserControls/f:PanelMenu.ascx" caret="0" fromTop="0" />
+      <File id="380D1390-98EA-48B7-8E78-7E024536F43F/d:UserControls/f:PanelTamdiem.ascx.cs" caret="1530" fromTop="31" />
+      <File id="56001EEA-50C4-497C-BCAF-1C4CFF9B29F0/d:AJAX/f:GetMedia.cs" caret="1236" fromTop="17" />
+    </RecentFiles>
+    <RecentEdits />
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>  
+<Survey>
+  <process>1</process>
+  <HasVoted>false</HasVoted>
+ <Title>Nếu ở Hà Nội vào dịp lễ 1000 năm Thăng Long, bạn quan tâm nhất đến</Title>
+ <Type>C</Type>
+<Options><Option><OptionId>4</OptionId><OptionName>Cổng chào</OptionName></Option><Option><OptionId>5</OptionId><OptionName>Các lễ hội</OptionName></Option><Option><OptionId>6</OptionId><OptionName>Cắt điện</OptionName></Option><Option><OptionId>7</OptionId><OptionName>Vấn đề giao thông</OptionName></Option><Option><OptionId>22</OptionId><OptionName>Ngập lụt</OptionName></Option></Options></Survey>

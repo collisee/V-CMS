@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Thao VietNamNet</title>
+<script language="JavaScript" type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/jquery.carouFredSel-2.4.3-packed.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/thethao_carouFredSel.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery("#sukien_thethao_box").carouFredSel({
+		auto : false,
+		prev : {	
+			button	: "#sukien_thethao_prev",
+			key		: "left"
+		},
+		next : { 
+			button	: "#sukien_thethao_next",
+			key		: "right"
+		},
+		pagination	: "#sukien_thethao_pagination"
+	});
+		
+	jQuery("#photo_thethao_box").carouFredSel({
+		items: {
+			visible: 1,
+			width: 218,
+			height: 124
+		},
+		scroll: {
+			items: 1,
+	        onAfter: function( oldItems, newItems, newSizes ) {
+	            jQuery("#photo_thethao_description").html('<a href="' + newItems.find("> img").attr('alt') + '">' + newItems.find("> img").attr('title') + '</a>');
+	        }
+		},
+		auto: false,
+		prev : {	
+			button	: "#photo_thethao_prev",
+			key		: "left"
+		},
+		next : { 
+			button	: "#photo_thethao_next",
+			key		: "right"
+		},
+		pagination	: "#photo_thethao_pagination"
+	});
+});
+</script>
+</head>
+<body>
+	<div id="home-parent" class="home-parent">
+		<div class="home-header">
+			<div class="logo-thethao">
+				<a href="#"><img src="images/logo_thethao.png" width="230" height="47" /></a>
+				<div class="time-update pdt10">
+					Cập nhật 07:51, Thứ Hai, 25/10/2010 (GMT+7)
+				</div>
+			</div>
+			<div class="adv_top">
+				<div class="adv_a1" >
+					<img src="img/a1.jpg" width="364" height="90" />
+				</div>
+				<div class="adv_a2">
+					<img src="img/a2.jpg" width="364" height="90" />
+				</div>
+			</div>
+			<br class="clear" />
+		</div>	
+		<div class="menu-tt">
+			<div class="menu-top1">
+				<div class="menu-item"><a href="#" class="menu-link1"> Tin Tức</a></div>
+				<div class="menu-artive"><a href="#" class="menu-link2"> Thể Thao</a></div>
+				<div class="menu-item pdl50"><a href="#" class="menu-link1"> 3G Hot</a></div>
+				<div class="menu-item"><a href="#" class="menu-link1"> Bảo Vệ Người Tiêu Dùng</a></div>
+				<div class="menu-item"><a href="#" class="menu-link1"> Tuần Việt Nam</a></div>
+				<div class="menu-item"><a href="#" class="menu-link1"> 2 Sao</a></div>
+				<br class="clear" />
+			</div>
+			<div class="menu-subtop">
+				<div class="menu-subtop2">
+					<a class="menu-sublink">
+						Bóng đá Việt Nam
+					</a>|
+					<a class="menu-sublink">
+						Bóng đá quốc tế
+					</a>|
+					<a class="menu-sublink">
+						Thể thao
+					</a>|
+					<a class="menu-sublink">
+						360°
+					</a>|
+					<a class="menu-sublink">
+						Bình luận cùng nhà báo
+					</a>|
+					<a class="menu-sublink">
+						World Cup	
+					</a>
+				</div>
+				<div class="search-top">
+					<input class="search-top-button" type="text" value="Từ khóa" />
+					<a href="#"><img src="images/blank.gif" height="13px" width="16" /></a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+		
+		<div class="home-body">			
+			
+			<div class="home-left">
+								
+				<div class="breadcrumbBox pdl5">
+					<a href="#">Thể thao</a>&nbsp;&rsaquo;&nbsp;
+					<a href="#">Bóng đá quốc tế</a>&nbsp;&rsaquo;&nbsp;
+					<a href="#">Maria- người thuần hóa...</a>
+				</div>
+				
+				<div class="home-article-detail pdl5">
+					<a href="#" class="article-title"><h1>Maria- người thuần hóa 'ngựa chứng' Ronaldo</h1></a>
+					<p class="article-des">Kể từ sau vụ bê bối với những kẻ đồng tính năm 2008, cái tên Ronaldo ít xuất hiện hơn, và thường chỉ liên quan đến bóng đá. Cuộc sống của anh đang trở nên cân bằng sau không ít lận đận, và Ronie cũng tìm được cho mình niềm vui riêng. Tất cả là nhờ Maria Beatriz Antony.</p>
+					<p class="article-date">Theo Bongdaso 08:39, Thứ Năm, 28/10/2010 (GMT+7)</p>
+					<ul class="button-function clearfix">
+						<li><a class="button-16 button-shared" href="#">Chia sẻ</a></li>
+						<li><a class="button-16 button-twitter no-text" href="#"></a></li>
+						<li><a class="button-16 button-facebook no-text" href="#"></a></li>
+						<li><a class="button-16 button-discussion no-text" href="#"></a></li>
+						<li><a class="button-16 button-email no-text" href="#"></a></li>
+						<li><a class="button-16 button-print no-text" href="#"></a></li>
+					</ul>
+					
+					<div class="home-article-body">
+					<!-- Content article here -->
+					<p>Khi vụ scandal với dân đồng tính bị phanh phui, và liên tục phải làm việc với cơ quan cảnh sát, Ronaldo rơi vào tình trạng tuyệt vọng. Maria Beatriz quyết định rời bỏ và không liên lạc càng khiến "chàng béo" chán nản.</p>
+					<p><img src="img/Ronaldo_Maria_1.jpg" alt="" title=""/></p>
+					<p>Dù thương con trai, nhưng bà Sonia vẫn tôn trọng quyết định của Maria. Bà cho rằng, Ronaldo có lỗi nên anh phải tự mình gánh lấy hậu quả, và Maria có quyền lựa chọn con đường của mình.</p>
+					<p><i>"Maria còn trẻ và lại là đứa con gái có học thức, nên xứng đáng được hưởng một cuộc sống hạnh phúc. Tôi biết, nó vừa trải qua một cú sốc kinh hoàng, cũng giống như bản thân tôi. Không có bất kỳ ràng buộc nào cả, Maria được tự do lựa chọn tương lai".</i></p>
+					<p>Maria đã chọn giải pháp là loại Ronie khỏi tâm trí. Cô tập trung toàn bộ thời gian cho khóa học cấp tốc tại Paris.</p>
+					<p>Tuy nhiên, càng cố gắng quên thì Maria càng nghĩ về Ronie. Thậm chí, chương trình học của Maria đã có sự thay đổi, do cô để hình ảnh của Ronaldo làm ảnh hưởng. Từ đó, Maria hiểu rằng, cô cần Ronie cũng như anh đang cần cô hơn bao giờ hết.</p>
+					<p><img src="img/Ronaldo_Maria_2.jpg" alt="" title=""/></p>
+					<p>Những cuộc gọi điện được Maria thực hiện về Brazil, cho bà Sonia, diễn ra hàng ngày. Hiểu được lòng cô gái trẻ, lúc đó đang mang trong mình giọt máu của Ronaldo, bà gợi ý cho Ronaldo sang Paris để kiểm tra lại vết mổ đầu gối, nhưng thực ra là để thu xếp cho anh gặp Maria.</p>
+					<p>Thế là, chỉ 3 tuần sau khi có ý định chấm dứt hoàn toàn chuyện tình cảm với Ronie, người ta bắt gặp Maria say đắm bên anh giữa Paris hoa lệ. Họ trao nhau những nụ hôn ngay trên đường phố, cùng đi mua sắm và xem hát.</p>
+					<p>Các bác sĩ kết luận chấn thương đầu gối của Ronie tiến triển cực kỳ khả quan. Đồng thời, vết thương lòng của anh cũng được Maria hàn gắn. Ronie nhanh chóng lại sự cân bằng trong cuộc sống, mà chỉ ít ngày trước tưởng như không thể trở lại.</p>
+					<p>"Tôi mang ơn Maria. Cô ấy đã sưởi ấm trái tim tôi. Nếu không có tình yêu của Maria, không biết đến bao giờ tôi mới vượt qua được sự cố đó, và cũng khó mà bình phục chấn thương để được trở lại sân cỏ" - Ronaldo tâm sự trên kênh Globo TV.</p>
+					<p><img src="img/Ronaldo_Maria_3.jpg" alt="Bé gái Maria Sophia" title="Bé gái Maria Sophia"/></p>
+					<p>Mọi thứ diễn ra với Ronie theo chiều hướng tốt đẹp. Chấn thương bình phục sớm hơn dự kiến giúp "Người ngoài hành tinh" trở lại tập luyện, và ký hợp đồng với Corinthians đầu tháng 12/2008.</p>
+					<p>Không lâu sau đó, đúng lễ Giáng sinh 2008, thêm một sự kiện quan trọng nữa diễn ra trong cuộc đời. Đích thân Ronie đã đưa Maria đến bệnh viện ở trung tâm Rio de Janeiro, và tại đây cô sinh cho anh một bé gái kháu khỉnh.</p>
+					<p>Sự ra đời của bé gái Maria Sophia, cũng là đứa con thứ hai của Ronaldo - sau bé trai Ronald với người vợ đầu Milene, giúp anh chín chắn hơn rất nhiều. Không còn những cuộc say bí tỉ, phớt lờ những cô nàng nóng bỏng luôn mời gọi bên cạnh, trừ khi thi đấu cho Corinthians, Ronie luôn ở bên cạnh Maria và con gái.</p>
+					<p>Ronie thực sự hạnh phúc bên cạnh vợ và con gái. Có thể nói, chính bé gái Maria Sophia đã tạo nên một bước ngoặt mới trong cuộc sống và suy nghĩ của Ronie.</p>
+					<p><img src="img/Ronaldo_Maria_4.jpg" alt="Ronaldo trong ngày đón bé gái thứ 2, Maria Alice, rời bệnh viện về nhà" title="Ronaldo trong ngày đón bé gái thứ 2, Maria Alice, rời bệnh viện về nhà"/></p>
+					<p>Roberto Carlos, nhà thiết kế thời trang Brazil và là bạn của hai người, cho rằng Ronaldo đã tìm được tình yêu đích thực, sau cuộc hôn nhân đầu tiên và một loạt mối tình khác. Hay nói cách khác, Carlos cho rằng "ngựa chứng" Ronaldo đã được nàng Maria "thuần hóa".</p>
+
+					<p>Nửa năm trước, Ronaldo lần thứ 3 được làm cha. Lần này cũng là một bé gái, được anh đặt tên Maria Alice. Điều đặc biệt, Maria Alice có cùng ngày sinh với Ronald (ngày 6/4, cách nhau đúng 10 năm).</p>
+
+					<p>Sau những rắc rối, đây là lúc để "người ngoài hành tinh" tận hưởng thời gian ngọt ngào bên "bộ ba Marias" (của mình, khi mà sự nghiệp cầu thủ của anh cũng chuẩn bị khép lại.</p>					
+					<!-- [Content article here] -->
+					</div>
+					
+				
+				<div class="home-article-tags-box pdr5">
+					<b>Tags:</b> <a href="#">Bóng đá</a>, <a href="#">World cup</a>, <a href="#">Ronaldo</a>
+				</div>
+				
+				<div class="home-article-related">
+					<h2>Các tin đã đăng</h2>
+					<ul>
+						<li><a href="#">Tiền đạo Thanh Bình hạnh phúc đón con gái đầu lòng</a></li>
+						<li><a href="#">Tiền đạo Thanh Bình hạnh phúc đón con gái đầu lòng</a></li>
+						<li><a href="#">Tiền đạo Thanh Bình hạnh phúc đón con gái đầu lòng</a></li>
+						<li><a href="#">Tiền đạo Thanh Bình hạnh phúc đón con gái đầu lòng</a></li>
+						<li><a href="#">Tiền đạo Thanh Bình hạnh phúc đón con gái đầu lòng</a></li>
+					</ul>
+				</div>
+				
+				<div class="home-adv-content-bottom">
+					<img src="img/adv4.png" />
+				</div>
+				
+				<div class="home-article-comment-box">
+					<h2>Ý kiến của bạn</h2>
+					<div class="input-area-columns clearfix">
+						<div class="l">
+							<p><input type="text" class="text" name="fullname" value="Họ và tên *"/></p>
+							<p>&nbsp;</p>
+							<p><input type="text" class="text" name="tel" value="Điện thoại"/></p>
+							<p>- Điện thoại không hiển thị lên trang</p>
+						</div>
+						<div class="r">
+							<p><input type="text" class="text" name="email" value="Enmail *"/></p>
+							<p>- Email không hiển thị lên trang</p>
+							<p><input type="text" class="text" name="address" value="Địa chỉ"/></p>
+							<p>&nbsp;</p>
+						</div>
+					</div>
+					<div class="input-area-full">
+						<p><textarea name="message">Nội dung</textarea></p>
+						<p>- Nội dung không quá 1000 từ, viết bằng tiếng Việt có dấu.</p>
+					</div>
+					<div class="input-area-columns clearfix">
+						<div class="l small">
+							<input type="image" class="button-img" src="images/button-send-comment.png"/>
+						</div>
+						<div class="r big pleft clearfix">
+								<a href="#"><img src="images/button-reload.png"/></a><img src="img/img-capchar.png" height="24px"/><input type="text" class="text small" name="capchar" value="Mã bảo vệ"/>								
+						</div>
+					</div>
+				</div>
+					
+				</div><!-- [home-article-detail] -->
+				
+			</div>
+			
+			<div class="home-right">				
+				<div class="box-list pdt2">
+					<div class="adv_right_300">
+						<img src="img/adv1.png" width="300" />
+					</div>
+					<div class="bbc-box">
+						<div class="bbc-top">&nbsp;</div>
+						<div class="pdlr5 "> 
+							<div class="box-item-title"><a href="#">Trưng cầu ý kiến</a></div>
+							<div class="pd10">
+								<div class="vote-ques">
+									Theo bạn có nên áp dụng luật bàn tay sắt với nạn bạo lực của bóng đá Việt Nam
+								</div>
+								<div class="vote-anser">
+									 <input type="radio" class="vote-radio" /> Man UNT
+								</div>
+								<div class="vote-anser">
+									 <input type="radio" class="vote-radio" /> Man UNT
+								</div>
+								<div class="vote-anser">
+									 <input type="radio" class="vote-radio" /> Man UNT
+								</div>
+								<div class="vote-anser">
+									 <input type="radio" class="vote-radio" /> Man UNT
+								</div>
+								<div class="vote-tool">
+									<a href="#" class="vote-tool-sent"><img src="images/vote-sent.gif" width="77" height="23" /></a>
+									<div class="vote-tool-text">
+										hoặc <a href="#"> Xem kết quả</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bbc-bottom">&nbsp;</div>
+					</div>
+					<div class="bbc-box">
+						<div class="bbc-top">&nbsp;</div>
+						<div class="pdlr5 "> 
+							<div class="box-item-title"><a href="#">Ảnh Thể Thao</a></div>
+							<div class="box-tga">
+								<div class="tga-back">
+									<a href="#" id="photo_thethao_prev"><img src="images/anh-back.gif" width="24" height="35" /></a>
+								</div>
+								<div class="tga-group">
+									<div class="tga-item">
+										<div class="box-anh">
+											<div id="photo_thethao_box">
+												<div>
+													<img src="img/tga.gif" width="213" height="119"  class="tga_vien" title="1 Gắm chân dài của những ngôi sao nổi tiếng nhất Châu Âu" alt="http://1.vietnamnet.vn/" />
+												</div>
+												<div>
+													<img src="img/tga.gif" width="213" height="119"  class="tga_vien" title="2 Gắm chân dài của những ngôi sao nổi tiếng nhất Châu Âu" alt="http://2.vietnamnet.vn/" />
+												</div>
+												<div>
+													<img src="img/tga.gif" width="213" height="119"  class="tga_vien" title="3 Gắm chân dài của những ngôi sao nổi tiếng nhất Châu Âu" alt="http://3.vietnamnet.vn/" />
+												</div>
+												<div>
+													<img src="img/tga.gif" width="213" height="119"  class="tga_vien" title="4 Gắm chân dài của những ngôi sao nổi tiếng nhất Châu Âu" alt="http://4.vietnamnet.vn/" />
+												</div>
+												<div>
+													<img src="img/tga.gif" width="213" height="119"  class="tga_vien" title="5 Gắm chân dài của những ngôi sao nổi tiếng nhất Châu Âu" alt="http://5.vietnamnet.vn/" />
+												</div>
+																								
+											</div>
+										</div>						
+									</div>
+								</div>
+								<div class="tga-next">
+									<a href="#" id="photo_thethao_next"><img src="images/anh-next.gif" width="24" height="35" /></a>
+								</div>
+								<br class="clear"  />
+								<div class="tga-link" id="photo_thethao_description">
+									<a href="http://1.vietnamnet.vn/">1 Gắm chân dài của những ngôi sao nổi tiếng nhất Châu Âu</a>
+								</div>
+								<div class="tga-point carousel_pagination" id="photo_thethao_pagination"></div>
+							</div>
+						</div>
+						<div class="bbc-bottom">&nbsp;</div>
+					</div>
+					<div class="bbc-box">
+						<div class="bbc-top">&nbsp;</div>
+						<div class="pdlr5 "> 
+							<div class="box-item-title"><a href="#">Bình luận thể thao</a></div>
+							<div class="pd10 ">
+								<div class="box-item">
+									<a class="box-item-img" href="#"><img src="img/bc-small.gif" width="41" height="30" /></a>
+									<a href="#" class="box-item-link">Ngày tàn của một đế chế bóng đá </a>
+									<div class="clear" >&nbsp;</div>
+								</div>
+								
+								<div class="box-item">
+									<a class="box-item-img" href="#"><img src="img/bc-small.gif" width="41" height="30" /></a>
+									<a href="#" class="box-item-link">Ngày tàn của một đế chế bóng đá </a>
+									<div class="clear" >&nbsp;</div>
+								</div>
+								<div class="box-item">
+									<a class="box-item-img" href="#"><img src="img/bc-small.gif" width="41" height="30" /></a>
+									<a href="#" class="box-item-link">Ngày tàn của một đế chế bóng đá </a>
+									<div class="clear" >&nbsp;</div>
+								</div>
+								
+								<div class="box-xemthem">
+									<img src="images/xemthem.gif" width="76" height="20" />
+								</div>
+							</div>
+						</div>
+						<div class="bbc-bottom">&nbsp;</div>
+					</div>
+					
+					<div class="adv_right_300_bottom">
+						<img src="img/adv3.png" width="300" />
+					</div>									
+					
+				</div>
+				<div class="adv_right_small">
+					<img src="img/adv2.png" width="180" />
+				</div>
+				
+			</div>
+			<br class="clear"  />
+			<div class="sktt ">
+				<div class="sktt-top">&nbsp;</div>
+				<div class="pdlr5">
+					<div class="bc-title">
+							<div class="sktt-point carousel_pagination" id="sukien_thethao_pagination">
+								<a href="#"> <img src="images/point-red.gif" width="11px" height="10"  /></a>
+								<a href="#"> <img src="images/point-black.gif" width="11px" height="10"  /></a>
+							</div>
+							<a href="#"> Sự kiện thể thao</a>
+						</div>
+					<div class="sktt-slide">						
+						<div class="sktt-group" id="sukien_thethao_box">
+							<div class="sktt-item">
+								<a href="#"><img src="img/sktt.gif" width="158" height="91" /></a>
+							</div>
+							<div class="sktt-item">
+								<a href="#"><img src="img/sktt.gif" width="158" height="91"/></a>
+							</div>
+							<div class="sktt-item">
+								<a href="#"><img src="img/sktt.gif" width="158" height="91"/></a>
+							</div>
+							<div class="sktt-item">
+								<a href="#"><img src="img/sktt.gif" width="158" height="91"/></a>
+							</div>
+							<div class="sktt-item">
+								<a href="#"><img src="img/sktt.gif" width="158" height="91"/></a>
+							</div>
+							<div class="sktt-item">
+								<a href="#"><img src="img/sktt.gif" width="158" height="91"/></a>
+							</div>
+							<div class="sktt-item">
+								<a href="#"><img src="img/sktt.gif" width="158" height="91"/></a>
+							</div>
+						</div>
+						<div class="sktt-back">
+							<a href="#" id="sukien_thethao_prev">
+								<img src="images/backtop.png" width="31" height="30" />
+							</a>
+						</div>
+						<div class="sktt-next">
+							<a href="#" id="sukien_thethao_next">
+								<img src="images/nexttop.png" width="31" height="30" />
+							</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="sktt-bottom ">&nbsp;</div>
+			</div>
+			
+			<div class="adv_bottom pdt5">
+				<div >
+					<img src="img/d1.gif" width="980" height="90" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="menu-bottom ">
+			<div class="menu-bt-icon">
+				<a href="#"><img src="images/blank.gif" width="21" height="20" /></a>
+				<a href="#"><img src="images/blank.gif" width="21" height="20"  /></a>
+				<a href="#"><img src="images/blank.gif" width="21" height="20" /></a>
+				<a href="#"><img src="images/blank.gif" width="21" height="20"  /></a>
+			</div>
+			<div class="search-bottom">
+				<input class="search-bottom-button" type="text" value="Từ khóa" />
+				<a href="#"><img src="images/blank.gif" height="13px" width="25" /></a>
+			</div>
+			<div class="text">
+				<a href="#">Hòm thư phản ánh phóng viên</a>
+			</div>
+		</div>
+		<div class="body-footer">
+			<div class="logobottom">
+				<a href="#"><img src="images/blank.gif" width="110" height="30" /></a>
+				<a href="#"><img src="images/blank.gif" width="110" height="30" class="pdt5" /></a>
+			</div>
+			<div class="footer-submenu pdt5">
+				<div class="bold">
+				<a href="#">Tin Tức</a> |
+				<a href="#">Thể Thao</a> |
+				<a href="#">3G Hot</a> |
+				<a href="#">Bảo Vệ Người Tiêu Dùng</a> |
+				<a href="#">Tuần Việt Nam</a> |
+				<a href="#">2 Sao</a>
+				</div>
+				<div class="pdt5">	
+					<a href="#">Bóng đá Việt Nam</a> |
+					<a href="#">Bóng đá quốc tế</a> |
+					<a href="#">Thể thao</a> |
+					<a href="#"> 360°</a> |
+					<a href="#">Bình luận cùng nhà báo</a> |
+					<a href="#">World Cup</a>   
+				</div>
+			</div>
+			<div class="pdt5">
+			© <b>Báo VietNamNet, số 141 Bà Triệu, Hai Bà Trưng, Hà Nội. </b><br/>
+			
+			Cơ quan chủ quản: Bộ Thông tin và Truyền thông. <br/>
+			
+			Số giấy phép: 1285/GP - BTTTT cấp ngày 27/8/2008. <br/>
+			
+			Tổng biên tập: Nguyễn Anh Tuấn. <br/>
+			
+			® Ghi rõ nguồn "VietNamNet" khi phát hành lại thông tin từ website này.
+			</div>
+			<br class="clear"  />
+		</div>
+	</div>
+</body>
+</html>

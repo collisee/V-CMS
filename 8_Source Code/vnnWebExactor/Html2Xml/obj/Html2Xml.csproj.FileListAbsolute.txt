@@ -1,0 +1,6 @@
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\Html2Xml\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\Html2Xml\bin\Debug\Html2Xml.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\Html2Xml\bin\Debug\Html2Xml.pdb
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\Html2Xml\bin\Debug\HtmlAgilityPack.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\Html2Xml\obj\Debug\Html2Xml.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\Html2Xml\obj\Debug\Html2Xml.pdb

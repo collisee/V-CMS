@@ -1,0 +1,62 @@
+
+// Provide a default path to dwr.engine
+if (dwr == null) var dwr = {};
+if (dwr.engine == null) dwr.engine = {};
+if (DWREngine == null) var DWREngine = dwr.engine;
+
+if (Watches == null) var Watches = {};
+Watches._path = '/dwr';
+Watches.isCommunityWatched = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'isCommunityWatched', p0, callback);
+}
+Watches.isThreadWatched = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'isThreadWatched', p0, callback);
+}
+Watches.isUserWatched = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'isUserWatched', p0, callback);
+}
+Watches.isDocumentWatched = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'isDocumentWatched', p0, callback);
+}
+Watches.isBlogWatched = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'isBlogWatched', p0, callback);
+}
+Watches.isBlogPostWatched = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'isBlogPostWatched', p0, callback);
+}
+Watches.watchThread = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'watchThread', p0, callback);
+}
+Watches.watchDocument = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'watchDocument', p0, callback);
+}
+Watches.watchBlog = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'watchBlog', p0, callback);
+}
+Watches.watchBlogPost = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'watchBlogPost', p0, callback);
+}
+Watches.watchUser = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'watchUser', p0, callback);
+}
+Watches.watchCommunity = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'watchCommunity', p0, callback);
+}
+Watches.removeThreadWatch = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'removeThreadWatch', p0, callback);
+}
+Watches.removeDocumentWatch = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'removeDocumentWatch', p0, callback);
+}
+Watches.removeBlogWatch = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'removeBlogWatch', p0, callback);
+}
+Watches.removeBlogPostWatch = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'removeBlogPostWatch', p0, callback);
+}
+Watches.removeUserWatch = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'removeUserWatch', p0, callback);
+}
+Watches.removeCommunityWatch = function(p0, callback) {
+  dwr.engine._execute(Watches._path, 'Watches', 'removeCommunityWatch', p0, callback);
+}

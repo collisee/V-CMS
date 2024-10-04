@@ -1,0 +1,14 @@
+/* CSS Document */
+.cate-docs-list {
+	background: transparent none;
+}
+.box-docs-title a {
+	padding-bottom: 6px;
+}
+* html .box-docs-title a {
+	display: inline-block;
+	padding-bottom: 9px;
+}
+.box-docs-title a.focus {
+		background: url(../images/box-docs-title-pointer.png) no-repeat bottom center;
+}

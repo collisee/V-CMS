@@ -1,0 +1,5 @@
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\FtpClient\bin\Debug\FtpClient.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\FtpClient\bin\Debug\FtpClient.pdb
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\FtpClient\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\FtpClient\obj\Debug\FtpClient.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\FtpClient\obj\Debug\FtpClient.pdb

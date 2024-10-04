@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Popup.master.cs" Inherits="VietNamNet.AddOn.CMS.Reports.Popup" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Popup</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="AnhĐT" name="manager" />
+    <meta content="AnhĐT" name="designer" />
+    <meta content="AnhĐT" name="developer" />
+    <link href="/Styles/Default.css" rel="stylesheet" type="text/css" />
+    <link href="/Styles/Common.css" rel="stylesheet" type="text/css" />
+    <telerik:RadStyleSheetManager runat="server" ID="RadStyleSheet1" />
+    
+    <script type="text/javascript" src="Scripts/Default.js"></script>
+    <link href="Styles/Default.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="frmDefault" runat="server">
+	    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+		    <Scripts>
+			    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+			    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+		    </Scripts>
+	    </telerik:RadScriptManager>
+        <telerik:RadFormDecorator runat="server" ID="RadFormDecorator1" DecoratedControls="Default,Zone" />
+        <telerik:RadSkinManager runat="server" ID="RadSkinManager1" ShowChooser="true"
+            PersistenceKey="Skin" PersistenceMode="Session" Visible="false" />
+        <div class="popup_wrapper">
+            <asp:ContentPlaceHolder ID="cplhContainer" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

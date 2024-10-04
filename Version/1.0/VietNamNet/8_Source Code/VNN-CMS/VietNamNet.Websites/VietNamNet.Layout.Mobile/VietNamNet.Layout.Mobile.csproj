@@ -1,0 +1,407 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6F3A474-8319-46EB-BAEA-C2A7B87DD67D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.Layout.Mobile</RootNamespace>
+    <AssemblyName>VietNamNet.Layout.Mobile</AssemblyName>
+    <SccProjectName>VietNamNet.Layout.Mobile</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Extensions\1.0.61025.0__31bf3856ad364e35\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.AJAX, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.AJAX.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Biz, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Biz.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Common, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.DAO.MSSQL, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.DAO.MSSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.ImageUtility, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.ImageUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Mobile, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Module, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.System, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizLogic\VNN4MobileManager.cs" />
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\VNN4MobileConstants.cs" />
+    <Compile Include="Common\VNN4MobileUtils.cs" />
+    <Compile Include="Common\ValueObject\VNN4MobileObject.cs" />
+    <Compile Include="DBAccess\VNN4MobileDAO.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Detector.cs" />
+    <Compile Include="Error.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\VNN4MobileHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendFeedBack.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SendFeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendFeedBack.aspx.designer.cs">
+      <DependentUpon>SendFeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GA.ascx.cs">
+      <DependentUpon>GA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GA.ascx.designer.cs">
+      <DependentUpon>GA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelCategory.ascx.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelCategory.ascx.designer.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelNewsDetail.ascx.cs">
+      <DependentUpon>PanelNewsDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelNewsDetail.ascx.designer.cs">
+      <DependentUpon>PanelNewsDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelNewsMore.ascx.cs">
+      <DependentUpon>PanelNewsMore.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelNewsMore.ascx.designer.cs">
+      <DependentUpon>PanelNewsMore.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelSendFeedBack.ascx.cs">
+      <DependentUpon>PanelSendFeedBack.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelSendFeedBack.ascx.designer.cs">
+      <DependentUpon>PanelSendFeedBack.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelTopNews.ascx.cs">
+      <DependentUpon>PanelTopNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelTopNews.ascx.designer.cs">
+      <DependentUpon>PanelTopNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelUerInterface.ascx.cs">
+      <DependentUpon>PanelUerInterface.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelUerInterface.ascx.designer.cs">
+      <DependentUpon>PanelUerInterface.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\Category.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="V1\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="V1\Error.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\News.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\SendFeedBack.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SendFeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\SendFeedBack.aspx.designer.cs">
+      <DependentUpon>SendFeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="V1\UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="V1\UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelBottomMenu.ascx.cs">
+      <DependentUpon>PanelBottomMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelBottomMenu.ascx.designer.cs">
+      <DependentUpon>PanelBottomMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelCategory.ascx.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelCategory.ascx.designer.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelHotNews.ascx.cs">
+      <DependentUpon>PanelHotNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelHotNews.ascx.designer.cs">
+      <DependentUpon>PanelHotNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelMenu.ascx.cs">
+      <DependentUpon>PanelMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelMenu.ascx.designer.cs">
+      <DependentUpon>PanelMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelMostRead.ascx.cs">
+      <DependentUpon>PanelMostRead.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelMostRead.ascx.designer.cs">
+      <DependentUpon>PanelMostRead.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelTopMenu.ascx.cs">
+      <DependentUpon>PanelTopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelTopMenu.ascx.designer.cs">
+      <DependentUpon>PanelTopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelTopNews.ascx.cs">
+      <DependentUpon>PanelTopNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="V1\UserControls\PanelTopNews.ascx.designer.cs">
+      <DependentUpon>PanelTopNews.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Browsers\Devices\mobile.browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Category.aspx" />
+    <Content Include="data\banner-kqsx-mb.gif" />
+    <Content Include="data\bannermb.gif" />
+    <Content Include="data\cat_title1.gif" />
+    <Content Include="data\cat_title2.gif" />
+    <Content Include="data\cat_title_bg.gif" />
+    <Content Include="data\menumb.gif" />
+    <Content Include="data\nutdo.gif" />
+    <Content Include="data\nuttrang.png" />
+    <Content Include="data\nutxanh.gif" />
+    <Content Include="data\refresh.gif" />
+    <Content Include="Default.Master" />
+    <Content Include="Error.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="Menu.aspx" />
+    <Content Include="News.aspx" />
+    <Content Include="SendFeedBack.aspx" />
+    <Content Include="style.css" />
+    <Content Include="UserControls\Footer.ascx" />
+    <Content Include="UserControls\GA.ascx" />
+    <Content Include="UserControls\Header.ascx" />
+    <Content Include="UserControls\PanelCategory.ascx" />
+    <Content Include="UserControls\PanelNewsDetail.ascx" />
+    <Content Include="UserControls\PanelNewsMore.ascx" />
+    <Content Include="UserControls\PanelSendFeedBack.ascx" />
+    <Content Include="UserControls\PanelTopNews.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\Thumbs.db" />
+    <Content Include="UserControls\PanelUerInterface.ascx" />
+    <Content Include="V1\Category.aspx" />
+    <Content Include="V1\css\style.css" />
+    <Content Include="V1\Default.aspx" />
+    <Content Include="V1\Default.Master" />
+    <Content Include="V1\Error.aspx" />
+    <Content Include="V1\images\home.gif" />
+    <Content Include="V1\images\icon-menu.gif" />
+    <Content Include="V1\images\icon.gif" />
+    <Content Include="V1\images\logo.gif" />
+    <Content Include="V1\images\qc1.gif" />
+    <Content Include="V1\images\submn.gif" />
+    <Content Include="V1\index.html" />
+    <Content Include="V1\News.aspx" />
+    <Content Include="V1\SendFeedBack.aspx" />
+    <Content Include="V1\UserControls\Footer.ascx" />
+    <Content Include="V1\UserControls\Header.ascx" />
+    <Content Include="V1\UserControls\PanelBottomMenu.ascx" />
+    <Content Include="V1\UserControls\PanelCategory.ascx" />
+    <Content Include="V1\UserControls\PanelHotNews.ascx" />
+    <Content Include="V1\UserControls\PanelMenu.ascx" />
+    <Content Include="V1\UserControls\PanelMostRead.ascx" />
+    <Content Include="V1\UserControls\PanelTopMenu.ascx" />
+    <Content Include="V1\UserControls\PanelTopNews.ascx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49658</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

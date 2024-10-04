@@ -1,0 +1,157 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GetContentFromRolo</RootNamespace>
+    <AssemblyName>GetContentFromRolo</AssemblyName>
+    <SccProjectName>GetContentFromRolo</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SubSonic, Version=2.1.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL_V1\AdvertisementBlock.cs" />
+    <Compile Include="DAL_V1\AdvertisementBlockController.cs" />
+    <Compile Include="DAL_V1\AdvertisementBlockItem.cs" />
+    <Compile Include="DAL_V1\AdvertisementBlockItemController.cs" />
+    <Compile Include="DAL_V1\AdvertisementItem.cs" />
+    <Compile Include="DAL_V1\AdvertisementItemController.cs" />
+    <Compile Include="DAL_V1\AdvertisementLayout.cs" />
+    <Compile Include="DAL_V1\AdvertisementLayoutCategory.cs" />
+    <Compile Include="DAL_V1\AdvertisementLayoutCategoryController.cs" />
+    <Compile Include="DAL_V1\AdvertisementLayoutController.cs" />
+    <Compile Include="DAL_V1\AdvertisementLayoutZone.cs" />
+    <Compile Include="DAL_V1\AdvertisementLayoutZoneController.cs" />
+    <Compile Include="DAL_V1\AdvertisementType.cs" />
+    <Compile Include="DAL_V1\AdvertisementTypeController.cs" />
+    <Compile Include="DAL_V1\AdvertisementZone.cs" />
+    <Compile Include="DAL_V1\AdvertisementZoneBlock.cs" />
+    <Compile Include="DAL_V1\AdvertisementZoneBlockController.cs" />
+    <Compile Include="DAL_V1\AdvertisementZoneController.cs" />
+    <Compile Include="DAL_V1\AllStructs.cs" />
+    <Compile Include="DAL_V1\Appointment.cs" />
+    <Compile Include="DAL_V1\AppointmentController.cs" />
+    <Compile Include="DAL_V1\AppointmentType.cs" />
+    <Compile Include="DAL_V1\AppointmentTypeController.cs" />
+    <Compile Include="DAL_V1\Article.cs" />
+    <Compile Include="DAL_V1\ArticleCategory.cs" />
+    <Compile Include="DAL_V1\ArticleCategoryController.cs" />
+    <Compile Include="DAL_V1\ArticleComment.cs" />
+    <Compile Include="DAL_V1\ArticleCommentController.cs" />
+    <Compile Include="DAL_V1\ArticleContentType.cs" />
+    <Compile Include="DAL_V1\ArticleContentTypeController.cs" />
+    <Compile Include="DAL_V1\ArticleController.cs" />
+    <Compile Include="DAL_V1\ArticleEvent.cs" />
+    <Compile Include="DAL_V1\ArticleEventCategory.cs" />
+    <Compile Include="DAL_V1\ArticleEventCategoryController.cs" />
+    <Compile Include="DAL_V1\ArticleEventController.cs" />
+    <Compile Include="DAL_V1\ArticleEventItem.cs" />
+    <Compile Include="DAL_V1\ArticleEventItemController.cs" />
+    <Compile Include="DAL_V1\ArticleMedium.cs" />
+    <Compile Include="DAL_V1\ArticleMediumController.cs" />
+    <Compile Include="DAL_V1\ArticleType.cs" />
+    <Compile Include="DAL_V1\ArticleTypeController.cs" />
+    <Compile Include="DAL_V1\ArticleVersion.cs" />
+    <Compile Include="DAL_V1\ArticleVersionController.cs" />
+    <Compile Include="DAL_V1\Category.cs" />
+    <Compile Include="DAL_V1\CategoryController.cs" />
+    <Compile Include="DAL_V1\CategoryPolicy.cs" />
+    <Compile Include="DAL_V1\CategoryPolicyController.cs" />
+    <Compile Include="DAL_V1\Collaborator.cs" />
+    <Compile Include="DAL_V1\CollaboratorController.cs" />
+    <Compile Include="DAL_V1\Configuration.cs" />
+    <Compile Include="DAL_V1\ConfigurationController.cs" />
+    <Compile Include="DAL_V1\Function.cs" />
+    <Compile Include="DAL_V1\FunctionController.cs" />
+    <Compile Include="DAL_V1\Group.cs" />
+    <Compile Include="DAL_V1\GroupController.cs" />
+    <Compile Include="DAL_V1\GroupMember.cs" />
+    <Compile Include="DAL_V1\GroupMemberController.cs" />
+    <Compile Include="DAL_V1\Logging.cs" />
+    <Compile Include="DAL_V1\LoggingController.cs" />
+    <Compile Include="DAL_V1\Menu.cs" />
+    <Compile Include="DAL_V1\MenuController.cs" />
+    <Compile Include="DAL_V1\Message.cs" />
+    <Compile Include="DAL_V1\MessageController.cs" />
+    <Compile Include="DAL_V1\MessageDelivery.cs" />
+    <Compile Include="DAL_V1\MessageDeliveryController.cs" />
+    <Compile Include="DAL_V1\ModuleX.cs" />
+    <Compile Include="DAL_V1\ModuleXController.cs" />
+    <Compile Include="DAL_V1\Policy.cs" />
+    <Compile Include="DAL_V1\PolicyController.cs" />
+    <Compile Include="DAL_V1\Room.cs" />
+    <Compile Include="DAL_V1\RoomBooking.cs" />
+    <Compile Include="DAL_V1\RoomBookingController.cs" />
+    <Compile Include="DAL_V1\RoomController.cs" />
+    <Compile Include="DAL_V1\Source.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAL_V1\SourceController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAL_V1\StoredProcedures.cs" />
+    <Compile Include="DAL_V1\User.cs" />
+    <Compile Include="DAL_V1\UserController.cs" />
+    <Compile Include="main.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NewsDB.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="newsGroups.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FtpClient\FtpClient.csproj">
+      <Project>{FC9E8EDA-1130-4991-9AB3-A144B3BC2840}</Project>
+      <Name>FtpClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

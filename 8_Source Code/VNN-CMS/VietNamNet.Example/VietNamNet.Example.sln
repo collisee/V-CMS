@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Example.Backend", "VietNamNet.Example.Backend\VietNamNet.Example.Backend.csproj", "{F8F41F6F-2773-4DB6-A8C6-3131790F4E2D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Example.Fontend", "VietNamNet.Example.Fontend\VietNamNet.Example.Fontend.csproj", "{03FE143B-0B8C-4E8A-9895-F86DE41733F1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Example.Core", "VietNamNet.Example.Core\VietNamNet.Example.Core.csproj", "{59AC8C63-F9CA-41BE-843F-54E2B288FAA1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(VaultVsipSolution-v1) = preSolution
+		VaultHost = http://10.4.6.78/VaultService
+		VaultRepositoryID = 3
+		VaultRepositoryGUID = c1529b89-63e8-4cab-8ed5-d8d37f863347
+		ProjectCount = 3
+		ProjectRelativeDiskPath1 = VietNamNet.Example.Backend\VietNamNet.Example.Backend.csproj
+		ProjectRelativeDiskPath2 = VietNamNet.Example.Fontend\VietNamNet.Example.Fontend.csproj
+		ProjectRelativeDiskPath3 = VietNamNet.Example.Core\VietNamNet.Example.Core.csproj
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8F41F6F-2773-4DB6-A8C6-3131790F4E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F41F6F-2773-4DB6-A8C6-3131790F4E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F41F6F-2773-4DB6-A8C6-3131790F4E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F41F6F-2773-4DB6-A8C6-3131790F4E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03FE143B-0B8C-4E8A-9895-F86DE41733F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FE143B-0B8C-4E8A-9895-F86DE41733F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FE143B-0B8C-4E8A-9895-F86DE41733F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FE143B-0B8C-4E8A-9895-F86DE41733F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59AC8C63-F9CA-41BE-843F-54E2B288FAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59AC8C63-F9CA-41BE-843F-54E2B288FAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59AC8C63-F9CA-41BE-843F-54E2B288FAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59AC8C63-F9CA-41BE-843F-54E2B288FAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,109 @@
+*{ margin:0px; padding:0px;}
+body{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	padding:0px ;
+	margin:0px auto;
+}
+ul{ padding-left:10px;}
+table.relate{  padding:5px; line-height:16px; }
+table.relate1{ background-color:#efefef; padding:5px; line-height:16px; }
+table.relate ul,table.relate1 ul {
+list-style-type:none;}
+table.relate .title{ text-transform:uppercase; font-weight:bold; padding:4px; color:#515151;}
+table.relate ul li,table.relate1 ul li {
+	padding: 3px 4px 3px 8px;
+	background-color:#ffffff;
+}
+table.relate ul li a,table.relate1 ul li a{
+	font-weight:bold;
+	color:#004276;
+}
+
+table.image td.note{ color:#000066; padding:4px; background-color:#D7E9FF;}
+table.image {
+	border-collapse: collapse;
+	background: #eee;
+	width: 1%;
+	color: #048;
+	text-align:center;
+}
+
+table.image td {
+	text-align: center;
+}
+
+table.image .image_desc {
+	padding: 5px;
+}
+
+table.leftside {
+	margin: 0px 10px 5px 1px;
+}
+
+table.rightside {
+	margin: 0px 0 5px 10px;
+}
+
+table.center {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align:center;
+}
+table.quote {
+	border: 1px solid #d6dce8;
+	background: #eee;
+}
+
+table.quote td {
+	padding: 3px 5px;
+	color: black;
+	text-align: justify;
+}
+
+/* Style min Doan nay luon luon de o cuoi cung file style */
+.pd10{ padding:10px;}
+.pd8{ padding:8px;}
+.pd5{ padding:5px;}
+.pdl10{ padding-left:10px;}
+.pdl8{ padding-left:8px;}
+.pdl5{ padding-left:5px;}
+.pdr10{ padding-right:10px;}
+.pdr8{ padding-right:8px;}
+.pdr5{ padding-right:5px;}
+.pdt10{ padding-top:10px;}
+.pdt8{ padding-top:8px;}
+.pdtb5{padding:5px 0px;}
+.pdtb10{padding:10px 0px;}
+.pdtb20{padding:20px 0px;}
+.pdt5{ padding-top:5px;}
+.pdb10{ padding-bottom:10px;}
+.pdb8{ padding-bottom:8px;}
+.pdb5{ padding-bottom:5px;}
+.pdlr4{ padding:0px 4px;}
+.pdlr5{ padding:0px 5px;}
+.pdlr8{ padding:0px 8px;}
+.pdlr10{ padding:0px 10px;}
+.fl_l{ float:left;}
+.fl_r{ float:right;}
+.text_u{text-transform:uppercase;}
+.bold{ font-weight:bold;}
+.text11{ font-size:11px;}
+.he10{ height:10px ; overflow:hidden;}
+.he5{ height:5px ; overflow:hidden;}
+.bortop{border-top:1px solid #e5e5e5;}
+.red52{ color:#570102;}
+.right{text-align:right;}
+.left{text-align:left;}
+.center{text-align:center;}
+.justify{text-align:justify;}
+
+.none{display:none;}
+.block{display:block;}
+
+/* End min style*/
+

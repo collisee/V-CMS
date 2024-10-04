@@ -1,0 +1,10 @@
+<Modules>
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="System" />
+  <Module PersistentId="012DA711-2F3B-4025-9FB0-6EE1E4481BD2" ModuleId="VNN_WEBEXTRACTSVC" />
+  <Module PersistentId="32240FAB-5D60-4013-A9BC-E9E8E5A73119" ModuleId="VideoSyncProcess" />
+  <Module PersistentId="FC9E8EDA-1130-4991-9AB3-A144B3BC2840" ModuleId="FtpClient" />
+  <Module PersistentId="A4E50BBE-F644-47FD-8AFF-879343EC992F" ModuleId="VideoDAL" />
+  <Module PersistentId="E31E10D3-BC50-4041-8847-3D8773560F67" ModuleId="Test" />
+  <Module PersistentId="48E10389-F46F-466E-8B68-FC60904CEC3C" ModuleId="VideoController" />
+  <Module PersistentId="3B2B4D31-9B3B-4A6C-B40D-C9BBE04E3EF3" ModuleId="Utils" />
+</Modules>

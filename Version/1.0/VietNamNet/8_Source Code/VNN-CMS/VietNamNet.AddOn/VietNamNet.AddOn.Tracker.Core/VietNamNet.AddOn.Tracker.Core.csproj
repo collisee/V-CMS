@@ -1,0 +1,168 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9320A031-AF14-45F7-B923-86579A539FA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.AddOn.Tracker.Core</RootNamespace>
+    <AssemblyName>VietNamNet.AddOn.Tracker.Core</AssemblyName>
+    <SccProjectName>VietNamNet.AddOn.Tracker.Core</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.1.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\CMS\AdvertisementBlock.cs" />
+    <Compile Include="Controller\CMS\AdvertisementBlockController.cs" />
+    <Compile Include="Controller\CMS\AdvertisementBlockItem.cs" />
+    <Compile Include="Controller\CMS\AdvertisementBlockItemController.cs" />
+    <Compile Include="Controller\CMS\AdvertisementItem.cs" />
+    <Compile Include="Controller\CMS\AdvertisementItemController.cs" />
+    <Compile Include="Controller\CMS\AdvertisementLayout.cs" />
+    <Compile Include="Controller\CMS\AdvertisementLayoutCategory.cs" />
+    <Compile Include="Controller\CMS\AdvertisementLayoutCategoryController.cs" />
+    <Compile Include="Controller\CMS\AdvertisementLayoutController.cs" />
+    <Compile Include="Controller\CMS\AdvertisementLayoutZone.cs" />
+    <Compile Include="Controller\CMS\AdvertisementLayoutZoneController.cs" />
+    <Compile Include="Controller\CMS\AdvertisementType.cs" />
+    <Compile Include="Controller\CMS\AdvertisementTypeController.cs" />
+    <Compile Include="Controller\CMS\AdvertisementZone.cs" />
+    <Compile Include="Controller\CMS\AdvertisementZoneBlock.cs" />
+    <Compile Include="Controller\CMS\AdvertisementZoneBlockController.cs" />
+    <Compile Include="Controller\CMS\AdvertisementZoneController.cs" />
+    <Compile Include="Controller\AllStructs.cs" />
+    <Compile Include="Controller\CMS\Appointment.cs" />
+    <Compile Include="Controller\CMS\AppointmentController.cs" />
+    <Compile Include="Controller\CMS\AppointmentType.cs" />
+    <Compile Include="Controller\CMS\AppointmentTypeController.cs" />
+    <Compile Include="Controller\CMS\Article.cs" />
+    <Compile Include="Controller\CMS\ArticleCategory.cs" />
+    <Compile Include="Controller\CMS\ArticleCategoryController.cs" />
+    <Compile Include="Controller\CMS\ArticleComment.cs" />
+    <Compile Include="Controller\CMS\ArticleCommentController.cs" />
+    <Compile Include="Controller\CMS\ArticleContentType.cs" />
+    <Compile Include="Controller\CMS\ArticleContentTypeController.cs" />
+    <Compile Include="Controller\CMS\ArticleController.cs" />
+    <Compile Include="Controller\CMS\ArticleEvent.cs" />
+    <Compile Include="Controller\CMS\ArticleEventCategory.cs" />
+    <Compile Include="Controller\CMS\ArticleEventCategoryController.cs" />
+    <Compile Include="Controller\CMS\ArticleEventController.cs" />
+    <Compile Include="Controller\CMS\ArticleEventItem.cs" />
+    <Compile Include="Controller\CMS\ArticleEventItemController.cs" />
+    <Compile Include="Controller\CMS\ArticleMedium.cs" />
+    <Compile Include="Controller\CMS\ArticleMediumController.cs" />
+    <Compile Include="Controller\CMS\ArticleType.cs" />
+    <Compile Include="Controller\CMS\ArticleTypeController.cs" />
+    <Compile Include="Controller\CMS\ArticleVersion.cs" />
+    <Compile Include="Controller\CMS\ArticleVersionController.cs" />
+    <Compile Include="Controller\CMS\Category.cs" />
+    <Compile Include="Controller\CMS\CategoryController.cs" />
+    <Compile Include="Controller\CMS\CategoryPolicy.cs" />
+    <Compile Include="Controller\CMS\CategoryPolicyController.cs" />
+    <Compile Include="Controller\CMS\Collaborator.cs" />
+    <Compile Include="Controller\CMS\CollaboratorController.cs" />
+    <Compile Include="Controller\CMS\Configuration.cs" />
+    <Compile Include="Controller\CMS\ConfigurationController.cs" />
+    <Compile Include="Controller\CMS\Function.cs" />
+    <Compile Include="Controller\CMS\FunctionController.cs" />
+    <Compile Include="Controller\CMS\Group.cs" />
+    <Compile Include="Controller\CMS\GroupController.cs" />
+    <Compile Include="Controller\CMS\GroupMember.cs" />
+    <Compile Include="Controller\CMS\GroupMemberController.cs" />
+    <Compile Include="Controller\CMS\Logging.cs" />
+    <Compile Include="Controller\CMS\LoggingController.cs" />
+    <Compile Include="Controller\CMS\Menu.cs" />
+    <Compile Include="Controller\CMS\MenuController.cs" />
+    <Compile Include="Controller\CMS\Message.cs" />
+    <Compile Include="Controller\CMS\MessageController.cs" />
+    <Compile Include="Controller\CMS\MessageDelivery.cs" />
+    <Compile Include="Controller\CMS\MessageDeliveryController.cs" />
+    <Compile Include="Controller\CMS\ModuleX.cs" />
+    <Compile Include="Controller\CMS\ModuleXController.cs" />
+    <Compile Include="Controller\CMS\Policy.cs" />
+    <Compile Include="Controller\CMS\PolicyController.cs" />
+    <Compile Include="Controller\CMS\Room.cs" />
+    <Compile Include="Controller\CMS\RoomBooking.cs" />
+    <Compile Include="Controller\CMS\RoomBookingController.cs" />
+    <Compile Include="Controller\CMS\RoomController.cs" />
+    <Compile Include="Controller\CMS\RoyaltyFund.cs" />
+    <Compile Include="Controller\CMS\RoyaltyFundController.cs" />
+    <Compile Include="Controller\CMS\RoyaltyType.cs" />
+    <Compile Include="Controller\CMS\RoyaltyTypeController.cs" />
+    <Compile Include="Controller\CMS\Source.cs" />
+    <Compile Include="Controller\CMS\SourceController.cs" />
+    <Compile Include="Controller\CMS\SPs.cs" />
+    <Compile Include="Controller\CMS\Survey.cs" />
+    <Compile Include="Controller\CMS\SurveyController.cs" />
+    <Compile Include="Controller\CMS\SurveyOption.cs" />
+    <Compile Include="Controller\CMS\SurveyOptionController.cs" />
+    <Compile Include="Controller\CMS\SurveyPublish.cs" />
+    <Compile Include="Controller\CMS\SurveyPublishController.cs" />
+    <Compile Include="Controller\CMS\SurveyResult.cs" />
+    <Compile Include="Controller\CMS\SurveyResultController.cs" />
+    <Compile Include="Controller\CMS\User.cs" />
+    <Compile Include="Controller\CMS\UserController.cs" />
+    <Compile Include="Controller\tracker\SPs.cs" />
+    <Compile Include="Controller\tracker\TrackingArticle.cs" />
+    <Compile Include="Controller\tracker\TrackingArticleController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DAL\Script\7.Module_Tracking_1_db.sql" />
+    <None Include="DAL\Script\7.Module_Tracking_2_schema.sql" />
+    <None Include="DAL\Script\7.Module_Tracking_3_tables.sql" />
+    <None Include="DAL\Script\7.Module_Tracking_5_sp.sql" />
+    <None Include="DAL\Script\7.Module_Tracking_4_tables.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

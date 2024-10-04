@@ -1,0 +1,347 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45F9DEB1-A664-4323-BEF2-FB1F79712E02}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.Websites.Resources</RootNamespace>
+    <AssemblyName>VietNamNet.Websites.Resources</AssemblyName>
+    <SccProjectName>VietNamNet.Websites.Resources</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="error.html" />
+    <Content Include="images\1000nam.jpg" />
+    <Content Include="images\24h-back.gif" />
+    <Content Include="images\24h-next.gif" />
+    <Content Include="images\24h-title.gif" />
+    <Content Include="images\2sao-title.gif" />
+    <Content Include="images\addtomyyahoo.gif" />
+    <Content Include="images\antoan190x75.jpg" />
+    <Content Include="images\arrow.gif" />
+    <Content Include="images\audio.gif" />
+    <Content Include="images\audiob.gif" />
+    <Content Include="images\back.gif" />
+    <Content Include="images\baovenguoitieudung.jpg" />
+    <Content Include="images\bg-24h.gif" />
+    <Content Include="images\bg-horizontal.png" />
+    <Content Include="images\bg_3cate.gif" />
+    <Content Include="images\bg_menu.gif" />
+    <Content Include="images\bg_menu1.gif" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\blue_line.gif" />
+    <Content Include="images\box_BVKH.gif" />
+    <Content Include="images\box_search_bg.png" />
+    <Content Include="images\box_search_reset.png" />
+    <Content Include="images\box_search_submit.png" />
+    <Content Include="images\box_TTOL.gif" />
+    <Content Include="images\btn-close-hover.gif" />
+    <Content Include="images\btn-close.gif" />
+    <Content Include="images\btn-slide.gif" />
+    <Content Include="images\bullet-horizontal.png" />
+    <Content Include="images\button1.gif" />
+    <Content Include="images\button2.gif" />
+    <Content Include="images\button2b.gif" />
+    <Content Include="images\button_search.gif" />
+    <Content Include="images\bvtd_bg.gif" />
+    <Content Include="images\cattitle.gif" />
+    <Content Include="images\cattitle2sao.gif" />
+    <Content Include="images\cattitleTVN.gif" />
+    <Content Include="images\cat_sub_line.jpg" />
+    <Content Include="images\cat_title1.gif" />
+    <Content Include="images\cat_title2.gif" />
+    <Content Include="images\cat_title3.gif" />
+    <Content Include="images\cat_title4.gif" />
+    <Content Include="images\cat_title_bg.gif" />
+    <Content Include="images\clip_img.gif" />
+    <Content Include="images\clip_most.gif" />
+    <Content Include="images\clip_play1.png" />
+    <Content Include="images\clip_play16x16.png" />
+    <Content Include="images\clip_play2.png" />
+    <Content Include="images\clip_play3.png" />
+    <Content Include="images\clip_play30x30.png" />
+    <Content Include="images\clip_sent.gif" />
+    <Content Include="images\clip_slide.gif" />
+    <Content Include="images\clip_title.gif" />
+    <Content Include="images\close.png" />
+    <Content Include="images\comment_button.png" />
+    <Content Include="images\comment_button2.png" />
+    <Content Include="images\comment_top_bg.png" />
+    <Content Include="images\comment_warning.png" />
+    <Content Include="images\digSendEmail_button_send.png" />
+    <Content Include="images\digSendEmail_but_close.png" />
+    <Content Include="images\favicon-vnn.ico" />
+    <Content Include="images\favicon_vnn.ico" />
+    <Content Include="images\fb_icon.gif" />
+    <Content Include="images\giaitri.jpg" />
+    <Content Include="images\giavang.jpg" />
+    <Content Include="images\header.jpg" />
+    <Content Include="images\header_goc.jpg" />
+    <Content Include="images\hg_tt.gif" />
+    <Content Include="images\hl1.gif" />
+    <Content Include="images\hnav\hnav_arrow1.png" />
+    <Content Include="images\hnav\hnav_bg.png" />
+    <Content Include="images\hnav\hnav_bullet1.png" />
+    <Content Include="images\hnav\hnav_bullet2.png" />
+    <Content Include="images\hnav\hnav_menu.png" />
+    <Content Include="images\hnav\icons_rss.png" />
+    <Content Include="images\hnav\search_txtbox.png" />
+    <Content Include="images\hoavanvnn.gif" />
+    <Content Include="images\hoctac3.gif" />
+    <Content Include="images\hoptac1.gif" />
+    <Content Include="images\hoptac2.gif" />
+    <Content Include="images\hoptac4.gif" />
+    <Content Include="images\hoptac_bg1.gif" />
+    <Content Include="images\hoptac_bg2.gif" />
+    <Content Include="images\hotline.gif" />
+    <Content Include="images\icon-24h.png" />
+    <Content Include="images\icon_focus.png" />
+    <Content Include="images\icon_hot.png" />
+    <Content Include="images\icon_mobi.gif" />
+    <Content Include="images\icon_mobi.jpg" />
+    <Content Include="images\icon_new.png" />
+    <Content Include="images\icon_thethao.gif" />
+    <Content Include="images\icon_truyenhinh.gif" />
+    <Content Include="images\lastnews3.gif" />
+    <Content Include="images\lightbox-blank.gif" />
+    <Content Include="images\lightbox-btn-close.gif" />
+    <Content Include="images\lightbox-btn-next.gif" />
+    <Content Include="images\lightbox-btn-prev.gif" />
+    <Content Include="images\lightbox-ico-loading.gif" />
+    <Content Include="images\line.gif" />
+    <Content Include="images\list_img_bg.jpg" />
+    <Content Include="images\logoBBC.gif" />
+    <Content Include="images\logovnn.png" />
+    <Content Include="images\mail.gif" />
+    <Content Include="images\menu1.gif" />
+    <Content Include="images\menu1.jpg" />
+    <Content Include="images\menu1a.gif" />
+    <Content Include="images\menu1a.jpg" />
+    <Content Include="images\menu1b.gif" />
+    <Content Include="images\menu1bb.gif" />
+    <Content Include="images\menu2.gif" />
+    <Content Include="images\menu2a.gif" />
+    <Content Include="images\menu2b.gif" />
+    <Content Include="images\menu2bb.gif" />
+    <Content Include="images\menubt_line.gif" />
+    <Content Include="images\mn_cham.gif" />
+    <Content Include="images\mn_cham2.gif" />
+    <Content Include="images\mobile.jpg" />
+    <Content Include="images\mostread.gif" />
+    <Content Include="images\most_fb.gif" />
+    <Content Include="images\muiten.gif" />
+    <Content Include="images\muonmaucuocsong.jpg" />
+    <Content Include="images\new_boder1.gif" />
+    <Content Include="images\new_boder2.gif" />
+    <Content Include="images\next-horizontal.png" />
+    <Content Include="images\next.gif" />
+    <Content Include="images\noibat3.png" />
+    <Content Include="images\other.gif" />
+    <Content Include="images\photo.gif" />
+    <Content Include="images\photob.gif" />
+    <Content Include="images\photo_r.gif" />
+    <Content Include="images\popup_logo.gif" />
+    <Content Include="images\prev-horizontal.png" />
+    <Content Include="images\print.gif" />
+    <Content Include="images\quangcao.gif" />
+    <Content Include="images\radio_bg.jpg" />
+    <Content Include="images\radio_buttom.jpg" />
+    <Content Include="images\radio_cham.gif" />
+    <Content Include="images\red_line.gif" />
+    <Content Include="images\resetformfb.gif" />
+    <Content Include="images\right_bg.gif" />
+    <Content Include="images\rss.gif" />
+    <Content Include="images\rss.png" />
+    <Content Include="images\sentfb.gif" />
+    <Content Include="images\sentfile.gif" />
+    <Content Include="images\sports.gif" />
+    <Content Include="images\star_small.png" />
+    <Content Include="images\tab_right_bg.gif" />
+    <Content Include="images\tdsk.gif" />
+    <Content Include="images\tg_anh.gif" />
+    <Content Include="images\tha.gif" />
+    <Content Include="images\thoisu.jpg" />
+    <Content Include="images\tinanh-bg.gif" />
+    <Content Include="images\tinanh_n.gif" />
+    <Content Include="images\tinanh_p.gif" />
+    <Content Include="images\tinkhac.gif" />
+    <Content Include="images\title-24h.png" />
+    <Content Include="images\title_vnr500.gif" />
+    <Content Include="images\tphcm24h.gif" />
+    <Content Include="images\ttol-title.gif" />
+    <Content Include="images\tw_icon.gif" />
+    <Content Include="images\video.gif" />
+    <Content Include="images\videob.gif" />
+    <Content Include="images\vietnamnet.png" />
+    <Content Include="images\vietnamnet1.png" />
+    <Content Include="images\vnn_image.gif" />
+    <Content Include="images\vnn_image2.gif" />
+    <Content Include="images\vnn_image3.gif" />
+    <Content Include="images\vnn_image4.gif" />
+    <Content Include="images\vnn_png.png" />
+    <Content Include="images\vnn_slide.gif" />
+    <Content Include="images\white-arrow.gif" />
+    <Content Include="mobile\images\home.gif" />
+    <Content Include="mobile\images\icon-menu.gif" />
+    <Content Include="mobile\images\icon.gif" />
+    <Content Include="mobile\images\logo.gif" />
+    <Content Include="mobile\images\qc1.gif" />
+    <Content Include="mobile\images\refresh.gif" />
+    <Content Include="mobile\images\submn.gif" />
+    <Content Include="scripts\vnn_v1.2.js" />
+    <Content Include="scripts\default.js" />
+    <Content Include="scripts\menu.js" />
+    <Content Include="scripts\vnn_v1.1.js" />
+    <Content Include="sports\images\anh-back.gif" />
+    <Content Include="sports\images\anh-next.gif" />
+    <Content Include="sports\images\bbc\100529115343_wcup_south_africa_2010_106b.jpg" />
+    <Content Include="sports\images\bbc\bcc.jpg" />
+    <Content Include="sports\images\bbc\blank.gif" />
+    <Content Include="sports\images\bbc\detail.gif" />
+    <Content Include="sports\images\bbc\feedback.gif" />
+    <Content Include="sports\images\bbc\icon.jpg" />
+    <Content Include="sports\images\bbc\logoBBC.jpg" />
+    <Content Include="sports\images\bbc\mail.gif" />
+    <Content Include="sports\images\bbc\photo.gif" />
+    <Content Include="sports\images\bbc\print.gif" />
+    <Content Include="sports\images\bbc\rss.gif" />
+    <Content Include="sports\images\box-docs-title-1.png" />
+    <Content Include="sports\images\box-docs-title-2.png" />
+    <Content Include="sports\images\box-docs-title-pointer.png" />
+    <Content Include="sports\images\box_trungthuong_bg.png" />
+    <Content Include="sports\images\box_trungthuong_header.png" />
+    <Content Include="sports\images\bt-reset.gif" />
+    <Content Include="sports\images\bt-search.gif" />
+    <Content Include="sports\images\button-reload.png" />
+    <Content Include="sports\images\button-send-comment.png" />
+    <Content Include="sports\images\thethaoslider\but_close.png" />
+    <Content Include="sports\images\close.png" />
+    <Content Include="sports\images\feeback_but.png" />
+    <Content Include="sports\images\feeback_items_bg.png" />
+    <Content Include="sports\images\feeback_items_bg2.png" />
+    <Content Include="sports\images\gradien-bg-1.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loading1.gif" />
+    <Content Include="images\plus_google.gif" />
+    <Content Include="images\sprite_sheet.gif" />
+    <Content Include="lib\player.swf" />
+    <Content Include="lib\vnn_v1.2.swf" />
+    <Content Include="lib\vnn_v1.0.swf" />
+    <Content Include="lib\vnn_v1.1.swf" />
+    <Content Include="scripts\addon_v1.0.js" />
+    <Content Include="scripts\vnn_v1.0.js" />
+    <Content Include="scripts\VietNamNet.Framework.JS.Advertisement.js" />
+    <Content Include="sports\images\backtop.png" />
+    <Content Include="sports\images\bg-foster.gif" />
+    <Content Include="sports\images\hn-title.png" />
+    <Content Include="sports\images\hnav_bg.png" />
+    <Content Include="sports\images\hnav_bullet1.gif" />
+    <Content Include="sports\images\hnav_menu.png" />
+    <Content Include="sports\images\icon-mono-pack-16.png" />
+    <Content Include="sports\images\icon_2sao.png" />
+    <Content Include="sports\images\icon_clip.png" />
+    <Content Include="sports\images\icon_tuanvietnam.png" />
+    <Content Include="sports\images\icon_vietnamnet.png" />
+    <Content Include="sports\images\logo_thethao.png" />
+    <Content Include="sports\images\logo_tt.png" />
+    <Content Include="sports\images\most_arrow_down.png" />
+    <Content Include="sports\images\most_arrow_up.png" />
+    <Content Include="sports\images\next-horizontal.png" />
+    <Content Include="sports\images\nexttop.png" />
+    <Content Include="sports\images\point-full.png" />
+    <Content Include="sports\images\prev-horizontal.png" />
+    <Content Include="sports\images\rss.png" />
+    <Content Include="sports\images\thethaoslider\thethao_box_bg.png" />
+    <Content Include="sports\images\thethaoslider\thethao_link_box.png" />
+    <Content Include="sports\images\thethaoslider\thethao_link_l.png" />
+    <Content Include="sports\images\thethaoslider\thethao_link_r.png" />
+    <Content Include="sports\images\thethaoslider\thethao_slidebg.png" />
+    <Content Include="sports\images\thethaoslider\thethao_slidelink.png" />
+    <Content Include="sports\images\thethaoslider\thethao_slider_title_bg_1.png" />
+    <Content Include="sports\images\thethaoslider\thethao_slider_title_bg_2.png" />
+    <Content Include="sports\images\vnn_tt_icon.gif" />
+    <Content Include="sports\images\vnn_tt_max.gif" />
+    <Content Include="sports\images\vnn_tt_min_h.gif" />
+    <Content Include="sports\images\vnn_tt_min_w.gif" />
+    <Content Include="sports\images\vote-sent.gif" />
+    <Content Include="sports\images\xemthem.gif" />
+    <Content Include="sports\lib\sport_photo_main.swf" />
+    <Content Include="sports\scripts\addon_v1.0.js" />
+    <Content Include="lib\expressInstall.swf" />
+    <Content Include="sports\scripts\full\addon_v1.0.js" />
+    <Content Include="sports\scripts\default.js" />
+    <Content Include="sports\scripts\menu_v1.0.js" />
+    <Content Include="mobile\styles\style_v1.0.css" />
+    <Content Include="sports\styles\styles_v1.0.css" />
+    <Content Include="styles\adv_v1.0.css" />
+    <Content Include="styles\vnn_v1.2.css" />
+    <Content Include="styles\vnn_v1.1.css" />
+    <Content Include="styles\vnn_v1.0.css" />
+    <Content Include="styles\common_v1.0.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sports\images\thethaoslider\Thumbs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>2603</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

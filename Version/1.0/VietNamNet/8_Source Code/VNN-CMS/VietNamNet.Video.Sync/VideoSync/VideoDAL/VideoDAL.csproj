@@ -1,0 +1,142 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4E50BBE-F644-47FD-8AFF-879343EC992F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VideoDAL</RootNamespace>
+    <AssemblyName>VideoDAL</AssemblyName>
+    <SccProjectName>VideoDAL</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SubSonic, Version=2.1.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AdvertisementBlockController.cs" />
+    <Compile Include="Controllers\AdvertisementBlockItemController.cs" />
+    <Compile Include="Controllers\AdvertisementItemController.cs" />
+    <Compile Include="Controllers\AdvertisementLayoutCategoryController.cs" />
+    <Compile Include="Controllers\AdvertisementLayoutController.cs" />
+    <Compile Include="Controllers\AdvertisementLayoutZoneController.cs" />
+    <Compile Include="Controllers\AdvertisementTypeController.cs" />
+    <Compile Include="Controllers\AdvertisementZoneBlockController.cs" />
+    <Compile Include="Controllers\AdvertisementZoneController.cs" />
+    <Compile Include="Controllers\AppointmentController.cs" />
+    <Compile Include="Controllers\AppointmentTypeController.cs" />
+    <Compile Include="Controllers\ArticleCategoryController.cs" />
+    <Compile Include="Controllers\ArticleCommentController.cs" />
+    <Compile Include="Controllers\ArticleContentTypeController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
+    <Compile Include="Controllers\ArticleEventCategoryController.cs" />
+    <Compile Include="Controllers\ArticleEventController.cs" />
+    <Compile Include="Controllers\ArticleEventItemController.cs" />
+    <Compile Include="Controllers\ArticleMediumController.cs" />
+    <Compile Include="Controllers\ArticleTypeController.cs" />
+    <Compile Include="Controllers\ArticleVersionController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CategoryPolicyController.cs" />
+    <Compile Include="Controllers\CollaboratorController.cs" />
+    <Compile Include="Controllers\ConfigurationController.cs" />
+    <Compile Include="Controllers\FunctionController.cs" />
+    <Compile Include="Controllers\GroupController.cs" />
+    <Compile Include="Controllers\GroupMemberController.cs" />
+    <Compile Include="Controllers\LoggingController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
+    <Compile Include="Controllers\MessageDeliveryController.cs" />
+    <Compile Include="Controllers\ModuleXController.cs" />
+    <Compile Include="Controllers\PolicyController.cs" />
+    <Compile Include="Controllers\RoomBookingController.cs" />
+    <Compile Include="Controllers\RoomController.cs" />
+    <Compile Include="Controllers\RoyaltyFundController.cs" />
+    <Compile Include="Controllers\RoyaltyTypeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Objects\AdvertisementBlock.cs" />
+    <Compile Include="Objects\AdvertisementBlockItem.cs" />
+    <Compile Include="Objects\AdvertisementItem.cs" />
+    <Compile Include="Objects\AdvertisementLayout.cs" />
+    <Compile Include="Objects\AdvertisementLayoutCategory.cs" />
+    <Compile Include="Objects\AdvertisementLayoutZone.cs" />
+    <Compile Include="Objects\AdvertisementType.cs" />
+    <Compile Include="Objects\AdvertisementZone.cs" />
+    <Compile Include="Objects\AdvertisementZoneBlock.cs" />
+    <Compile Include="Objects\AllStructs.cs" />
+    <Compile Include="Objects\Appointment.cs" />
+    <Compile Include="Objects\AppointmentType.cs" />
+    <Compile Include="Objects\Article.cs" />
+    <Compile Include="Objects\ArticleCategory.cs" />
+    <Compile Include="Objects\ArticleComment.cs" />
+    <Compile Include="Objects\ArticleContentType.cs" />
+    <Compile Include="Objects\ArticleEvent.cs" />
+    <Compile Include="Objects\ArticleEventCategory.cs" />
+    <Compile Include="Objects\ArticleEventItem.cs" />
+    <Compile Include="Objects\ArticleMedium.cs" />
+    <Compile Include="Objects\ArticleType.cs" />
+    <Compile Include="Objects\ArticleVersion.cs" />
+    <Compile Include="Objects\Category.cs" />
+    <Compile Include="Objects\CategoryPolicy.cs" />
+    <Compile Include="Objects\Collaborator.cs" />
+    <Compile Include="Objects\Configuration.cs" />
+    <Compile Include="Objects\Function.cs" />
+    <Compile Include="Objects\Group.cs" />
+    <Compile Include="Objects\GroupMember.cs" />
+    <Compile Include="Objects\Logging.cs" />
+    <Compile Include="Objects\Menu.cs" />
+    <Compile Include="Objects\Message.cs" />
+    <Compile Include="Objects\MessageDelivery.cs" />
+    <Compile Include="Objects\ModuleX.cs" />
+    <Compile Include="Objects\Policy.cs" />
+    <Compile Include="Objects\Room.cs" />
+    <Compile Include="Objects\RoomBooking.cs" />
+    <Compile Include="Objects\RoyaltyFund.cs" />
+    <Compile Include="Objects\RoyaltyType.cs" />
+    <Compile Include="Objects\StoredProcedures.cs" />
+    <Compile Include="Objects\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

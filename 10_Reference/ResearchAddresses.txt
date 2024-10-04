@@ -1,0 +1,19 @@
+http://support.microsoft.com/kb/290802
+
+http://www.devx.com/MicrosoftISV/Article/29261
+http://www.petri.co.il/customizing_new_meeting_request_outlook_form.htm
+http://www.msdner.net/dev-archive/6/4-16-66956.shtm
+http://www.dimastr.com/outspy/
+
+
+###HTML5
+
+http://html5demos.com/
+http://www.w3.org/TR/html5-diff/
+
+### Manage User control using web.config
+
+http://weblogs.asp.net/scottgu/archive/2006/11/26/tip-trick-how-to-register-user-controls-and-custom-controls-in-web-config.aspx
+
+### Media player
+http://www.longtailvideo.com/support/jw-player

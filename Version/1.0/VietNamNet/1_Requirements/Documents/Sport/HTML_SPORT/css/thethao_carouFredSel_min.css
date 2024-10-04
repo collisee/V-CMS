@@ -1,0 +1,4 @@
+.carousel_pagination a{background:url(../images/point-full.png) no-repeat transparent;width:10px;height:10px;display:inline-block;cursor:pointer;margin:0 5px 0 0}
+.carousel_pagination a.selected{background-position:0 -10px;cursor:default}
+.carousel_pagination a:hover{background-position:0 -20px;cursor:pointer}
+.carousel_pagination a span{display:none}

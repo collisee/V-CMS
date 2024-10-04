@@ -1,0 +1,130 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Html2Xml", "Html2Xml\Html2Xml.csproj", "{CD085827-E0B9-4ECD-836A-B66029DF7B5A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FtpClient", "FtpClient\FtpClient.csproj", "{FC9E8EDA-1130-4991-9AB3-A144B3BC2840}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VNN_WEBEXTR", "VNN_Client\VNN_WEBEXTR.vbproj", "{1F5D946D-1016-421F-934A-C1540F8CD433}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VNN_WEBEXTRACTOR", "VNN_WEBEXTRACTOR\VNN_WEBEXTRACTOR.vbproj", "{48A41D9C-264E-4466-A57A-737B4FD87A87}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VNN_WEBEXTRACTSVC", "VNN_WEBEXTRACTSVC\VNN_WEBEXTRACTSVC.vbproj", "{012DA711-2F3B-4025-9FB0-6EE1E4481BD2}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{A0AE7654-4307-4AB0-A481-E5E476682071}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vnnRssFramework", "vnnRssFramework\vnnRssFramework.csproj", "{70315737-840A-49F0-AD59-25B433B021FB}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetContentFromRolo", "GetContentFromRolo\GetContentFromRolo.csproj", "{2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{B076B13D-37D6-49DA-89EC-9B5981D99FE0}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoloService", "RoloService\RoloService.csproj", "{88D50A9F-6ED3-43EB-88E8-14C32EA36331}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(VaultVsipSolution-v1) = preSolution
+		VaultHost = http://10.4.6.78/VaultService
+		VaultRepositoryID = 3
+		VaultRepositoryGUID = c1529b89-63e8-4cab-8ed5-d8d37f863347
+		ProjectCount = 10
+		ProjectRelativeDiskPath1 = Html2Xml\Html2Xml.csproj
+		ProjectRelativeDiskPath2 = FtpClient\FtpClient.csproj
+		ProjectRelativeDiskPath3 = VNN_Client\VNN_WEBEXTR.vbproj
+		ProjectRelativeDiskPath4 = VNN_WEBEXTRACTOR\VNN_WEBEXTRACTOR.vbproj
+		ProjectRelativeDiskPath5 = VNN_WEBEXTRACTSVC\VNN_WEBEXTRACTSVC.vbproj
+		ProjectRelativeDiskPath6 = DAL\DAL.csproj
+		ProjectRelativeDiskPath7 = vnnRssFramework\vnnRssFramework.csproj
+		ProjectRelativeDiskPath8 = GetContentFromRolo\GetContentFromRolo.csproj
+		ProjectRelativeDiskPath9 = Test\Test.csproj
+		ProjectRelativeDiskPath10 = RoloService\RoloService.csproj
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD085827-E0B9-4ECD-836A-B66029DF7B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD085827-E0B9-4ECD-836A-B66029DF7B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD085827-E0B9-4ECD-836A-B66029DF7B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD085827-E0B9-4ECD-836A-B66029DF7B5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9E8EDA-1130-4991-9AB3-A144B3BC2840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9E8EDA-1130-4991-9AB3-A144B3BC2840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9E8EDA-1130-4991-9AB3-A144B3BC2840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9E8EDA-1130-4991-9AB3-A144B3BC2840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5D946D-1016-421F-934A-C1540F8CD433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5D946D-1016-421F-934A-C1540F8CD433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5D946D-1016-421F-934A-C1540F8CD433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5D946D-1016-421F-934A-C1540F8CD433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A41D9C-264E-4466-A57A-737B4FD87A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A41D9C-264E-4466-A57A-737B4FD87A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A41D9C-264E-4466-A57A-737B4FD87A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A41D9C-264E-4466-A57A-737B4FD87A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{012DA711-2F3B-4025-9FB0-6EE1E4481BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012DA711-2F3B-4025-9FB0-6EE1E4481BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012DA711-2F3B-4025-9FB0-6EE1E4481BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012DA711-2F3B-4025-9FB0-6EE1E4481BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0AE7654-4307-4AB0-A481-E5E476682071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0AE7654-4307-4AB0-A481-E5E476682071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0AE7654-4307-4AB0-A481-E5E476682071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0AE7654-4307-4AB0-A481-E5E476682071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70315737-840A-49F0-AD59-25B433B021FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70315737-840A-49F0-AD59-25B433B021FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70315737-840A-49F0-AD59-25B433B021FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70315737-840A-49F0-AD59-25B433B021FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2750DC0E-3C65-4027-9DF1-AFEBBF46EC7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B076B13D-37D6-49DA-89EC-9B5981D99FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B076B13D-37D6-49DA-89EC-9B5981D99FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B076B13D-37D6-49DA-89EC-9B5981D99FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B076B13D-37D6-49DA-89EC-9B5981D99FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88D50A9F-6ED3-43EB-88E8-14C32EA36331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88D50A9F-6ED3-43EB-88E8-14C32EA36331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88D50A9F-6ED3-43EB-88E8-14C32EA36331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88D50A9F-6ED3-43EB-88E8-14C32EA36331}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

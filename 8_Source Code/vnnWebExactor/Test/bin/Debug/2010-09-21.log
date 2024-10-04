@@ -1,0 +1,3 @@
+9/21/2010 11:56:35 AM:Error-->System.NullReferenceException: Object reference not set to an instance of an object.
+   at GetContentFromRolo.NewsDB.CheckLinkExisted(String href) in D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\NewsDB.cs:line 161
+   at GetContentFromRolo.Main.GetContentFromRolo() in D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\main.cs:line 41

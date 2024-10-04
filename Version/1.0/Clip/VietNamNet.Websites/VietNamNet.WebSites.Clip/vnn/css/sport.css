@@ -1,0 +1,134 @@
+
+/* CSS Document */
+*{ padding:0px; margin:0px;}
+body{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF;}
+a {
+	text-decoration:none;
+	color:#ffffff;
+}
+.clear {
+clear:both;
+color:white;
+font-size:0;
+height:0;
+line-height:0;
+}
+
+#th_vnn{ width:490px;position:relative;}
+.th-clip-title{
+	background:url(../images/clip_title.gif) repeat ; 
+	height:19px; 
+	width:490px;
+	padding-top:3px;
+	}
+.clip-arrow{ width:9px; height:17px; position:absolute; top:15px; left:0px;}
+.th-clip-title a{ font-weight:bold; font-size:12px; color:#56aae8; padding-left:25px; text-transform:uppercase;}
+.th-clip-player{ background-color:#0e334e; float:left; width:354px; height:218px; overflow:hidden;}
+.th-clip-list{ background-color:#0e334e; float:right; width:136px;height:218px; overflow:hidden;  position:relative; }
+.clip-group{ float:right; width:125px; padding-left:8px;position:relative;height:214px;}
+.clip-srcoll{ float:right; width:11px; background:url(../images/clip_scroll.gif) repeat-y scroll -8px 0px; height:220px;}
+.srcoll-parent{background:url(../images/clip_scroll.gif) repeat-y scroll 2px 0px; width:9px; height:40px; }
+.clip-item{ 
+	border: 1px solid #05253c;
+	padding:8px 5px;
+	width:102px;
+	text-align: left; 
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: #042842 2px 2px 2px;
+	-moz-box-shadow: #042842 2px 2px 2px;
+	box-shadow: #042842 2px 2px 2px;
+	background: #0f3f63;
+	font-size:11px;
+	margin-bottom:5px;
+	behavior: url(PIE.htc);
+	}
+.clip-item a{ text-shadow:#220000 1px 1px;}
+.clip-item a:hover{ color:#73bcf2;}
+.clip-item-a{ border: 1px solid #05253c;
+	padding:8px 5px;
+	width:102px;
+	text-align: left; 
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: #042842 2px 2px 2px;
+	-moz-box-shadow: #042842 2px 2px 2px;
+	box-shadow: #042842 2px 2px 2px;
+	background: #11578e;
+	font-size:11px;
+	margin-bottom:5px;
+	behavior: url(PIE.htc);
+	}
+.clip_hot_subtitle{position:absolute;top:180px;padding:5px 40px;color:#FFFFFF;font-weight:bold;font-size:12px;background:#000000;width:270px;}
+
+
+
+/* BEGIN jScrollPaneContainer */
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width:9px;
+	background:transparent url(../images/clip_scroll.gif) repeat-y scroll -8px 0px;
+}
+.jScrollPaneDrag {
+	position: absolute;
+	background:transparent url(../images/clip_scroll.gif) repeat-y scroll 2px 0px; 
+	cursor: pointer;
+	overflow: hidden;
+}
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowUp:hover {
+	/*background-color: #f60;*/
+}
+
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowDown:hover {
+	/*background-color: #f60;*/
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color: #f00;*/
+}
+/* END jScrollPaneContainer */

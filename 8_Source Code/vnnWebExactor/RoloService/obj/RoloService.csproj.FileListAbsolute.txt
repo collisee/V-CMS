@@ -1,0 +1,11 @@
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\obj\Debug\RoloService.RoloService.resources
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\obj\Debug\RoloService.csproj.GenerateResource.Cache
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\bin\Debug\RoloService.exe.config
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\bin\Debug\RoloService.exe
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\bin\Debug\RoloService.pdb
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\bin\Debug\GetContentFromRolo.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\bin\Debug\SubSonic.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\bin\Debug\GetContentFromRolo.pdb
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\obj\Debug\RoloService.exe
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\RoloService\obj\Debug\RoloService.pdb

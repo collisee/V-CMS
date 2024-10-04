@@ -1,0 +1,1033 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41A9CE37-5486-4F18-844F-14419A5D96A3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.CMS</RootNamespace>
+    <AssemblyName>VietNamNet.CMS</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="Telerik.Web.UI, Version=2009.2.701.20, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="vnConvert, Version=1.0.2723.36603, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\vnConvert.dll</HintPath>
+    </Reference>
+    <Reference Include="yama.Library, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\yama.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Yogesh.ExcelXml, Version=3.35.1017.910, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\Yogesh.ExcelXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Yogesh.Extensions, Version=1.16.524.1306, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\Yogesh.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArticleContentTypeDisplay.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleContentTypeDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleContentTypeDisplay.aspx.designer.cs">
+      <DependentUpon>ArticleContentTypeDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleContentTypeEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleContentTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleContentTypeEdit.aspx.designer.cs">
+      <DependentUpon>ArticleContentTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleContentTypeView.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleContentTypeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleContentTypeView.aspx.designer.cs">
+      <DependentUpon>ArticleContentTypeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleDisplay.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleDisplay.aspx.designer.cs">
+      <DependentUpon>ArticleDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleEdit.aspx.designer.cs">
+      <DependentUpon>ArticleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticlePreview.aspx.cs">
+      <DependentUpon>ArticlePreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\ArticlePreview.aspx.designer.cs">
+      <DependentUpon>ArticlePreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleVersionDisplay.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleVersionDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleVersionDisplay.aspx.designer.cs">
+      <DependentUpon>ArticleVersionDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleView.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleView.aspx.designer.cs">
+      <DependentUpon>ArticleView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleViewByCategory.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleViewByCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleViewByCategory.aspx.designer.cs">
+      <DependentUpon>ArticleViewByCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleViewByManager.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleViewByManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ArticleViewByManager.aspx.designer.cs">
+      <DependentUpon>ArticleViewByManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\PopupInsertNews.aspx.cs">
+      <DependentUpon>PopupInsertNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\PopupInsertNews.aspx.designer.cs">
+      <DependentUpon>PopupInsertNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\UserControls\PanelArticleCategory.ascx.cs">
+      <DependentUpon>PanelArticleCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\UserControls\PanelArticleCategory.ascx.designer.cs">
+      <DependentUpon>PanelArticleCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\UserControls\PanelArticleMedia.ascx.cs">
+      <DependentUpon>PanelArticleMedia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\UserControls\PanelArticleMedia.ascx.designer.cs">
+      <DependentUpon>PanelArticleMedia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleTypeDisplay.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleTypeDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleTypeDisplay.aspx.designer.cs">
+      <DependentUpon>ArticleTypeDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleTypeEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleTypeEdit.aspx.designer.cs">
+      <DependentUpon>ArticleTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleTypeView.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleTypeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleTypeView.aspx.designer.cs">
+      <DependentUpon>ArticleTypeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BizLogic\ArticleCategoryManager.cs" />
+    <Compile Include="BizLogic\ArticleCommentManager.cs" />
+    <Compile Include="BizLogic\ArticleContentTypeManager.cs" />
+    <Compile Include="BizLogic\ArticleEventCategoryManager.cs" />
+    <Compile Include="BizLogic\ArticleEventItemManager.cs" />
+    <Compile Include="BizLogic\ArticleEventManager.cs" />
+    <Compile Include="BizLogic\ArticleManager.cs" />
+    <Compile Include="BizLogic\ArticleMediaManager.cs" />
+    <Compile Include="BizLogic\ArticleVersionManager.cs" />
+    <Compile Include="BizLogic\CategoryManager.cs" />
+    <Compile Include="BizLogic\CategoryPolicyManager.cs" />
+    <Compile Include="BizLogic\ArticleTypeManager.cs" />
+    <Compile Include="BizLogic\CollaboratorManager.cs" />
+    <Compile Include="CategoryDisplay.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CategoryDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryDisplay.aspx.designer.cs">
+      <DependentUpon>CategoryDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CategoryEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryEdit.aspx.designer.cs">
+      <DependentUpon>CategoryEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryTreeView.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CategoryTreeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryTreeView.aspx.designer.cs">
+      <DependentUpon>CategoryTreeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryView.aspx.cs">
+      <DependentUpon>CategoryView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryView.aspx.designer.cs">
+      <DependentUpon>CategoryView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollaboratorDisplay.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CollaboratorDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollaboratorDisplay.aspx.designer.cs">
+      <DependentUpon>CollaboratorDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollaboratorEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CollaboratorEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollaboratorEdit.aspx.designer.cs">
+      <DependentUpon>CollaboratorEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollaboratorView.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CollaboratorView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollaboratorView.aspx.designer.cs">
+      <DependentUpon>CollaboratorView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments\ArticleCommentDisplay.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleCommentDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments\ArticleCommentDisplay.aspx.designer.cs">
+      <DependentUpon>ArticleCommentDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments\ArticleCommentEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleCommentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments\ArticleCommentEdit.aspx.designer.cs">
+      <DependentUpon>ArticleCommentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments\ArticleCommentView.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleCommentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments\ArticleCommentView.aspx.designer.cs">
+      <DependentUpon>ArticleCommentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments\ArticleCommentViewByArticleId.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleCommentViewByArticleId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments\ArticleCommentViewByArticleId.aspx.designer.cs">
+      <DependentUpon>ArticleCommentViewByArticleId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments\ArticleCommentViewByStatus.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleCommentViewByStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments\ArticleCommentViewByStatus.aspx.designer.cs">
+      <DependentUpon>ArticleCommentViewByStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CMSConstants.cs" />
+    <Compile Include="Common\CMSUtils.cs" />
+    <Compile Include="Common\ValueObject\Article.cs" />
+    <Compile Include="Common\ValueObject\ArticleCategory.cs" />
+    <Compile Include="Common\ValueObject\ArticleComment.cs" />
+    <Compile Include="Common\ValueObject\ArticleContentType.cs" />
+    <Compile Include="Common\ValueObject\ArticleEvent.cs" />
+    <Compile Include="Common\ValueObject\ArticleEventCategory.cs" />
+    <Compile Include="Common\ValueObject\ArticleEventItem.cs" />
+    <Compile Include="Common\ValueObject\ArticleMedia.cs" />
+    <Compile Include="Common\ValueObject\ArticleVersion.cs" />
+    <Compile Include="Common\ValueObject\Category.cs" />
+    <Compile Include="Common\ValueObject\CategoryPolicy.cs" />
+    <Compile Include="Common\ValueObject\ArticleType.cs" />
+    <Compile Include="Common\ValueObject\Collaborator.cs" />
+    <Compile Include="Components\BaseUserControls.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBAccess\ArticleCategoryDAO.cs" />
+    <Compile Include="DBAccess\ArticleCommentDAO.cs" />
+    <Compile Include="DBAccess\ArticleContentTypeDAO.cs" />
+    <Compile Include="DBAccess\ArticleDAO.cs" />
+    <Compile Include="DBAccess\ArticleEventCategoryDAO.cs" />
+    <Compile Include="DBAccess\ArticleEventDAO.cs" />
+    <Compile Include="DBAccess\ArticleEventItemDAO.cs" />
+    <Compile Include="DBAccess\ArticleMediaDAO.cs" />
+    <Compile Include="DBAccess\ArticleVersionDAO.cs" />
+    <Compile Include="DBAccess\CategoryDAO.cs" />
+    <Compile Include="DBAccess\CategoryPolicyDAO.cs" />
+    <Compile Include="DBAccess\ArticleTypeDAO.cs" />
+    <Compile Include="DBAccess\CollaboratorDAO.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventDisplay.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleEventDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventDisplay.aspx.designer.cs">
+      <DependentUpon>ArticleEventDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleEventEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventEdit.aspx.designer.cs">
+      <DependentUpon>ArticleEventEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventPreview.aspx.cs">
+      <DependentUpon>ArticleEventPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events\ArticleEventPreview.aspx.designer.cs">
+      <DependentUpon>ArticleEventPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventView.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleEventView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventView.aspx.designer.cs">
+      <DependentUpon>ArticleEventView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventViewByCategory.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleEventViewByCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventViewByCategory.aspx.designer.cs">
+      <DependentUpon>ArticleEventViewByCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventViewByManager.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ArticleEventViewByManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ArticleEventViewByManager.aspx.designer.cs">
+      <DependentUpon>ArticleEventViewByManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\UserControls\PanelArticleEventCategory.ascx.cs">
+      <DependentUpon>PanelArticleEventCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events\UserControls\PanelArticleEventCategory.ascx.designer.cs">
+      <DependentUpon>PanelArticleEventCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\UserControls\PanelArticleEventItem.ascx.cs">
+      <DependentUpon>PanelArticleEventItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events\UserControls\PanelArticleEventItem.ascx.designer.cs">
+      <DependentUpon>PanelArticleEventItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popup.Master.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup.Master.designer.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PopupCategoryPolicy.aspx.cs">
+      <DependentUpon>PopupCategoryPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopupCategoryPolicy.aspx.designer.cs">
+      <DependentUpon>PopupCategoryPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopupGroupPolicy.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PopupGroupPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopupGroupPolicy.aspx.designer.cs">
+      <DependentUpon>PopupGroupPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopupSelectLogo.aspx.cs">
+      <DependentUpon>PopupSelectLogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopupSelectLogo.aspx.designer.cs">
+      <DependentUpon>PopupSelectLogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ArticleCategoryHelper.cs" />
+    <Compile Include="Presentation\ArticleCommentHelper.cs" />
+    <Compile Include="Presentation\ArticleContentTypeHelper.cs" />
+    <Compile Include="Presentation\ArticleEventCategoryHelper.cs" />
+    <Compile Include="Presentation\ArticleEventHelper.cs" />
+    <Compile Include="Presentation\ArticleEventItemHelper.cs" />
+    <Compile Include="Presentation\ArticleHelper.cs" />
+    <Compile Include="Presentation\ArticleMediaHelper.cs" />
+    <Compile Include="Presentation\ArticleVersionHelper.cs" />
+    <Compile Include="Presentation\CategoryHelper.cs" />
+    <Compile Include="Presentation\CategoryPolicyHelper.cs" />
+    <Compile Include="Presentation\ArticleTypeHelper.cs" />
+    <Compile Include="Presentation\CollaboratorHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Commons\PanelArticleSelection.ascx.cs">
+      <DependentUpon>PanelArticleSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Commons\PanelArticleSelection.ascx.designer.cs">
+      <DependentUpon>PanelArticleSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Commons\PanelCategorySelection.ascx.cs">
+      <DependentUpon>PanelCategorySelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Commons\PanelCategorySelection.ascx.designer.cs">
+      <DependentUpon>PanelCategorySelection.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CategoryDisplay.aspx" />
+    <Content Include="CategoryEdit.aspx" />
+    <Content Include="CategoryView.aspx" />
+    <Content Include="Default.Master" />
+    <Content Include="Login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VietNamNet.CMS.MediaManager\VietNamNet.CMS.MediaManager.csproj">
+      <Project>{86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7}</Project>
+      <Name>VietNamNet.CMS.MediaManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.AJAX\VietNamNet.Framework.AJAX.csproj">
+      <Project>{5D2824D5-7977-4A9A-98AF-010B9E89FB04}</Project>
+      <Name>VietNamNet.Framework.AJAX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.Biz\VietNamNet.Framework.Biz.csproj">
+      <Project>{C658561E-AD12-4E11-973E-A834D74B96A9}</Project>
+      <Name>VietNamNet.Framework.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.Common\VietNamNet.Framework.Common.csproj">
+      <Project>{6616D57A-1C08-425C-8AAB-7437FC3BA800}</Project>
+      <Name>VietNamNet.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.DAO.MSSQL\VietNamNet.Framework.DAO.MSSQL.csproj">
+      <Project>{2ACFBF32-633C-4124-808C-41DBA5AAC536}</Project>
+      <Name>VietNamNet.Framework.DAO.MSSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.ImageUtility\VietNamNet.Framework.ImageUtility.csproj">
+      <Project>{145CB3CC-7A93-4C17-AC68-62A32B218545}</Project>
+      <Name>VietNamNet.Framework.ImageUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.Module\VietNamNet.Framework.Module.csproj">
+      <Project>{499104BB-A1EF-4EAB-9BB1-37171CCC09D0}</Project>
+      <Name>VietNamNet.Framework.Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.System\VietNamNet.Framework.System.csproj">
+      <Project>{273154BA-EC93-4EB8-A64C-ACEC4B0CAD96}</Project>
+      <Name>VietNamNet.Framework.System</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CategoryTreeView.aspx" />
+    <Content Include="Message.config" />
+    <Content Include="PopupCategoryPolicy.aspx" />
+    <Content Include="PopupGroupPolicy.aspx" />
+    <Content Include="Scripts\Default.js" />
+    <Content Include="Scripts\swfobject.js" />
+    <Content Include="UserControls\AuditTrail.ascx" />
+    <Content Include="UserControls\ErrorMessage.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArticleContentTypeDisplay.aspx" />
+    <Content Include="ArticleContentTypeEdit.aspx" />
+    <Content Include="ArticleContentTypeView.aspx" />
+    <Content Include="Articles\ArticleDisplay.aspx" />
+    <Content Include="Articles\ArticleEdit.aspx" />
+    <Content Include="Articles\ArticlePreview.aspx" />
+    <Content Include="Articles\ArticleVersionDisplay.aspx" />
+    <Content Include="Articles\ArticleView.aspx" />
+    <Content Include="Articles\ArticleViewByCategory.aspx" />
+    <Content Include="Articles\ArticleViewByManager.aspx" />
+    <Content Include="Articles\Images\CustomDialog.gif" />
+    <Content Include="Articles\PopupInsertNews.aspx" />
+    <Content Include="Articles\UserControls\PanelArticleCategory.ascx" />
+    <Content Include="Articles\UserControls\PanelArticleMedia.ascx" />
+    <Content Include="ArticleTypeDisplay.aspx" />
+    <Content Include="ArticleTypeEdit.aspx" />
+    <Content Include="ArticleTypeView.aspx" />
+    <Content Include="CollaboratorDisplay.aspx" />
+    <Content Include="CollaboratorEdit.aspx" />
+    <Content Include="CollaboratorView.aspx" />
+    <Content Include="Comments\ArticleCommentDisplay.aspx" />
+    <Content Include="Comments\ArticleCommentEdit.aspx" />
+    <Content Include="Comments\ArticleCommentView.aspx" />
+    <Content Include="Comments\ArticleCommentViewByArticleId.aspx" />
+    <Content Include="Comments\ArticleCommentViewByStatus.aspx" />
+    <Content Include="Events\ArticleEventDisplay.aspx" />
+    <Content Include="Events\ArticleEventEdit.aspx" />
+    <Content Include="Events\ArticleEventPreview.aspx" />
+    <Content Include="Events\ArticleEventView.aspx" />
+    <Content Include="Events\ArticleEventViewByCategory.aspx" />
+    <Content Include="Events\ArticleEventViewByManager.aspx" />
+    <Content Include="Events\UserControls\PanelArticleEventCategory.ascx" />
+    <Content Include="Events\UserControls\PanelArticleEventItem.ascx" />
+    <Content Include="FileExplorer.aspx" />
+    <Content Include="FileManager.aspx" />
+    <Content Include="Images\10.gif" />
+    <Content Include="Images\7.gif" />
+    <Content Include="Images\add_user.jpg" />
+    <Content Include="Images\arrow.gif" />
+    <Content Include="Images\banner-bg.gif" />
+    <Content Include="Images\banner.gif" />
+    <Content Include="Images\Delete.gif" />
+    <Content Include="Images\download.jpg" />
+    <Content Include="Images\edititem.gif" />
+    <Content Include="Images\first.gif" />
+    <Content Include="Images\goback.gif" />
+    <Content Include="Images\goback1.gif" />
+    <Content Include="Images\icon-calendar.gif" />
+    <Content Include="Images\image.gif" />
+    <Content Include="Images\img26.gif" />
+    <Content Include="Images\LargeIcon\add.png" />
+    <Content Include="Images\LargeIcon\applications.png" />
+    <Content Include="Images\LargeIcon\back.png" />
+    <Content Include="Images\LargeIcon\calculator.png" />
+    <Content Include="Images\LargeIcon\calendar.png" />
+    <Content Include="Images\LargeIcon\cancel.png" />
+    <Content Include="Images\LargeIcon\CD.png" />
+    <Content Include="Images\LargeIcon\CD_add.png" />
+    <Content Include="Images\LargeIcon\CD_delete.png" />
+    <Content Include="Images\LargeIcon\check.png" />
+    <Content Include="Images\LargeIcon\clock.png" />
+    <Content Include="Images\LargeIcon\close.png" />
+    <Content Include="Images\LargeIcon\delete.png" />
+    <Content Include="Images\LargeIcon\document.png" />
+    <Content Include="Images\LargeIcon\document_add.png" />
+    <Content Include="Images\LargeIcon\document_delete.png" />
+    <Content Include="Images\LargeIcon\document_edit.png" />
+    <Content Include="Images\LargeIcon\down.png" />
+    <Content Include="Images\LargeIcon\email.png" />
+    <Content Include="Images\LargeIcon\favorites.png" />
+    <Content Include="Images\LargeIcon\favorites_add.png" />
+    <Content Include="Images\LargeIcon\favorites_delete.png" />
+    <Content Include="Images\LargeIcon\folder.png" />
+    <Content Include="Images\LargeIcon\folder_add.png" />
+    <Content Include="Images\LargeIcon\folder_delete.png" />
+    <Content Include="Images\LargeIcon\folder_open.png" />
+    <Content Include="Images\LargeIcon\go.png" />
+    <Content Include="Images\LargeIcon\group.png" />
+    <Content Include="Images\LargeIcon\help.png" />
+    <Content Include="Images\LargeIcon\home.png" />
+    <Content Include="Images\LargeIcon\info.png" />
+    <Content Include="Images\LargeIcon\lock.png" />
+    <Content Include="Images\LargeIcon\movie.png" />
+    <Content Include="Images\LargeIcon\paste.png" />
+    <Content Include="Images\LargeIcon\printer.png" />
+    <Content Include="Images\LargeIcon\refresh.png" />
+    <Content Include="Images\LargeIcon\report.png" />
+    <Content Include="Images\LargeIcon\unlock.png" />
+    <Content Include="Images\LargeIcon\up.png" />
+    <Content Include="Images\LargeIcon\user.png" />
+    <Content Include="Images\LargeIcon\user_add.png" />
+    <Content Include="Images\LargeIcon\user_black.png" />
+    <Content Include="Images\LargeIcon\user_delete.png" />
+    <Content Include="Images\LargeIcon\user_white.png" />
+    <Content Include="Images\LargeIcon\web.png" />
+    <Content Include="Images\LargeIcon\zoom.png" />
+    <Content Include="Images\LargeIcon\zoom_in.png" />
+    <Content Include="Images\LargeIcon\zoom_out.png" />
+    <Content Include="Images\last.gif" />
+    <Content Include="Images\LayoutClassical\img26.gif" />
+    <Content Include="Images\LayoutClassical\toolbar02.gif" />
+    <Content Include="Images\LayoutClassical\toolbar07.gif" />
+    <Content Include="Images\LayoutDefault\header-colds.png" />
+    <Content Include="Images\LayoutDefault\header-darks.png" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\logo1.gif" />
+    <Content Include="Images\MediaIcon\16x16\btn-add.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-cancel.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-close.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-delete.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-fastforward.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-first.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-help.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-info.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-last.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-next.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-pause.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-play.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-previous.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-refresh.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-reload.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-rewind.png" />
+    <Content Include="Images\MediaIcon\16x16\btn-stop.png" />
+    <Content Include="Images\MediaIcon\16x16\EjectDisabled.png" />
+    <Content Include="Images\MediaIcon\16x16\EjectHot.png" />
+    <Content Include="Images\MediaIcon\16x16\EjectNormal.png" />
+    <Content Include="Images\MediaIcon\16x16\EjectNormalRed.png" />
+    <Content Include="Images\MediaIcon\16x16\EjectPressed.png" />
+    <Content Include="Images\MediaIcon\16x16\MicrophoneDisabled.png" />
+    <Content Include="Images\MediaIcon\16x16\MicrophoneHot.png" />
+    <Content Include="Images\MediaIcon\16x16\MicrophoneNormal.png" />
+    <Content Include="Images\MediaIcon\16x16\MicrophonePressed.png" />
+    <Content Include="Images\MediaIcon\16x16\PauseDisabled.png" />
+    <Content Include="Images\MediaIcon\16x16\PauseHot.png" />
+    <Content Include="Images\MediaIcon\16x16\PauseNormal.png" />
+    <Content Include="Images\MediaIcon\16x16\PauseNormalRed.png" />
+    <Content Include="Images\MediaIcon\16x16\PausePressed.png" />
+    <Content Include="Images\MediaIcon\16x16\Play1Disabled.png" />
+    <Content Include="Images\MediaIcon\16x16\Play1Hot.png" />
+    <Content Include="Images\MediaIcon\16x16\Play1Normal.png" />
+    <Content Include="Images\MediaIcon\16x16\Play1Pressed.png" />
+    <Content Include="Images\MediaIcon\16x16\RecordDisabled.png" />
+    <Content Include="Images\MediaIcon\16x16\RecordHot.png" />
+    <Content Include="Images\MediaIcon\16x16\RecordNormal.png" />
+    <Content Include="Images\MediaIcon\16x16\RecordNormalRed.png" />
+    <Content Include="Images\MediaIcon\16x16\RecordPressed.png" />
+    <Content Include="Images\MediaIcon\16x16\StepForwardDisabled.png" />
+    <Content Include="Images\MediaIcon\16x16\StepForwardHot.png" />
+    <Content Include="Images\MediaIcon\16x16\StepForwardNormal.png" />
+    <Content Include="Images\MediaIcon\16x16\StepForwardNormalBlue.png" />
+    <Content Include="Images\MediaIcon\16x16\StepForwardNormalOrange.png" />
+    <Content Include="Images\MediaIcon\16x16\StepForwardNormalRed.png" />
+    <Content Include="Images\MediaIcon\16x16\StepForwardNormalYellow.png" />
+    <Content Include="Images\MediaIcon\16x16\StepForwardPressed.png" />
+    <Content Include="Images\MediaIcon\16x16\StepForwardPressedBlue.png" />
+    <Content Include="Images\MediaIcon\16x16\Stop1Disabled.png" />
+    <Content Include="Images\MediaIcon\16x16\Stop1Hot.png" />
+    <Content Include="Images\MediaIcon\16x16\Stop1Normal.png" />
+    <Content Include="Images\MediaIcon\16x16\Stop1NormalBlue.png" />
+    <Content Include="Images\MediaIcon\16x16\Stop1NormalOrange.png" />
+    <Content Include="Images\MediaIcon\16x16\Stop1NormalRed.png" />
+    <Content Include="Images\MediaIcon\16x16\Stop1NormalYellow.png" />
+    <Content Include="Images\MediaIcon\16x16\Stop1Pressed.png" />
+    <Content Include="Images\MediaIcon\16x16\Stop1PressedBlue.png" />
+    <Content Include="Images\MediaIcon\16x16\VolumeDisabled.png" />
+    <Content Include="Images\MediaIcon\16x16\VolumeHot.png" />
+    <Content Include="Images\MediaIcon\16x16\VolumeNormal.png" />
+    <Content Include="Images\MediaIcon\16x16\VolumeNormalBlue.png" />
+    <Content Include="Images\MediaIcon\16x16\VolumeNormalOrange.png" />
+    <Content Include="Images\MediaIcon\16x16\VolumeNormalRed.png" />
+    <Content Include="Images\MediaIcon\16x16\VolumeNormalYellow.png" />
+    <Content Include="Images\MediaIcon\16x16\VolumePressed.png" />
+    <Content Include="Images\MediaIcon\16x16\VolumePressedBlue.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-add.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-cancel.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-close.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-delete.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-fastforward.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-first.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-help.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-info.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-last.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-next.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-pause.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-play.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-previous.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-refresh.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-reload.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-rewind.png" />
+    <Content Include="Images\MediaIcon\24x24\btn-stop.png" />
+    <Content Include="Images\MediaIcon\24x24\EjectDisabled.png" />
+    <Content Include="Images\MediaIcon\24x24\EjectHot.png" />
+    <Content Include="Images\MediaIcon\24x24\EjectNormal.png" />
+    <Content Include="Images\MediaIcon\24x24\EjectNormalRed.png" />
+    <Content Include="Images\MediaIcon\24x24\EjectPressed.png" />
+    <Content Include="Images\MediaIcon\24x24\MicrophoneDisabled.png" />
+    <Content Include="Images\MediaIcon\24x24\MicrophoneHot.png" />
+    <Content Include="Images\MediaIcon\24x24\MicrophoneNormal.png" />
+    <Content Include="Images\MediaIcon\24x24\MicrophonePressed.png" />
+    <Content Include="Images\MediaIcon\24x24\PauseDisabled.png" />
+    <Content Include="Images\MediaIcon\24x24\PauseHot.png" />
+    <Content Include="Images\MediaIcon\24x24\PauseNormal.png" />
+    <Content Include="Images\MediaIcon\24x24\PauseNormalRed.png" />
+    <Content Include="Images\MediaIcon\24x24\PausePressed.png" />
+    <Content Include="Images\MediaIcon\24x24\Play1Disabled.png" />
+    <Content Include="Images\MediaIcon\24x24\Play1Hot.png" />
+    <Content Include="Images\MediaIcon\24x24\Play1Normal.png" />
+    <Content Include="Images\MediaIcon\24x24\Play1Pressed.png" />
+    <Content Include="Images\MediaIcon\24x24\RecordDisabled.png" />
+    <Content Include="Images\MediaIcon\24x24\RecordHot.png" />
+    <Content Include="Images\MediaIcon\24x24\RecordNormal.png" />
+    <Content Include="Images\MediaIcon\24x24\RecordNormalRed.png" />
+    <Content Include="Images\MediaIcon\24x24\RecordPressed.png" />
+    <Content Include="Images\MediaIcon\24x24\StepForwardDisabled.png" />
+    <Content Include="Images\MediaIcon\24x24\StepForwardHot.png" />
+    <Content Include="Images\MediaIcon\24x24\StepForwardNormal.png" />
+    <Content Include="Images\MediaIcon\24x24\StepForwardNormalBlue.png" />
+    <Content Include="Images\MediaIcon\24x24\StepForwardNormalOrange.png" />
+    <Content Include="Images\MediaIcon\24x24\StepForwardNormalRed.png" />
+    <Content Include="Images\MediaIcon\24x24\StepForwardNormalYellow.png" />
+    <Content Include="Images\MediaIcon\24x24\StepForwardPressed.png" />
+    <Content Include="Images\MediaIcon\24x24\StepForwardPressedBlue.png" />
+    <Content Include="Images\MediaIcon\24x24\Stop1Disabled.png" />
+    <Content Include="Images\MediaIcon\24x24\Stop1Hot.png" />
+    <Content Include="Images\MediaIcon\24x24\Stop1Normal.png" />
+    <Content Include="Images\MediaIcon\24x24\Stop1NormalBlue.png" />
+    <Content Include="Images\MediaIcon\24x24\Stop1NormalOrange.png" />
+    <Content Include="Images\MediaIcon\24x24\Stop1NormalRed.png" />
+    <Content Include="Images\MediaIcon\24x24\Stop1NormalYellow.png" />
+    <Content Include="Images\MediaIcon\24x24\Stop1Pressed.png" />
+    <Content Include="Images\MediaIcon\24x24\Stop1PressedBlue.png" />
+    <Content Include="Images\MediaIcon\24x24\VolumeDisabled.png" />
+    <Content Include="Images\MediaIcon\24x24\VolumeHot.png" />
+    <Content Include="Images\MediaIcon\24x24\VolumeNormal.png" />
+    <Content Include="Images\MediaIcon\24x24\VolumeNormalBlue.png" />
+    <Content Include="Images\MediaIcon\24x24\VolumeNormalOrange.png" />
+    <Content Include="Images\MediaIcon\24x24\VolumeNormalRed.png" />
+    <Content Include="Images\MediaIcon\24x24\VolumeNormalYellow.png" />
+    <Content Include="Images\MediaIcon\24x24\VolumePressed.png" />
+    <Content Include="Images\MediaIcon\24x24\VolumePressedBlue.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-add.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-cancel.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-close.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-delete.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-fastforward.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-first.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-help.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-info.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-last.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-next.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-pause.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-play.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-previous.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-refresh.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-reload.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-rewind.png" />
+    <Content Include="Images\MediaIcon\32x32\btn-stop.png" />
+    <Content Include="Images\MediaIcon\32x32\EjectDisabled.png" />
+    <Content Include="Images\MediaIcon\32x32\EjectHot.png" />
+    <Content Include="Images\MediaIcon\32x32\EjectNormal.png" />
+    <Content Include="Images\MediaIcon\32x32\EjectNormalRed.png" />
+    <Content Include="Images\MediaIcon\32x32\EjectPressed.png" />
+    <Content Include="Images\MediaIcon\32x32\MicrophoneDisabled.png" />
+    <Content Include="Images\MediaIcon\32x32\MicrophoneHot.png" />
+    <Content Include="Images\MediaIcon\32x32\MicrophoneNormal.png" />
+    <Content Include="Images\MediaIcon\32x32\MicrophonePressed.png" />
+    <Content Include="Images\MediaIcon\32x32\PauseDisabled.png" />
+    <Content Include="Images\MediaIcon\32x32\PauseHot.png" />
+    <Content Include="Images\MediaIcon\32x32\PauseNormal.png" />
+    <Content Include="Images\MediaIcon\32x32\PauseNormalRed.png" />
+    <Content Include="Images\MediaIcon\32x32\PausePressed.png" />
+    <Content Include="Images\MediaIcon\32x32\Play1Disabled.png" />
+    <Content Include="Images\MediaIcon\32x32\Play1Hot.png" />
+    <Content Include="Images\MediaIcon\32x32\Play1Normal.png" />
+    <Content Include="Images\MediaIcon\32x32\Play1Pressed.png" />
+    <Content Include="Images\MediaIcon\32x32\RecordDisabled.png" />
+    <Content Include="Images\MediaIcon\32x32\RecordHot.png" />
+    <Content Include="Images\MediaIcon\32x32\RecordNormal.png" />
+    <Content Include="Images\MediaIcon\32x32\RecordNormalRed.png" />
+    <Content Include="Images\MediaIcon\32x32\RecordPressed.png" />
+    <Content Include="Images\MediaIcon\32x32\StepForwardDisabled.png" />
+    <Content Include="Images\MediaIcon\32x32\StepForwardHot.png" />
+    <Content Include="Images\MediaIcon\32x32\StepForwardNormal.png" />
+    <Content Include="Images\MediaIcon\32x32\StepForwardNormalBlue.png" />
+    <Content Include="Images\MediaIcon\32x32\StepForwardNormalOrange.png" />
+    <Content Include="Images\MediaIcon\32x32\StepForwardNormalRed.png" />
+    <Content Include="Images\MediaIcon\32x32\StepForwardNormalYellow.png" />
+    <Content Include="Images\MediaIcon\32x32\StepForwardPressed.png" />
+    <Content Include="Images\MediaIcon\32x32\StepForwardPressedBlue.png" />
+    <Content Include="Images\MediaIcon\32x32\Stop1Disabled.png" />
+    <Content Include="Images\MediaIcon\32x32\Stop1Hot.png" />
+    <Content Include="Images\MediaIcon\32x32\Stop1Normal.png" />
+    <Content Include="Images\MediaIcon\32x32\Stop1NormalBlue.png" />
+    <Content Include="Images\MediaIcon\32x32\Stop1NormalOrange.png" />
+    <Content Include="Images\MediaIcon\32x32\Stop1NormalRed.png" />
+    <Content Include="Images\MediaIcon\32x32\Stop1NormalYellow.png" />
+    <Content Include="Images\MediaIcon\32x32\Stop1Pressed.png" />
+    <Content Include="Images\MediaIcon\32x32\Stop1PressedBlue.png" />
+    <Content Include="Images\MediaIcon\32x32\VolumeDisabled.png" />
+    <Content Include="Images\MediaIcon\32x32\VolumeHot.png" />
+    <Content Include="Images\MediaIcon\32x32\VolumeNormal.png" />
+    <Content Include="Images\MediaIcon\32x32\VolumeNormalBlue.png" />
+    <Content Include="Images\MediaIcon\32x32\VolumeNormalOrange.png" />
+    <Content Include="Images\MediaIcon\32x32\VolumeNormalRed.png" />
+    <Content Include="Images\MediaIcon\32x32\VolumeNormalYellow.png" />
+    <Content Include="Images\MediaIcon\32x32\VolumePressed.png" />
+    <Content Include="Images\MediaIcon\32x32\VolumePressedBlue.png" />
+    <Content Include="Images\MediaIcon\btn-add.png" />
+    <Content Include="Images\MediaIcon\btn-cancel.png" />
+    <Content Include="Images\MediaIcon\btn-close.png" />
+    <Content Include="Images\MediaIcon\btn-delete.png" />
+    <Content Include="Images\MediaIcon\btn-fastforward.png" />
+    <Content Include="Images\MediaIcon\btn-first.png" />
+    <Content Include="Images\MediaIcon\btn-help.png" />
+    <Content Include="Images\MediaIcon\btn-info.png" />
+    <Content Include="Images\MediaIcon\btn-last.png" />
+    <Content Include="Images\MediaIcon\btn-next.png" />
+    <Content Include="Images\MediaIcon\btn-pause.png" />
+    <Content Include="Images\MediaIcon\btn-play.png" />
+    <Content Include="Images\MediaIcon\btn-previous.png" />
+    <Content Include="Images\MediaIcon\btn-refresh.png" />
+    <Content Include="Images\MediaIcon\btn-reload.png" />
+    <Content Include="Images\MediaIcon\btn-rewind.png" />
+    <Content Include="Images\MediaIcon\btn-stop.png" />
+    <Content Include="Images\MediaIcon\Eject-Disabled-icon.png" />
+    <Content Include="Images\MediaIcon\Eject-Hot-icon.png" />
+    <Content Include="Images\MediaIcon\Eject-Normal-icon.png" />
+    <Content Include="Images\MediaIcon\Eject-Normal-Red-icon.png" />
+    <Content Include="Images\MediaIcon\Eject-Pressed-icon.png" />
+    <Content Include="Images\MediaIcon\Microphone-Disabled-icon.png" />
+    <Content Include="Images\MediaIcon\Microphone-Hot-icon.png" />
+    <Content Include="Images\MediaIcon\Microphone-Normal-icon.png" />
+    <Content Include="Images\MediaIcon\Microphone-Pressed-icon.png" />
+    <Content Include="Images\MediaIcon\Pause-Disabled-icon.png" />
+    <Content Include="Images\MediaIcon\Pause-Hot-icon.png" />
+    <Content Include="Images\MediaIcon\Pause-Normal-icon.png" />
+    <Content Include="Images\MediaIcon\Pause-Normal-Red-icon.png" />
+    <Content Include="Images\MediaIcon\Pause-Pressed-icon.png" />
+    <Content Include="Images\MediaIcon\Play-Disabled-icon.png" />
+    <Content Include="Images\MediaIcon\Play-Hot-icon.png" />
+    <Content Include="Images\MediaIcon\Play-Normal-icon.png" />
+    <Content Include="Images\MediaIcon\Play-Pressed-icon.png" />
+    <Content Include="Images\MediaIcon\Record-Disabled-icon.png" />
+    <Content Include="Images\MediaIcon\Record-Hot-icon.png" />
+    <Content Include="Images\MediaIcon\Record-Normal-icon.png" />
+    <Content Include="Images\MediaIcon\Record-Normal-Red-icon.png" />
+    <Content Include="Images\MediaIcon\Record-Pressed-icon.png" />
+    <Content Include="Images\MediaIcon\Step-Forward-Disabled-icon.png" />
+    <Content Include="Images\MediaIcon\Step-Forward-Hot-icon.png" />
+    <Content Include="Images\MediaIcon\Step-Forward-Normal-Blue-icon.png" />
+    <Content Include="Images\MediaIcon\Step-Forward-Normal-icon.png" />
+    <Content Include="Images\MediaIcon\Step-Forward-Normal-Orange-icon.png" />
+    <Content Include="Images\MediaIcon\Step-Forward-Normal-Red-icon.png" />
+    <Content Include="Images\MediaIcon\Step-Forward-Normal-Yellow-icon.png" />
+    <Content Include="Images\MediaIcon\Step-Forward-Pressed-Blue-icon.png" />
+    <Content Include="Images\MediaIcon\Step-Forward-Pressed-icon.png" />
+    <Content Include="Images\MediaIcon\Stop-Disabled-icon.png" />
+    <Content Include="Images\MediaIcon\Stop-Hot-icon.png" />
+    <Content Include="Images\MediaIcon\Stop-Normal-Blue-icon.png" />
+    <Content Include="Images\MediaIcon\Stop-Normal-icon.png" />
+    <Content Include="Images\MediaIcon\Stop-Normal-Orange-icon.png" />
+    <Content Include="Images\MediaIcon\Stop-Normal-Red-icon.png" />
+    <Content Include="Images\MediaIcon\Stop-Normal-Yellow-icon.png" />
+    <Content Include="Images\MediaIcon\Stop-Pressed-Blue-icon.png" />
+    <Content Include="Images\MediaIcon\Stop-Pressed-icon.png" />
+    <Content Include="Images\MediaIcon\Volume-Disabled-icon.png" />
+    <Content Include="Images\MediaIcon\Volume-Hot-icon.png" />
+    <Content Include="Images\MediaIcon\Volume-Normal-Blue-icon.png" />
+    <Content Include="Images\MediaIcon\Volume-Normal-icon.png" />
+    <Content Include="Images\MediaIcon\Volume-Normal-Orange-icon.png" />
+    <Content Include="Images\MediaIcon\Volume-Normal-Red-icon.png" />
+    <Content Include="Images\MediaIcon\Volume-Normal-Yellow-icon.png" />
+    <Content Include="Images\MediaIcon\Volume-Pressed-Blue-icon.png" />
+    <Content Include="Images\MediaIcon\Volume-Pressed-icon.png" />
+    <Content Include="Images\newitem.gif" />
+    <Content Include="Images\next.gif" />
+    <Content Include="Images\plus.gif" />
+    <Content Include="Images\policy.jpg" />
+    <Content Include="Images\prev.gif" />
+    <Content Include="Images\publish1.jpg" />
+    <Content Include="Images\publish2.jpg" />
+    <Content Include="Images\publish3.gif" />
+    <Content Include="Images\publish4.gif" />
+    <Content Include="Images\publish5.gif" />
+    <Content Include="Images\remove_user.jpg" />
+    <Content Include="Images\rename.gif" />
+    <Content Include="Images\right.gif" />
+    <Content Include="Images\saveitem.gif" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\SmallIcon\1.png" />
+    <Content Include="Images\SmallIcon\10.png" />
+    <Content Include="Images\SmallIcon\11.png" />
+    <Content Include="Images\SmallIcon\12.png" />
+    <Content Include="Images\SmallIcon\13.png" />
+    <Content Include="Images\SmallIcon\14.png" />
+    <Content Include="Images\SmallIcon\15.png" />
+    <Content Include="Images\SmallIcon\16.png" />
+    <Content Include="Images\SmallIcon\17.png" />
+    <Content Include="Images\SmallIcon\18.png" />
+    <Content Include="Images\SmallIcon\19.png" />
+    <Content Include="Images\SmallIcon\2.png" />
+    <Content Include="Images\SmallIcon\20.png" />
+    <Content Include="Images\SmallIcon\21.png" />
+    <Content Include="Images\SmallIcon\22.png" />
+    <Content Include="Images\SmallIcon\23.png" />
+    <Content Include="Images\SmallIcon\24.png" />
+    <Content Include="Images\SmallIcon\25.png" />
+    <Content Include="Images\SmallIcon\26.png" />
+    <Content Include="Images\SmallIcon\27.png" />
+    <Content Include="Images\SmallIcon\28.png" />
+    <Content Include="Images\SmallIcon\29.png" />
+    <Content Include="Images\SmallIcon\3.png" />
+    <Content Include="Images\SmallIcon\30.png" />
+    <Content Include="Images\SmallIcon\31.png" />
+    <Content Include="Images\SmallIcon\32.png" />
+    <Content Include="Images\SmallIcon\33.png" />
+    <Content Include="Images\SmallIcon\34.png" />
+    <Content Include="Images\SmallIcon\35.png" />
+    <Content Include="Images\SmallIcon\36.png" />
+    <Content Include="Images\SmallIcon\37.png" />
+    <Content Include="Images\SmallIcon\38.png" />
+    <Content Include="Images\SmallIcon\39.png" />
+    <Content Include="Images\SmallIcon\4.png" />
+    <Content Include="Images\SmallIcon\40.png" />
+    <Content Include="Images\SmallIcon\41.png" />
+    <Content Include="Images\SmallIcon\42.png" />
+    <Content Include="Images\SmallIcon\43.png" />
+    <Content Include="Images\SmallIcon\44.png" />
+    <Content Include="Images\SmallIcon\45.png" />
+    <Content Include="Images\SmallIcon\46.png" />
+    <Content Include="Images\SmallIcon\47.png" />
+    <Content Include="Images\SmallIcon\48.png" />
+    <Content Include="Images\SmallIcon\49.png" />
+    <Content Include="Images\SmallIcon\5.png" />
+    <Content Include="Images\SmallIcon\50.png" />
+    <Content Include="Images\SmallIcon\51.png" />
+    <Content Include="Images\SmallIcon\52.png" />
+    <Content Include="Images\SmallIcon\53.png" />
+    <Content Include="Images\SmallIcon\54.png" />
+    <Content Include="Images\SmallIcon\55.png" />
+    <Content Include="Images\SmallIcon\56.png" />
+    <Content Include="Images\SmallIcon\57.png" />
+    <Content Include="Images\SmallIcon\58.png" />
+    <Content Include="Images\SmallIcon\59.png" />
+    <Content Include="Images\SmallIcon\6.png" />
+    <Content Include="Images\SmallIcon\60.png" />
+    <Content Include="Images\SmallIcon\61.png" />
+    <Content Include="Images\SmallIcon\62.png" />
+    <Content Include="Images\SmallIcon\63.png" />
+    <Content Include="Images\SmallIcon\64.png" />
+    <Content Include="Images\SmallIcon\65.png" />
+    <Content Include="Images\SmallIcon\66.png" />
+    <Content Include="Images\SmallIcon\67.png" />
+    <Content Include="Images\SmallIcon\68.png" />
+    <Content Include="Images\SmallIcon\69.png" />
+    <Content Include="Images\SmallIcon\7.png" />
+    <Content Include="Images\SmallIcon\70.png" />
+    <Content Include="Images\SmallIcon\71.png" />
+    <Content Include="Images\SmallIcon\72.png" />
+    <Content Include="Images\SmallIcon\73.png" />
+    <Content Include="Images\SmallIcon\74.png" />
+    <Content Include="Images\SmallIcon\75.png" />
+    <Content Include="Images\SmallIcon\76.png" />
+    <Content Include="Images\SmallIcon\77.png" />
+    <Content Include="Images\SmallIcon\78.png" />
+    <Content Include="Images\SmallIcon\79.png" />
+    <Content Include="Images\SmallIcon\8.png" />
+    <Content Include="Images\SmallIcon\80.png" />
+    <Content Include="Images\SmallIcon\81.png" />
+    <Content Include="Images\SmallIcon\82.png" />
+    <Content Include="Images\SmallIcon\83.png" />
+    <Content Include="Images\SmallIcon\84.png" />
+    <Content Include="Images\SmallIcon\85.png" />
+    <Content Include="Images\SmallIcon\86.png" />
+    <Content Include="Images\SmallIcon\87.png" />
+    <Content Include="Images\SmallIcon\88.png" />
+    <Content Include="Images\SmallIcon\89.png" />
+    <Content Include="Images\SmallIcon\9.png" />
+    <Content Include="Images\SmallIcon\90.png" />
+    <Content Include="Images\SmallIcon\91.png" />
+    <Content Include="Images\SmallIcon\92.png" />
+    <Content Include="Images\SmallIcon\pre.png" />
+    <Content Include="Images\SmallIcon\preview.png" />
+    <Content Include="Images\upload.gif" />
+    <Content Include="Images\upload.jpg" />
+    <Content Include="Lib\player.html" />
+    <Content Include="Lib\player.swf" />
+    <Content Include="Popup.Master" />
+    <Content Include="PopupSelectLogo.aspx" />
+    <Content Include="Styles\Classical.css" />
+    <Content Include="Styles\Common.css" />
+    <Content Include="Styles\Default.css" />
+    <Content Include="Styles\Standard.css" />
+    <Content Include="UserControls\Commons\PanelArticleSelection.ascx" />
+    <Content Include="UserControls\Commons\PanelCategorySelection.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBAccess\Scripts\Search_store.sql" />
+    <None Include="Lib\vnn.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\LayoutStandard\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52399</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,307 @@
+﻿*{
+	font-family:Arial;
+	font-size:12px;
+	padding:0;
+	margin:0;
+}
+ul,li,h1,h2,h3,h4{
+	padding:0px;
+	margin:0px;
+}
+a{
+	color:#fe0002;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+img{
+	border:0px;
+}
+body{
+	margin:0px;
+	padding:0px;
+	color:#333333;
+}
+.clearall{
+	clear:both;
+}
+.main{
+	width:920px;
+	clear:both;
+	margin:0 auto;
+}
+.header{
+	background:transparent url('../images/top.gif') repeat-x;
+	text-align:right;
+	
+}
+.logo{
+	padding:15px 0px 10px 0px;
+}
+.banner{
+	width:920px;
+	height:212px;
+}
+
+.banner_menu{
+	margin-top:20px;
+}
+.banner_menu ul{
+	list-style-type:none;
+}
+.banner_menu ul li{
+	float:left;
+}
+.banner_menu ul li	.trangchu{
+	background:transparent url('../images/hsbc_banner_menu_01.jpg') no-repeat;
+	width:230px;
+	height:202px;
+	display:block;
+	background-position:0px -202px;
+}
+.banner_menu ul li .trangchu:hover{
+	background-position:0px 0px;
+}
+
+
+.banner_menu ul li	.giaithuong{
+	background:transparent url('../images/hsbc_banner_menu_02.jpg') no-repeat;
+	width:230px;
+	height:202px;
+	display:block;
+	background-position:0px -202px;
+}
+.banner_menu ul li .giaithuong:hover{
+	background-position:0px 0px;
+}
+
+
+.banner_menu ul li	.baithi{
+	background:transparent url('../images/hsbc_banner_menu_03.jpg') no-repeat;
+	width:231px;
+	height:202px;
+	display:block;
+	background-position:0px -202px;
+}
+.banner_menu ul li .baithi:hover{
+	background-position:0px 0px;
+}
+
+.banner_menu ul li	.lienhe{
+	background:transparent url('../images/hsbc_banner_menu_04.jpg') no-repeat;
+	width:229px;
+	height:202px;
+	display:block;
+	background-position:0px -202px;
+}
+.banner_menu ul li .lienhe:hover{
+	background-position:0px 0px;
+}
+
+#image_rotate{
+	list-style: none;
+	margin:0px 0 0 0px;
+	padding-top:12px;
+}
+.website_content{
+	/*background:transparent url('../images/home_bg.gif') repeat-y;*/
+	margin-top:20px;
+}
+
+.giaithuong_content{
+	margin-top:20px;
+}
+
+h2{
+	background:#ffffff url('../images/muiten.gif') no-repeat left center;
+	color:#fe0002;
+	font-size:18px;
+	padding-left:12px;
+	margin-bottom:20px;
+}
+h2 a{
+	color:#fe0002;
+	font-size:18px;
+}
+h3{
+
+	color:#fe0002;
+	font-size:14px;
+	margin-bottom:5px;
+}
+
+.home_left{
+	width:290px;
+	float:left;
+}
+.home_left .des{
+	text-align:justify;
+}
+.home_right{
+	width:580px;
+	float:right;
+	padding-left:30px;
+	border-left:dotted 1px #000000;
+}
+.giaithuong_right{
+	border-left:dotted 1px #000000;
+	width:605px;
+	float:right;
+	padding-left:15px;
+}
+.home_left ul{
+	list-style-type:none;
+}
+.home_left ul li{
+	padding-bottom:30px;
+}
+.home_left .thumb{
+	float:left;
+	width:110px;
+}
+.home_left .thumb img{
+	border:1px #3c3b36 solid;
+	cursor:pointer;
+}
+.home_left .thumb img:hover{
+	border:1px #fe0002 solid;
+}
+.readmore{
+	background:transparent url('../images/muiten_nho.gif') no-repeat right center;
+	padding-right:8px;
+
+}
+
+.giaithuongpic{
+	width:200px;
+	float:left;
+}
+
+.giaithuong_thele{
+	width:400px;
+	float:right;
+	text-align:justify;
+}
+
+
+.homepic{
+	width:165px;
+	float:left;
+}
+.home_thele{
+	width:415px;
+	float:left;
+	text-align:justify;
+}
+.giaithuong_thele h4,
+.home_thele h4{
+	margin:5px 0px;
+	color:#fe0002 ;
+}
+.giaithuong_thele ul,
+.home_thele ul{
+	list-style-type:none;
+	padding-left:20px;
+}
+.giaithuong_thele ul li,
+.home_thele ul li{
+	list-style-type:square;
+}
+.downloadthele{
+	margin:10px 0px;
+}
+
+/* chi tiet bai du thi */
+.chitiet_content{
+	background:transparent url('../images/baiduthi_bg.gif') repeat-y;
+	margin-top:20px;
+}
+.chitiet_noidung{
+	width:585px;
+	float:right;
+}
+/*.chitiet_noidung img{
+	float:right;
+}*/
+.chitiet_noidung .des{
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.chitiet_noidung p{
+	padding:3px 0px 2px;
+	margin:0px;
+}
+.thongtinnguoithi{
+	margin-top:10px;
+}
+.thongtinnguoithi{
+	padding:2px 0px 2px;
+}
+.baiduthikhac{
+	margin-top:10px;
+	border-top:1px #ccc  dotted;
+	padding-top:20px;
+}
+
+
+.tb_baiduthiantuong{
+	width:100%;
+}
+.tb_baiduthiantuong td{
+	width:33%;
+	padding-bottom:20px;
+
+}
+.tb_baiduthiantuong td img{
+	border:1px #333 solid;
+	cursor:pointer;
+	margin-bottom:10px;
+}
+.tb_baiduthiantuong td .xemchitiet img{
+	border:0px;
+}
+.tb_baiduthiantuong td .xemchitiet img:hover{
+	border:0px;
+}
+
+.tb_baiduthiantuong td img:hover{
+	border:1px #fe0002 solid;
+}
+.tb_baiduthiantuong td .xemchitiet{
+	margin-top:5px;
+}
+.tb_baiduthiantuong td .des{
+	font-size:11px;
+}
+.baiduthikhac ul{
+	list-style-type:none;
+}
+.baiduthikhac ul li a{
+	display:block;
+	background:transparent url('../images/muiten_den.gif') no-repeat left center;
+	padding-left:10px;
+	color:#333;
+	font-weight:bold;
+}
+.article_time{color:#a9a9a9;
+	font-size:11px; 
+	font-family:Tahoma;
+	padding:8px 0px 8px 0px;}
+.article_content{text-align:justify;}
+/* chi tiet bai du thi */
+
+
+
+/* foooter */
+.footer{
+	background:#fff url('../images/footer_bg.gif') repeat-x ;
+	padding:20px 0px 20px 0px;
+	margin-top:20px;
+}
+.footer a{
+	color:#333;
+}
+.footer .copyright{
+	padding-top:3px;
+}

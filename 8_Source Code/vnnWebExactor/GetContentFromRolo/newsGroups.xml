@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rolo>
+	<newsGroup>
+		<id>9</id>
+		<name>Nhịp sống trẻ</name>
+	</newsGroup>
+	<newsGroup>
+		<id>7</id>
+		<name>Nghệ thuật</name>
+	</newsGroup>
+	<newsGroup>
+		<id>1</id>
+		<name>Xã hội</name>
+	</newsGroup>
+	<newsGroup>
+		<id>5</id>
+		<name>Thể thao</name>
+	</newsGroup>
+	<newsGroup>
+		<id>8</id>
+		<name>Sức khỏe</name>
+	</newsGroup>
+	<newsGroup>
+		<id>2</id>
+		<name>Kinh tế</name>
+	</newsGroup>
+	<newsGroup>
+		<id>6</id>
+		<name>Thế giới</name>
+	</newsGroup>
+	<newsGroup>
+		<id>4</id>
+		<name>Giáo dục</name>
+	</newsGroup>
+	<newsGroup>
+		<id>3</id>
+		<name>Khoa học công nghệ</name>
+	</newsGroup>
+	<newsGroup>
+		<id>10</id>
+		<name>Giải trí</name>
+	</newsGroup>
+</Rolo>

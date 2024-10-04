@@ -1,0 +1,110 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0AE7654-4307-4AB0-A481-E5E476682071}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <SccProjectName>DAL</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SubSonic, Version=2.1.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL.Structures.cs" />
+    <Compile Include="DAL.Vcms.Article.cs" />
+    <Compile Include="DAL.Vcms.ArticleCategory.cs" />
+    <Compile Include="DAL.Vcms.ArticleCategoryController.cs" />
+    <Compile Include="DAL.Vcms.ArticleComment.cs" />
+    <Compile Include="DAL.Vcms.ArticleCommentController.cs" />
+    <Compile Include="DAL.Vcms.ArticleContentType.cs" />
+    <Compile Include="DAL.Vcms.ArticleContentTypeController.cs" />
+    <Compile Include="DAL.Vcms.ArticleController.cs" />
+    <Compile Include="DAL.Vcms.ArticleEvent.cs" />
+    <Compile Include="DAL.Vcms.ArticleEventCategory.cs" />
+    <Compile Include="DAL.Vcms.ArticleEventCategoryController.cs" />
+    <Compile Include="DAL.Vcms.ArticleEventController.cs" />
+    <Compile Include="DAL.Vcms.ArticleEventItem.cs" />
+    <Compile Include="DAL.Vcms.ArticleEventItemController.cs" />
+    <Compile Include="DAL.Vcms.ArticleMedium.cs" />
+    <Compile Include="DAL.Vcms.ArticleMediumController.cs" />
+    <Compile Include="DAL.Vcms.ArticleType.cs" />
+    <Compile Include="DAL.Vcms.ArticleTypeController.cs" />
+    <Compile Include="DAL.Vcms.ArticleVersion.cs" />
+    <Compile Include="DAL.Vcms.ArticleVersionController.cs" />
+    <Compile Include="DAL.Vcms.Category.cs" />
+    <Compile Include="DAL.Vcms.CategoryController.cs" />
+    <Compile Include="DAL.Vcms.CategoryPolicy.cs" />
+    <Compile Include="DAL.Vcms.CategoryPolicyController.cs" />
+    <Compile Include="DAL.Vcms.Collaborator.cs" />
+    <Compile Include="DAL.Vcms.CollaboratorController.cs" />
+    <Compile Include="DAL.Vcms.Configuration.cs" />
+    <Compile Include="DAL.Vcms.ConfigurationController.cs" />
+    <Compile Include="DAL.Vcms.Function.cs" />
+    <Compile Include="DAL.Vcms.FunctionController.cs" />
+    <Compile Include="DAL.Vcms.Group.cs" />
+    <Compile Include="DAL.Vcms.GroupController.cs" />
+    <Compile Include="DAL.Vcms.GroupMember.cs" />
+    <Compile Include="DAL.Vcms.GroupMemberController.cs" />
+    <Compile Include="DAL.Vcms.Logging.cs" />
+    <Compile Include="DAL.Vcms.LoggingController.cs" />
+    <Compile Include="DAL.Vcms.Menu.cs" />
+    <Compile Include="DAL.Vcms.MenuController.cs" />
+    <Compile Include="DAL.Vcms.ModuleX.cs" />
+    <Compile Include="DAL.Vcms.ModuleXController.cs" />
+    <Compile Include="DAL.Vcms.Policy.cs" />
+    <Compile Include="DAL.Vcms.PolicyController.cs" />
+    <Compile Include="DAL.Vcms.Source.cs" />
+    <Compile Include="DAL.Vcms.SourceController.cs" />
+    <Compile Include="DAL.Vcms.SPs.cs" />
+    <Compile Include="DAL.Vcms.User.cs" />
+    <Compile Include="DAL.Vcms.UserController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAL\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

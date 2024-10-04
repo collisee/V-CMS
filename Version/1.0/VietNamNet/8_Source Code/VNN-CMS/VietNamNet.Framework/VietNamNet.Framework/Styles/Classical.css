@@ -1,0 +1,46 @@
+/**{padding:0;margin:0;}*/
+body{margin:0;padding:0;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:13px;color:#000;}
+img{border:0;}
+a{text-decoration:none;color:#3A66CC;}
+a:hover{text-decoration:underline;}
+p{text-align:justify;}
+
+#VietNamNet_wrapper{width:980px;margin:0 auto;position:relative;padding:0;}
+#VietNamNet_header{position:relative;color:#fff;}
+#VietNamNet_container{position:relative;margin:10px 0;min-height:400px;}
+#VietNamNet_footer{clear:both;padding:20px 0;/*height:72px;*/text-align:center;font-size:smaller;background:#578BB8;color:#fff;}
+
+#VietNamNet_menu{float:left;width:200px;position:relative;}
+#VietNamNet_content{float:right;width:750px;position:relative;min-height:200px;}
+
+#VietNamNet_header a{color:#fff;}
+#h_top{/*height:24px;*/padding:4px;overflow:hidden;background:#578BB8;}
+#h_logo{height:86px;overflow:hidden;background:#467AA7;}
+#h_logo{padding:8px}
+#h_logo .skin-chooser{position:absolute;top:37px;right:13px;cursor:default;color:#fff;text-align:right;}
+#h_logo .logo{background-color:transparent;background-repeat:no-repeat;width:196px;height:48px;float:left;padding-left:10px;}
+#h_logo .datetime{color:#FFF;float:left;margin-left:30px;padding-top:70px;width:300px;}
+
+#path{padding:5px;}
+
+#VietNamNet_footer{text-align:center;font-size:11px;}
+#VietNamNet_footer a{color:#fff;font-weight:bold;}
+
+div.RadToolBar{width:100%;}
+
+.altRowStyle{cursor:pointer;background-color:#ddd;}
+.altRowStyle:hover{cursor:pointer;background-color:#ff8;}
+.rowStyle{cursor:pointer;background-color:Transparent;}
+.rowStyle:hover{cursor:pointer;background-color:#ff8;}
+
+.mceFirst span{float:none;}
+.RadGrid_Office2007 table{border:0;}
+.RadGrid_Office2007 tr.GridRow_Office2007:hover,
+.RadGrid_Office2007 tr.GridAltRow_Office2007:hover{cursor:pointer;background:#F1C15F url(WebResource.axd?d=iUXEp-bkMaiM1ZvRlIquzyi-pScyA03HRNbFvll6C85DmFgQAlw41hYCcQ3DsHzK7m7kNzceznO1-9TDVRyt5w2&t=633440650819531250) repeat-x scroll 0pt -800px;}
+.radMultiPage{border:1px #8CB2E7 solid;border-top:0;padding:5px;min-height:200px;}
+.InsertNews{background-image: url(../Images/LayoutClassical/CustomDialog.gif) !important;}
+
+.advVMG{background-color:transparent;border-bottom:1px solid #2B9900;color:darkgreen;cursor:pointer;padding-bottom:0px;text-decoration:underline;}
+.advPopup{position:absolute;z-index:100001;background:#ccc;color:#333;height:150px;width:250px;}
+.advPopupLoading{padding:56px 15px;height:19px;width:220px;}
+

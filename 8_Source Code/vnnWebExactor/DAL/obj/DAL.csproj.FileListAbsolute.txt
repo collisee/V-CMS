@@ -1,0 +1,7 @@
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\DAL\bin\Debug\DAL.dll.config
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\DAL\bin\Debug\DAL.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\DAL\bin\Debug\DAL.pdb
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\DAL\obj\Debug\DAL.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\DAL\obj\Debug\DAL.pdb
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\DAL\bin\Debug\SubSonic.dll

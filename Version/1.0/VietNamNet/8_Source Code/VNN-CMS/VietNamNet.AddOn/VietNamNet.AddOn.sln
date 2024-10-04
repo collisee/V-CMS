@@ -1,0 +1,157 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Advertisement", "VietNamNet.AddOn.Advertisement\VietNamNet.AddOn.Advertisement.csproj", "{530E7B9A-6EAE-4123-9766-1AF9D960F4DD}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Calendar", "VietNamNet.AddOn.Calendar\VietNamNet.AddOn.Calendar.csproj", "{F453BCFD-41D8-451E-839D-6D42010CDE8D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Messages", "VietNamNet.AddOn.Messages\VietNamNet.AddOn.Messages.csproj", "{3241C3B1-E427-49AE-8562-2B36B715A938}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Survey", "VietNamNet.AddOn.Survey\VietNamNet.AddOn.Survey.csproj", "{2DA25247-C591-4D7F-93D9-1C9D5262F735}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Tracker", "VietNamNet.AddOn.Tracker\VietNamNet.AddOn.Tracker.csproj", "{3B144B7E-D1CB-4CDC-873E-D06ADB6B4982}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Union", "VietNamNet.AddOn.Union\VietNamNet.AddOn.Union.csproj", "{B38869F8-149B-48F4-BCE3-47588EA96E11}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.VCard", "VietNamNet.AddOn.VCard\VietNamNet.AddOn.VCard.csproj", "{FB201F39-883D-43D5-8CB6-4AEBF97B3C71}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.VCard.Core", "VietNamNet.AddOn.VCard\Core\VietNamNet.AddOn.VCard.Core.csproj", "{ED54CF2C-D68D-4468-B0E5-C142498F9196}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Royalty", "VietNamNet.AddOn.Royalty\VietNamNet.AddOn.Royalty.csproj", "{BA223213-9339-4CC3-AF65-7A28AFB83862}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Royalty.Core", "VietNamNet.AddOn.Royalty\Core\VietNamNet.AddOn.Royalty.Core\VietNamNet.AddOn.Royalty.Core.csproj", "{6CD292DE-6321-4385-AD07-56FFEE01AA5A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Reports", "VietNamNet.AddOn.Reports\VietNamNet.AddOn.Reports.csproj", "{9BF5F78E-FDFA-4868-A75A-044A34DF2B14}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Tracker.Process", "VietNamNet.AddOn.Tracker.Process\VietNamNet.AddOn.Tracker.Process.csproj", "{4FACC1AF-37CD-4675-8511-30AF0A67DCDC}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.AddOn.Tracker.Core", "VietNamNet.AddOn.Tracker.Core\VietNamNet.AddOn.Tracker.Core.csproj", "{9320A031-AF14-45F7-B923-86579A539FA1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(VaultVsipSolution-v1) = preSolution
+		VaultHost = http://10.4.6.78/VaultService
+		VaultRepositoryID = 3
+		VaultRepositoryGUID = c1529b89-63e8-4cab-8ed5-d8d37f863347
+		ProjectCount = 7
+		ProjectRelativeDiskPath1 = VietNamNet.AddOn.Survey\VietNamNet.AddOn.Survey.csproj
+		ProjectRelativeDiskPath2 = VietNamNet.AddOn.Tracker\VietNamNet.AddOn.Tracker.csproj
+		ProjectRelativeDiskPath3 = VietNamNet.AddOn.Royalty\VietNamNet.AddOn.Royalty.csproj
+		ProjectRelativeDiskPath4 = VietNamNet.AddOn.Royalty\Core\VietNamNet.AddOn.Royalty.Core\VietNamNet.AddOn.Royalty.Core.csproj
+		ProjectRelativeDiskPath5 = VietNamNet.AddOn.Reports\VietNamNet.AddOn.Reports.csproj
+		ProjectRelativeDiskPath6 = VietNamNet.AddOn.Tracker.Process\VietNamNet.AddOn.Tracker.Process.csproj
+		ProjectRelativeDiskPath7 = VietNamNet.AddOn.Tracker.Core\VietNamNet.AddOn.Tracker.Core.csproj
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{530E7B9A-6EAE-4123-9766-1AF9D960F4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{530E7B9A-6EAE-4123-9766-1AF9D960F4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{530E7B9A-6EAE-4123-9766-1AF9D960F4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{530E7B9A-6EAE-4123-9766-1AF9D960F4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F453BCFD-41D8-451E-839D-6D42010CDE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F453BCFD-41D8-451E-839D-6D42010CDE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F453BCFD-41D8-451E-839D-6D42010CDE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F453BCFD-41D8-451E-839D-6D42010CDE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3241C3B1-E427-49AE-8562-2B36B715A938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3241C3B1-E427-49AE-8562-2B36B715A938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3241C3B1-E427-49AE-8562-2B36B715A938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3241C3B1-E427-49AE-8562-2B36B715A938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA25247-C591-4D7F-93D9-1C9D5262F735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA25247-C591-4D7F-93D9-1C9D5262F735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA25247-C591-4D7F-93D9-1C9D5262F735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA25247-C591-4D7F-93D9-1C9D5262F735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B144B7E-D1CB-4CDC-873E-D06ADB6B4982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B144B7E-D1CB-4CDC-873E-D06ADB6B4982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B144B7E-D1CB-4CDC-873E-D06ADB6B4982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B144B7E-D1CB-4CDC-873E-D06ADB6B4982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38869F8-149B-48F4-BCE3-47588EA96E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38869F8-149B-48F4-BCE3-47588EA96E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38869F8-149B-48F4-BCE3-47588EA96E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38869F8-149B-48F4-BCE3-47588EA96E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB201F39-883D-43D5-8CB6-4AEBF97B3C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB201F39-883D-43D5-8CB6-4AEBF97B3C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB201F39-883D-43D5-8CB6-4AEBF97B3C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB201F39-883D-43D5-8CB6-4AEBF97B3C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED54CF2C-D68D-4468-B0E5-C142498F9196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED54CF2C-D68D-4468-B0E5-C142498F9196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED54CF2C-D68D-4468-B0E5-C142498F9196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED54CF2C-D68D-4468-B0E5-C142498F9196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA223213-9339-4CC3-AF65-7A28AFB83862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA223213-9339-4CC3-AF65-7A28AFB83862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA223213-9339-4CC3-AF65-7A28AFB83862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA223213-9339-4CC3-AF65-7A28AFB83862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD292DE-6321-4385-AD07-56FFEE01AA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD292DE-6321-4385-AD07-56FFEE01AA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD292DE-6321-4385-AD07-56FFEE01AA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD292DE-6321-4385-AD07-56FFEE01AA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF5F78E-FDFA-4868-A75A-044A34DF2B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF5F78E-FDFA-4868-A75A-044A34DF2B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF5F78E-FDFA-4868-A75A-044A34DF2B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF5F78E-FDFA-4868-A75A-044A34DF2B14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FACC1AF-37CD-4675-8511-30AF0A67DCDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FACC1AF-37CD-4675-8511-30AF0A67DCDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FACC1AF-37CD-4675-8511-30AF0A67DCDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FACC1AF-37CD-4675-8511-30AF0A67DCDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9320A031-AF14-45F7-B923-86579A539FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9320A031-AF14-45F7-B923-86579A539FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9320A031-AF14-45F7-B923-86579A539FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9320A031-AF14-45F7-B923-86579A539FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

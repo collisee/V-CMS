@@ -1,0 +1,522 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDD867EB-E342-493A-929B-02109BEA9E30}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.WebSites.Clip</RootNamespace>
+    <AssemblyName>VietNamNet.WebSites.Clip</AssemblyName>
+    <SccProjectName>VietNamNet.WebSites.Clip</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.AJAX, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.AJAX.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Common, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Module, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Module.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\ad.css" />
+    <Content Include="css\ad_min.css" />
+    <Content Include="css\blank.gif" />
+    <Content Include="css\iepngfix.htc" />
+    <Content Include="css\jScrollPane.css" />
+    <Content Include="css\Style.css" />
+    <Content Include="css\style_min.css" />
+    <Content Include="css\vnn.css" />
+    <Content Include="css\vnn_min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\antoan190x75.jpg" />
+    <Content Include="Images\arrow.gif" />
+    <Content Include="Images\audio.gif" />
+    <Content Include="Images\audiob.gif" />
+    <Content Include="Images\back.gif" />
+    <Content Include="Images\baovenguoitieudung.jpg" />
+    <Content Include="Images\bg_3cate.gif" />
+    <Content Include="Images\bg_menu.gif" />
+    <Content Include="Images\bg_menu1.gif" />
+    <Content Include="Images\blank.gif" />
+    <Content Include="Images\blue_line.gif" />
+    <Content Include="Images\box_BVKH.gif" />
+    <Content Include="Images\box_TTOL.gif" />
+    <Content Include="Images\btn-slide.gif" />
+    <Content Include="Images\button1.gif" />
+    <Content Include="Images\button2.gif" />
+    <Content Include="Images\button2b.gif" />
+    <Content Include="Images\button_search.gif" />
+    <Content Include="Images\bvtd_bg.gif" />
+    <Content Include="Images\cattitle.gif" />
+    <Content Include="Images\cattitle2sao.gif" />
+    <Content Include="Images\cattitleTVN.gif" />
+    <Content Include="Images\cat_sub_line.jpg" />
+    <Content Include="Images\cat_title1.gif" />
+    <Content Include="Images\cat_title2.gif" />
+    <Content Include="Images\cat_title3.gif" />
+    <Content Include="Images\cat_title4.gif" />
+    <Content Include="Images\cat_title_bg.gif" />
+    <Content Include="Images\clip_img.gif" />
+    <Content Include="Images\clip_most.gif" />
+    <Content Include="Images\clip_play1.png" />
+    <Content Include="Images\clip_play16x16.png" />
+    <Content Include="Images\clip_play2.png" />
+    <Content Include="Images\clip_play3.png" />
+    <Content Include="Images\clip_play30x30.png" />
+    <Content Include="Images\clip_sent.gif" />
+    <Content Include="Images\clip_slide.gif" />
+    <Content Include="Images\clip_title.gif" />
+    <Content Include="Images\favicon-vnn.ico" />
+    <Content Include="Images\favicon_vnn.ico" />
+    <Content Include="Images\fb_icon.gif" />
+    <Content Include="Images\giaitri.jpg" />
+    <Content Include="Images\giavang.jpg" />
+    <Content Include="Images\header.jpg" />
+    <Content Include="Images\header_goc.jpg" />
+    <Content Include="Images\hl1.gif" />
+    <Content Include="Images\hoavanvnn.gif" />
+    <Content Include="Images\hoctac3.gif" />
+    <Content Include="Images\hoptac1.gif" />
+    <Content Include="Images\hoptac2.gif" />
+    <Content Include="Images\hoptac4.gif" />
+    <Content Include="Images\hoptac_bg1.gif" />
+    <Content Include="Images\hoptac_bg2.gif" />
+    <Content Include="Images\hotline.gif" />
+    <Content Include="Images\icon_mobi.gif" />
+    <Content Include="Images\icon_mobi.jpg" />
+    <Content Include="Images\icon_thethao.gif" />
+    <Content Include="Images\icon_truyenhinh.gif" />
+    <Content Include="Images\line.gif" />
+    <Content Include="Images\list_img_bg.jpg" />
+    <Content Include="Images\logoBBC.gif" />
+    <Content Include="Images\logovnn.png" />
+    <Content Include="Images\mail.gif" />
+    <Content Include="Images\menu1.gif" />
+    <Content Include="Images\menu1.jpg" />
+    <Content Include="Images\menu1a.gif" />
+    <Content Include="Images\menu1a.jpg" />
+    <Content Include="Images\menu1b.gif" />
+    <Content Include="Images\menu1bb.gif" />
+    <Content Include="Images\menu2.gif" />
+    <Content Include="Images\menu2a.gif" />
+    <Content Include="Images\menu2b.gif" />
+    <Content Include="Images\menu2bb.gif" />
+    <Content Include="Images\menubt_line.gif" />
+    <Content Include="Images\mn_cham.gif" />
+    <Content Include="Images\mn_cham2.gif" />
+    <Content Include="Images\mobile.jpg" />
+    <Content Include="Images\mostread.gif" />
+    <Content Include="Images\most_fb.gif" />
+    <Content Include="Images\muiten.gif" />
+    <Content Include="Images\muonmaucuocsong.jpg" />
+    <Content Include="Images\new_boder1.gif" />
+    <Content Include="Images\new_boder2.gif" />
+    <Content Include="Images\next.gif" />
+    <Content Include="Images\noibat3.png" />
+    <Content Include="Images\other.gif" />
+    <Content Include="Images\photo.gif" />
+    <Content Include="Images\photob.gif" />
+    <Content Include="Images\photo_r.gif" />
+    <Content Include="Images\popup_logo.gif" />
+    <Content Include="Images\print.gif" />
+    <Content Include="Images\quangcao.gif" />
+    <Content Include="Images\radio_bg.jpg" />
+    <Content Include="Images\radio_buttom.jpg" />
+    <Content Include="Images\radio_cham.gif" />
+    <Content Include="Images\red_line.gif" />
+    <Content Include="Images\right_bg.gif" />
+    <Content Include="Images\rss.gif" />
+    <Content Include="Images\sentfb.gif" />
+    <Content Include="Images\sentfile.gif" />
+    <Content Include="Images\sports.gif" />
+    <Content Include="Images\sprite_sheet.gif" />
+    <Content Include="Images\star_small.png" />
+    <Content Include="Images\tab_right_bg.gif" />
+    <Content Include="Images\tdsk.gif" />
+    <Content Include="Images\thoisu.jpg" />
+    <Content Include="Images\tinanh-bg.gif" />
+    <Content Include="Images\tinanh_n.gif" />
+    <Content Include="Images\tinanh_p.gif" />
+    <Content Include="Images\tinkhac.gif" />
+    <Content Include="Images\title_vnr500.gif" />
+    <Content Include="Images\tw_icon.gif" />
+    <Content Include="Images\video.gif" />
+    <Content Include="Images\videob.gif" />
+    <Content Include="Images\vietnamnet.png" />
+    <Content Include="Images\vietnamnet1.png" />
+    <Content Include="Images\vnn_image.gif" />
+    <Content Include="Images\vnn_image2.gif" />
+    <Content Include="Images\vnn_image3.gif" />
+    <Content Include="Images\vnn_image4.gif" />
+    <Content Include="Images\vnn_png.png" />
+    <Content Include="Images\vnn_slide.gif" />
+    <Content Include="Images\white-arrow.gif" />
+    <Content Include="js\default.js" />
+    <Content Include="js\feedback.js" />
+    <Content Include="js\lib-min.js" />
+    <Content Include="js\lib.js" />
+    <Content Include="js\menu.js" />
+    <Content Include="js\poll.js" />
+    <Content Include="js\video-min.js" />
+    <Content Include="js\video.js" />
+    <Content Include="lib\player.swf" />
+    <Content Include="NewsDetail.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="UserControls\PanelAdvA.ascx" />
+    <Content Include="UserControls\PanelAdvAddcode.ascx" />
+    <Content Include="UserControls\PanelAdvD.ascx" />
+    <Content Include="UserControls\PanelAdvertisement.ascx" />
+    <Content Include="UserControls\PanelFooter.ascx" />
+    <Content Include="UserControls\PanelGa.ascx" />
+    <Content Include="UserControls\PanelHeader.ascx" />
+    <Content Include="UserControls\PanelMenu.ascx" />
+    <Content Include="UserControls\PanelTicker.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Category.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Live.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Live.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Live.aspx.designer.cs">
+      <DependentUpon>Live.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popup.Master.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadClip.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>UploadClip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadClip.aspx.designer.cs">
+      <DependentUpon>UploadClip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvA.ascx.cs">
+      <DependentUpon>PanelAdvA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvA.ascx.designer.cs">
+      <DependentUpon>PanelAdvA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvAddcode.ascx.cs">
+      <DependentUpon>PanelAdvAddcode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvAddcode.ascx.designer.cs">
+      <DependentUpon>PanelAdvAddcode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvB_1.ascx.cs">
+      <DependentUpon>PanelAdvB_1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvB_1.ascx.designer.cs">
+      <DependentUpon>PanelAdvB_1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvC_1_3.ascx.cs">
+      <DependentUpon>PanelAdvC_1_3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvC_1_3.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_1_3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvC_4_5.ascx.cs">
+      <DependentUpon>PanelAdvC_4_5.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvC_4_5.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_4_5.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvC_6_14.ascx.cs">
+      <DependentUpon>PanelAdvC_6_14.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvC_6_14.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_6_14.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvD.ascx.cs">
+      <DependentUpon>PanelAdvD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvD.ascx.designer.cs">
+      <DependentUpon>PanelAdvD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvertisement.ascx.cs">
+      <DependentUpon>PanelAdvertisement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvertisement.ascx.designer.cs">
+      <DependentUpon>PanelAdvertisement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelArticlePlaylist.ascx.cs">
+      <DependentUpon>PanelArticlePlaylist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelArticlePlaylist.ascx.designer.cs">
+      <DependentUpon>PanelArticlePlaylist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelCate3gContent.ascx.cs">
+      <DependentUpon>PanelCate3gContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelCate3gContent.ascx.designer.cs">
+      <DependentUpon>PanelCate3gContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelCateBox1.ascx.cs">
+      <DependentUpon>PanelCateBox1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelCateBox1.ascx.designer.cs">
+      <DependentUpon>PanelCateBox1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelCategoryPlaylist.ascx.cs">
+      <DependentUpon>PanelCategoryPlaylist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelCategoryPlaylist.ascx.designer.cs">
+      <DependentUpon>PanelCategoryPlaylist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelClipNoibat.ascx.cs">
+      <DependentUpon>PanelClipNoibat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelClipNoibat.ascx.designer.cs">
+      <DependentUpon>PanelClipNoibat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelFooter.ascx.cs">
+      <DependentUpon>PanelFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelFooter.ascx.designer.cs">
+      <DependentUpon>PanelFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelGa.ascx.cs">
+      <DependentUpon>PanelGa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelGa.ascx.designer.cs">
+      <DependentUpon>PanelGa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelHeader.ascx.cs">
+      <DependentUpon>PanelHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelHeader.ascx.designer.cs">
+      <DependentUpon>PanelHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelLiveTV.ascx.cs">
+      <DependentUpon>PanelLiveTV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelLiveTV.ascx.designer.cs">
+      <DependentUpon>PanelLiveTV.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelMenu.ascx.cs">
+      <DependentUpon>PanelMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelMenu.ascx.designer.cs">
+      <DependentUpon>PanelMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelTamdiem3g.ascx.cs">
+      <DependentUpon>PanelTamdiem3g.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelTamdiem3g.ascx.designer.cs">
+      <DependentUpon>PanelTamdiem3g.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelTicker.ascx.cs">
+      <DependentUpon>PanelTicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelTicker.ascx.designer.cs">
+      <DependentUpon>PanelTicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Search\PanelSearchContent.ascx.cs">
+      <DependentUpon>PanelSearchContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Search\PanelSearchContent.ascx.designer.cs">
+      <DependentUpon>PanelSearchContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VNNNewsDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>VNNNewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VNNNewsDetail.aspx.designer.cs">
+      <DependentUpon>VNNNewsDetail.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Category.aspx" />
+    <Content Include="crossdomain.xml" />
+    <Content Include="Default.Master" />
+    <None Include="lib\vnn.zip" />
+    <Content Include="Error.aspx" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\radio.gif" />
+    <Content Include="Images\refresh.gif" />
+    <Content Include="lib\vnn_sport.swf" />
+    <Content Include="lib\vnn_v1.0.swf" />
+    <Content Include="lib\vnn_v1.1.swf" />
+    <Content Include="Live.aspx" />
+    <Content Include="Popup.Master" />
+    <Content Include="Templates\TemplateUploadClip.xslt" />
+    <Content Include="Templates\TemplateSendEmailArticle.xslt" />
+    <Content Include="UploadClip.aspx" />
+    <Content Include="UserControls\PanelAdvB_1.ascx" />
+    <Content Include="UserControls\PanelAdvC_1_3.ascx" />
+    <Content Include="UserControls\PanelAdvC_4_5.ascx" />
+    <Content Include="UserControls\PanelAdvC_6_14.ascx" />
+    <Content Include="UserControls\PanelArticlePlaylist.ascx" />
+    <Content Include="UserControls\PanelCate3gContent.ascx" />
+    <Content Include="UserControls\PanelCateBox1.ascx" />
+    <Content Include="UserControls\PanelCategoryPlaylist.ascx" />
+    <Content Include="UserControls\PanelClipNoibat.ascx" />
+    <Content Include="UserControls\PanelLiveTV.ascx" />
+    <Content Include="UserControls\PanelTamdiem3g.ascx" />
+    <Content Include="UserControls\Search\PanelSearchContent.ascx" />
+    <Content Include="VNNNewsDetail.aspx" />
+    <Content Include="vnn\css\sport.css" />
+    <Content Include="vnn\css\sport1.css" />
+    <Content Include="vnn\images\camera.png" />
+    <Content Include="vnn\images\scroll_arrow_down.png" />
+    <Content Include="vnn\images\scroll_arrow_up.png" />
+    <Content Include="vnn\images\scroll_bg.png" />
+    <Content Include="vnn\images\scroll_point.png" />
+    <Content Include="vnn\js\sport.js" />
+    <Content Include="vnn\js\live.js" />
+    <Content Include="vnn\js\sport1.js" />
+    <Content Include="vnn\live.asx" />
+    <Content Include="vnn\live.htm" />
+    <Content Include="vnn\radio.htm" />
+    <Content Include="vnn\css\PIE.htc" />
+    <Content Include="vnn\css\style.css" />
+    <Content Include="vnn\images\arrow.gif" />
+    <Content Include="vnn\images\clip_scroll.gif" />
+    <Content Include="vnn\images\clip_title.gif" />
+    <Content Include="vnn\images\demo.gif" />
+    <Content Include="vnn\index.htm" />
+    <Content Include="vnn\js\audio.js" />
+    <Content Include="vnn\js\lib-min.js" />
+    <Content Include="vnn\js\video.js" />
+    <Content Include="vnn\quoc-te.htm" />
+    <Content Include="vnn\sport.htm" />
+    <Content Include="vnn\sport1.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VietNamNet.Websites.Core\VietNamNet.Websites.Core.csproj">
+      <Project>{56001EEA-50C4-497C-BCAF-1C4CFF9B29F0}</Project>
+      <Name>VietNamNet.Websites.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4146</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

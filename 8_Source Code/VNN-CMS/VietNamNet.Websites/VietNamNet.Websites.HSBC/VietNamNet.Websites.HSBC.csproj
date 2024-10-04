@@ -1,0 +1,305 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47B552A8-E843-46C3-9494-EDE2244FED65}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.Websites.HSBC</RootNamespace>
+    <AssemblyName>VietNamNet.Websites.HSBC</AssemblyName>
+    <SccProjectName>VietNamNet.Websites.HSBC</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.CMS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.CMS.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.AJAX, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.AJAX.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Biz, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Biz.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Common, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.DAO.MSSQL, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.DAO.MSSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Module, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Module.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizLogic\HSBCManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\HSBCConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\HSBCUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ValueObject\HSBCObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBAccess\HSBCDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaiThuong.aspx.cs">
+      <DependentUpon>GiaiThuong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaiThuong.aspx.designer.cs">
+      <DependentUpon>GiaiThuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LienHe.aspx.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LienHe.aspx.designer.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\HSBCHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Banner.ascx.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Banner.ascx.designer.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GA.ascx.cs">
+      <DependentUpon>GA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GA.ascx.designer.cs">
+      <DependentUpon>GA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Logo.ascx.cs">
+      <DependentUpon>Logo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Logo.ascx.designer.cs">
+      <DependentUpon>Logo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelCategory.ascx.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelCategory.ascx.designer.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelLeft.ascx.cs">
+      <DependentUpon>PanelLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelLeft.ascx.designer.cs">
+      <DependentUpon>PanelLeft.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Category.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Default.Master" />
+    <Content Include="Error.aspx" />
+    <Content Include="GiaiThuong.aspx" />
+    <Content Include="images\baiduthi_bg.gif" />
+    <Content Include="images\banner\1.jpg" />
+    <Content Include="images\banner\2.jpg" />
+    <Content Include="images\banner\3.jpg" />
+    <Content Include="images\banner\4.jpg" />
+    <Content Include="images\Demo.jpg" />
+    <Content Include="images\demo1.jpg" />
+    <Content Include="images\demo2.jpg" />
+    <Content Include="images\demo22.jpg" />
+    <Content Include="images\download_thele.gif" />
+    <Content Include="images\footer_bg.gif" />
+    <Content Include="images\giai-thuong.jpg" />
+    <Content Include="images\home_bg.gif" />
+    <Content Include="images\HSBC - Trangchu.jpg" />
+    <Content Include="images\hsbc_banner_menu.jpg" />
+    <Content Include="images\hsbc_banner_menu_01.jpg" />
+    <Content Include="images\hsbc_banner_menu_02.jpg" />
+    <Content Include="images\hsbc_banner_menu_03.jpg" />
+    <Content Include="images\hsbc_banner_menu_04.jpg" />
+    <Content Include="images\images\hsbc_banner_menu_01.jpg" />
+    <Content Include="images\images\hsbc_banner_menu_02.jpg" />
+    <Content Include="images\images\hsbc_banner_menu_03.jpg" />
+    <Content Include="images\images\hsbc_banner_menu_04.jpg" />
+    <Content Include="images\images\hsbc_banner_menu_05.jpg" />
+    <Content Include="images\lienhe.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\muiten.gif" />
+    <Content Include="images\muiten_den.gif" />
+    <Content Include="images\muiten_nho.gif" />
+    <Content Include="images\The-le-cuoc-thi.jpg" />
+    <Content Include="images\thongtinhsbc.gif" />
+    <Content Include="images\tmp\1.gif" />
+    <Content Include="images\tmp\1.jpg" />
+    <Content Include="images\tmp\11.gif" />
+    <Content Include="images\tmp\12.gif" />
+    <Content Include="images\tmp\13.gif" />
+    <Content Include="images\tmp\2.gif" />
+    <Content Include="images\tmp\3.gif" />
+    <Content Include="images\tmp\4.gif" />
+    <Content Include="images\tmp\giaithuong.jpg" />
+    <Content Include="images\tmp\lienhe.jpg" />
+    <Content Include="images\tmp\thongtinbenle.jpg" />
+    <Content Include="images\top.gif" />
+    <Content Include="images\topbanner.jpg" />
+    <Content Include="images\trangchu.gif" />
+    <Content Include="images\xemchitiet.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\jquery-1.3.2.js" />
+    <Content Include="js\jquery.innerfade.js" />
+    <Content Include="Lib\player.html" />
+    <Content Include="Lib\player.swf" />
+    <Content Include="LienHe.aspx" />
+    <Content Include="NewsDetail.aspx" />
+    <Content Include="UserControls\Banner.ascx" />
+    <Content Include="UserControls\Footer.ascx" />
+    <Content Include="UserControls\GA.ascx" />
+    <Content Include="UserControls\Header.ascx" />
+    <Content Include="UserControls\Logo.ascx" />
+    <Content Include="UserControls\Menu.ascx" />
+    <Content Include="UserControls\PanelCategory.ascx" />
+    <Content Include="UserControls\PanelLeft.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lib\TheLeCuocThi.doc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49389</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

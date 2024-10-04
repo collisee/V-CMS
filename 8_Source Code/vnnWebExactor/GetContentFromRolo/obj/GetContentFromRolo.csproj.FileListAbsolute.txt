@@ -1,0 +1,9 @@
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\bin\Debug\GetContentFromRolo.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\bin\Debug\GetContentFromRolo.pdb
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\obj\Debug\GetContentFromRolo.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\obj\Debug\GetContentFromRolo.pdb
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\bin\Debug\GetContentFromRolo.dll.config
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\bin\Debug\SubSonic.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\bin\Debug\FtpClient.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\GetContentFromRolo\bin\Debug\FtpClient.pdb

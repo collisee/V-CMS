@@ -1,0 +1,24 @@
+.gsc-search-box, .gsc-trailing-more-results, .gsc-resultsHeader {
+display:none !important;
+}
+.gsc-control, .gsc-results {
+width:100% !important;
+}
+.gs-visibleUrl{display:none !important;}
+.gsc-tabHeader{display:none !important;}
+
+.gsc-result .gs-title{font-weight:bold; font-size:12px;color:#004276;
+				text-decoration: none;}
+.gs-snippet{ padding-top:4px; font-size:11px; line-height:16px;}
+
+/*
+.hc-img{ 
+	float:left; 
+	padding:0px 4px 2px 0px;
+	max-height:100px;
+	height:auto !important;
+	height:100px;
+	overflow:hidden;}
+.hc-item{ 
+	background:url(../Images/bg_body.gif) no-repeat scroll -969px -438px;
+	padding: 4px 4px 2px 8px;}*/

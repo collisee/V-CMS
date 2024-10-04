@@ -1,0 +1,427 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{353C4416-B228-4ED1-83AE-713F178A0293}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.Websites.Petro</RootNamespace>
+    <AssemblyName>VietNamNet.Websites.Petro</AssemblyName>
+    <SccProjectName>VietNamNet.Websites.Petro</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.CMS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.CMS.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.AJAX, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.AJAX.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Biz, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Biz.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Common, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.DAO.MSSQL, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.DAO.MSSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Module, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Module.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Category.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="UserControls\Footer.ascx" />
+    <Content Include="UserControls\GA.ascx" />
+    <Content Include="UserControls\Header.ascx" />
+    <Content Include="UserControls\Menu.ascx" />
+    <Content Include="UserControls\PanelLeft.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AJAX\GetMedia.cs" />
+    <Compile Include="AJAX\GetTopMedia.cs" />
+    <Compile Include="AJAX\MediaFile.cs" />
+    <Compile Include="BizLogic\PetroManager.cs" />
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PetroConstants.cs" />
+    <Compile Include="Common\PetroUtils.cs" />
+    <Compile Include="Common\ValueObject\PetroObject.cs" />
+    <Compile Include="DBAccess\PetroDAO.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HotNewsDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>HotNewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotNewsDetail.aspx.designer.cs">
+      <DependentUpon>HotNewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PetroHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCategory.ascx.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCategory.ascx.designer.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GA.ascx.cs">
+      <DependentUpon>GA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GA.ascx.designer.cs">
+      <DependentUpon>GA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCategories.ascx.cs">
+      <DependentUpon>PanelCategories.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCategories.ascx.designer.cs">
+      <DependentUpon>PanelCategories.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelHotNews.ascx.cs">
+      <DependentUpon>PanelHotNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelHotNews.ascx.designer.cs">
+      <DependentUpon>PanelHotNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelTopNews.ascx.cs">
+      <DependentUpon>PanelTopNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelTopNews.ascx.designer.cs">
+      <DependentUpon>PanelTopNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelTopVideo.ascx.cs">
+      <DependentUpon>PanelTopVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelTopVideo.ascx.designer.cs">
+      <DependentUpon>PanelTopVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\SubPanelTopImages.ascx.cs">
+      <DependentUpon>SubPanelTopImages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\SubPanelTopImages.ascx.designer.cs">
+      <DependentUpon>SubPanelTopImages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\News\PanelComment.ascx.cs">
+      <DependentUpon>PanelComment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\News\PanelComment.ascx.designer.cs">
+      <DependentUpon>PanelComment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\News\VideoPlayer.ascx.cs">
+      <DependentUpon>VideoPlayer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\News\VideoPlayer.ascx.designer.cs">
+      <DependentUpon>VideoPlayer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelCategory.ascx.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelCategory.ascx.designer.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelHotNews.ascx.cs">
+      <DependentUpon>PanelHotNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelHotNews.ascx.designer.cs">
+      <DependentUpon>PanelHotNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelLeft.ascx.cs">
+      <DependentUpon>PanelLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelLeft.ascx.designer.cs">
+      <DependentUpon>PanelLeft.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelMostRead.ascx.cs">
+      <DependentUpon>PanelMostRead.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelMostRead.ascx.designer.cs">
+      <DependentUpon>PanelMostRead.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelOilPrice.ascx.cs">
+      <DependentUpon>PanelOilPrice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelOilPrice.ascx.designer.cs">
+      <DependentUpon>PanelOilPrice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelRight.ascx.cs">
+      <DependentUpon>PanelRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelRight.ascx.designer.cs">
+      <DependentUpon>PanelRight.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelSearch.ascx.cs">
+      <DependentUpon>PanelSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelSearch.ascx.designer.cs">
+      <DependentUpon>PanelSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelTheodongsukien.ascx.cs">
+      <DependentUpon>PanelTheodongsukien.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelTheodongsukien.ascx.designer.cs">
+      <DependentUpon>PanelTheodongsukien.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VNNNewsDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>VNNNewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VNNNewsDetail.aspx.designer.cs">
+      <DependentUpon>VNNNewsDetail.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\anhcate1.jpg" />
+    <Content Include="data\anhcate2.jpg" />
+    <Content Include="data\anhcate3.jpg" />
+    <Content Include="data\anhnho.jpg" />
+    <Content Include="data\anhto1.jpg" />
+    <Content Include="data\arrow.gif" />
+    <Content Include="data\back.gif" />
+    <Content Include="data\banner300.gif" />
+    <Content Include="data\bg_itemmn.gif" />
+    <Content Include="data\bg_menu.gif" />
+    <Content Include="data\bg_poster.gif" />
+    <Content Include="data\bg_title0.gif" />
+    <Content Include="data\bg_title1.gif" />
+    <Content Include="data\bg_title11.gif" />
+    <Content Include="data\bg_title2.gif" />
+    <Content Include="data\bg_title3.gif" />
+    <Content Include="data\btn-close-hover.gif" />
+    <Content Include="data\btn-close.gif" />
+    <Content Include="data\cate1.jpg" />
+    <Content Include="data\cate2.jpg" />
+    <Content Include="data\cate3.jpg" />
+    <Content Include="data\cate4.jpg" />
+    <Content Include="data\cate5.jpg" />
+    <Content Include="data\cate6.jpg" />
+    <Content Include="data\clip.jpg" />
+    <Content Include="data\comment.gif" />
+    <Content Include="data\company\bannerdaukhi.swf" />
+    <Content Include="data\company\DMC.swf" />
+    <Content Include="data\company\Petro 300x120.swf" />
+    <Content Include="data\company\ptsc.swf" />
+    <Content Include="data\company\pvc.swf" />
+    <Content Include="data\company\pvfc.swf" />
+    <Content Include="data\company\pvi.swf" />
+    <Content Include="data\company\pvoil.swf" />
+    <Content Include="data\daihoidang.gif" />
+    <Content Include="data\docnhieunhat.gif" />
+    <Content Include="data\flash1.swf" />
+    <Content Include="data\hoctac3.gif" />
+    <Content Include="data\hoptac1.gif" />
+    <Content Include="data\hoptac2.gif" />
+    <Content Include="data\hoptac4.gif" />
+    <Content Include="data\hoptac_bg1.gif" />
+    <Content Include="data\hoptac_bg2.gif" />
+    <Content Include="data\icon.gif" />
+    <Content Include="data\icon1.png" />
+    <Content Include="data\iconvideo.gif" />
+    <Content Include="data\icon_ct.gif" />
+    <Content Include="data\icon_print.gif" />
+    <Content Include="data\logo1.jpg" />
+    <Content Include="data\logo1.png" />
+    <Content Include="data\logo2.jpg" />
+    <Content Include="data\logo2.png" />
+    <Content Include="data\muiten.gif" />
+    <Content Include="data\next.gif" />
+    <Content Include="data\next.png" />
+    <Content Include="data\other.gif" />
+    <Content Include="data\quangcao1.jpg" />
+    <Content Include="data\quangcao2.jpg" />
+    <Content Include="data\quangcaoto.jpg" />
+    <Content Include="data\search.gif" />
+    <Content Include="data\search.png" />
+    <Content Include="data\slogan.gif" />
+    <Content Include="data\slogan.jpg" />
+    <Content Include="data\sprite_sheet.gif" />
+    <Content Include="data\title_bottom.gif" />
+    <Content Include="data\title_camera.jpg" />
+    <Content Include="data\title_clip.jpg" />
+    <Content Include="data\title_cuasodau.jpg" />
+    <Content Include="data\title_dongchay.jpg" />
+    <Content Include="data\title_huyetmach.jpg" />
+    <Content Include="data\title_hydro.jpg" />
+    <Content Include="data\title_kynguyen.jpg" />
+    <Content Include="data\title_nguoiditim.jpg" />
+    <Content Include="data\title_tinmoi.jpg" />
+    <Content Include="data\video.jpg" />
+    <Content Include="data\Videocmr.jpg" />
+    <Content Include="Default.Master" />
+    <Content Include="favicon.ico" />
+    <Content Include="HotNewsDetail.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Lib\default.js" />
+    <Content Include="Lib\lib.js" />
+    <Content Include="Lib\player.html" />
+    <Content Include="Lib\player.swf" />
+    <Content Include="Lib\swfobject.js" />
+    <Content Include="Lib\swfobject_v2.2.js" />
+    <Content Include="NewsDetail.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="style.css" />
+    <Content Include="UserControls\Categories\PanelCategory.ascx" />
+    <Content Include="UserControls\Homepage\PanelCategories.ascx" />
+    <Content Include="UserControls\Homepage\PanelHotNews.ascx" />
+    <Content Include="UserControls\Homepage\PanelTopNews.ascx" />
+    <Content Include="UserControls\Homepage\PanelTopVideo.ascx" />
+    <Content Include="UserControls\Homepage\SubPanelTopImages.ascx" />
+    <Content Include="UserControls\News\PanelComment.ascx" />
+    <Content Include="UserControls\News\VideoPlayer.ascx" />
+    <Content Include="UserControls\PanelCategory.ascx" />
+    <Content Include="UserControls\PanelHotNews.ascx" />
+    <Content Include="UserControls\PanelMostRead.ascx" />
+    <Content Include="UserControls\PanelOilPrice.ascx" />
+    <Content Include="UserControls\PanelRight.ascx" />
+    <Content Include="UserControls\PanelSearch.ascx" />
+    <Content Include="UserControls\PanelTheodongsukien.ascx" />
+    <Content Include="VNNNewsDetail.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\banner.psd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4663</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Codebehind="Default.master.cs" Inherits="VietNamNet.Layout.Mobile.Default" %>
+
+<%@ Register Src="~/UserControls/PanelUerInterface.ascx" TagName="PanelUerInterface" TagPrefix="uc" %>
+<%@ Register Src="~/UserControls/Header.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="~/UserControls/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<%@ Register Src="~/UserControls/GA.ascx" TagName="GA" TagPrefix="uc" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>VIETNAMNET</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <div id="home">
+            <uc:PanelUerInterface ID="PanelUerInterface1" runat="server" />
+            <uc:Header ID="Header1" runat="server" />
+            <div class="home-body">
+                <asp:ContentPlaceHolder ID="cplhContainer" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <uc:Footer ID="Footer1" runat="server" />
+        </div>
+    </div>
+    <uc:GA ID="GA1" runat="server" />
+</body>
+</html>

@@ -1,0 +1,5 @@
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\vnnRssFramework\bin\Debug\vnnRssFramework.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\vnnRssFramework\bin\Debug\vnnRssFramework.pdb
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\vnnRssFramework\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\vnnRssFramework\obj\Debug\vnnRssFramework.dll
+D:\PROJECTS\VNN\V-CMS\8_Source Code\vnnWebExactor\vnnRssFramework\obj\Debug\vnnRssFramework.pdb

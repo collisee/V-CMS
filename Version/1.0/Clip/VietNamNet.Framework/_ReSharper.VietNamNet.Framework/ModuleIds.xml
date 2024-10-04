@@ -1,0 +1,45 @@
+<Modules>
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="System" />
+  <Module PersistentId="374910C4-5F80-4166-A519-82CAF469D830" ModuleId="VietNamNet.Framework" />
+  <Module PersistentId="5D2824D5-7977-4A9A-98AF-010B9E89FB04" ModuleId="VietNamNet.Framework.AJAX" />
+  <Module PersistentId="C658561E-AD12-4E11-973E-A834D74B96A9" ModuleId="VietNamNet.Framework.Biz" />
+  <Module PersistentId="6616D57A-1C08-425C-8AAB-7437FC3BA800" ModuleId="VietNamNet.Framework.Common" />
+  <Module PersistentId="2ACFBF32-633C-4124-808C-41DBA5AAC536" ModuleId="VietNamNet.Framework.DAO.MSSQL" />
+  <Module PersistentId="145CB3CC-7A93-4C17-AC68-62A32B218545" ModuleId="VietNamNet.Framework.ImageUtility" />
+  <Module PersistentId="5205CD15-F70F-4B60-B782-81D9D454A779" ModuleId="VietNamNet.Framework.Mobile" />
+  <Module PersistentId="499104BB-A1EF-4EAB-9BB1-37171CCC09D0" ModuleId="VietNamNet.Framework.Module" />
+  <Module PersistentId="273154BA-EC93-4EB8-A64C-ACEC4B0CAD96" ModuleId="VietNamNet.Framework.System" />
+  <Module PersistentId="E93496EB-6ADC-429B-85B3-542BEA034867" ModuleId="VietNamNet.Framework.Tracking" />
+  <Module PersistentId="41A9CE37-5486-4F18-844F-14419A5D96A3" ModuleId="VietNamNet.CMS" />
+  <Module PersistentId="86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7" ModuleId="VietNamNet.CMS.MediaManager" />
+  <Module PersistentId="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+  <Module PersistentId="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System_1" />
+  <Module PersistentId="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data" />
+  <Module PersistentId="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Drawing" />
+  <Module PersistentId="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Web" />
+  <Module PersistentId="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="System.Web.Extensions" />
+  <Module PersistentId="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Xml" />
+  <Module PersistentId="System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Configuration" />
+  <Module PersistentId="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Web.Services" />
+  <Module PersistentId="System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.EnterpriseServices" />
+  <Module PersistentId="System.Web.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Web.Mobile" />
+  <Module PersistentId="Telerik.Web.UI, Version=2009.2.701.20, Culture=neutral, PublicKeyToken=121fae78165ba3d4" ModuleId="Telerik.Web.UI" />
+  <Module PersistentId="Telerik.Web.UI, Version=2009.2.701.20, Culture=neutral, PublicKeyToken=121fae78165ba3d4" ModuleId="Telerik.Web.UI_1" />
+  <Module PersistentId="AjaxPro.2, Version=7.7.31.1, Culture=neutral, PublicKeyToken=eabb1b8f6347d5af" ModuleId="AjaxPro.2" />
+  <Module PersistentId="MySql.Data, Version=5.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" ModuleId="MySql.Data" />
+  <Module PersistentId="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73" ModuleId="ICSharpCode.SharpZipLib" />
+  <Module PersistentId="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73" ModuleId="ICSharpCode.SharpZipLib_1" />
+  <Module PersistentId="LumiSoft.Net, Version=2.0.3637.22476, Culture=neutral" ModuleId="LumiSoft.Net" />
+  <Module PersistentId="Yogesh.ExcelXml, Version=3.35.1017.910, Culture=neutral" ModuleId="Yogesh.ExcelXml" />
+  <Module PersistentId="Yogesh.Extensions, Version=1.16.524.1306, Culture=neutral" ModuleId="Yogesh.Extensions" />
+  <Module PersistentId="ImageQuantization, Version=1.0.1486.27504, Culture=neutral" ModuleId="ImageQuantization" />
+  <Module PersistentId="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Runtime.Serialization" />
+  <Module PersistentId="System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.IdentityModel" />
+  <Module PersistentId="System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.ServiceModel" />
+  <Module PersistentId="System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="System.ServiceModel.Web" />
+  <Module PersistentId="System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="System.WorkflowServices" />
+  <Module PersistentId="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Design" />
+  <Module PersistentId="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Windows.Forms" />
+  <Module PersistentId="System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Drawing.Design" />
+  <Module PersistentId="JetBrains.Annotations, Version=5.1.1727.12, Culture=neutral, PublicKeyToken=1010a0d8d6380325" ModuleId="JetBrains.Annotations" />
+</Modules>

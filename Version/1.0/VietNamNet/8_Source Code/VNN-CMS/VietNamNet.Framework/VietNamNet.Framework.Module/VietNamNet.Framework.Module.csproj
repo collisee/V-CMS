@@ -1,0 +1,79 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{499104BB-A1EF-4EAB-9BB1-37171CCC09D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.Framework.Module</RootNamespace>
+    <AssemblyName>VietNamNet.Framework.Module</AssemblyName>
+    <SccProjectName>VietNamNet.Framework.Module</SccProjectName>
+    <SccLocalPath>3~c1529b89-63e8-4cab-8ed5-d8d37f863347</SccLocalPath>
+    <SccAuxPath>http://10.4.6.78/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{7BE9CE03-56BF-4682-9C06-78C68B134B30}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseEntities.cs" />
+    <Compile Include="BaseObject.cs" />
+    <Compile Include="BaseServices.cs" />
+    <Compile Include="CommonDAO.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VietNamNet.Framework.AJAX\VietNamNet.Framework.AJAX.csproj">
+      <Project>{5D2824D5-7977-4A9A-98AF-010B9E89FB04}</Project>
+      <Name>VietNamNet.Framework.AJAX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.Biz\VietNamNet.Framework.Biz.csproj">
+      <Project>{C658561E-AD12-4E11-973E-A834D74B96A9}</Project>
+      <Name>VietNamNet.Framework.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.Common\VietNamNet.Framework.Common.csproj">
+      <Project>{6616D57A-1C08-425C-8AAB-7437FC3BA800}</Project>
+      <Name>VietNamNet.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.DAO.MSSQL\VietNamNet.Framework.DAO.MSSQL.csproj">
+      <Project>{2ACFBF32-633C-4124-808C-41DBA5AAC536}</Project>
+      <Name>VietNamNet.Framework.DAO.MSSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.ImageUtility\VietNamNet.Framework.ImageUtility.csproj">
+      <Project>{145CB3CC-7A93-4C17-AC68-62A32B218545}</Project>
+      <Name>VietNamNet.Framework.ImageUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,27 @@
+<%@ Master Language="C#" AutoEventWireup="true" Codebehind="Default.master.cs" Inherits="VietNamNet.AddOn.Royalty.Default" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>VietNamNet.CMS</title>
+    <link href="/Styles/Default.css" rel="stylesheet" type="text/css" />
+    <link href="/Styles/Common.css" rel="stylesheet" type="text/css" />
+    <telerik:RadStyleSheetManager runat="server" ID="RadStyleSheet1" />
+    <script type="text/javascript" src="/Scripts/Default.js"></script>
+    <script type="text/javascript" src="Scripts/Default.js"></script>
+</head>
+<body>
+    <form id="frmDefault" runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+            </Scripts>
+        </telerik:RadScriptManager>
+        <telerik:RadFormDecorator runat="server" ID="RadFormDecorator1" DecoratedControls="Default,Zone" />
+        <div>
+            <asp:ContentPlaceHolder ID="cplhContainer" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

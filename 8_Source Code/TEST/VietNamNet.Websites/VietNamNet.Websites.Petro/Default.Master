@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Codebehind="Default.master.cs" Inherits="VietNamNet.Websites.Petro.Default" %>
+<%@ Register Src="UserControls/PanelHotNews.ascx" TagName="PanelHotNews" TagPrefix="uc" %>
+<%@ Register Src="UserControls/PanelTheodongsukien.ascx" TagName="PanelTheodongsukien"
+  TagPrefix="uc" %>
+<%@ Register Src="UserControls/Header.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="UserControls/Menu.ascx" TagName="Menu" TagPrefix="uc" %>
+<%@ Register Src="UserControls/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<%@ Register Src="UserControls/GA.ascx" TagName="GA" TagPrefix="uc" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title>Dầu Khí</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="/Lib/swfobject_v2.2.js"></script>
+  <script type="text/javascript" src="/Lib/lib.js"></script>
+  <script type="text/javascript" src="/Lib/default.js"></script>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <form id="frmDefault" runat="server">
+    <div id="cpanen">
+      <uc:Header ID="Header1" runat="server" />
+      <uc:Menu ID="Menu1" runat="server" />
+      <!-- website content -->
+      <div id="home-body">
+        <uc:PanelHotNews ID="PanelHotNews1" runat="server" CategoryAlias="tin-nong" />
+        <asp:ContentPlaceHolder ID="cplhContainer" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="clearall">
+          <!-- website content -->
+          <div class="clear">
+            ,</div>
+        </div>
+      </div>
+      <uc:PanelTheodongsukien ID="PanelTheodongsukien1" runat="server" CategoryAlias="theo-dong-su-kien" />
+    </div>
+    <uc:Footer ID="Footer1" runat="server" />
+    <uc:GA ID="GA1" runat="server" />
+  </form>
+</body>
+</html>

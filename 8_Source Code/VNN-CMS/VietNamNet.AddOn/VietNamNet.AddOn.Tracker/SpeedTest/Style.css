@@ -1,0 +1,46 @@
+body {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:9pt;
+	font-size-adjust:none;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	padding:0px ;
+	margin:0px auto;
+	background:#EEEEEE none repeat scroll 0 0;
+	text-align:center;
+}
+.bg{ padding-top:60px;}
+.bg{ text-align:center; width:1024px; margin:0px auto; }
+.bg .form{ 
+	text-align:center;background:url(imgs/bg_form.gif) no-repeat;
+	 width:551px; height:391px;
+	margin:0px auto;position:relative;}
+.bg .loading
+{ 
+	padding-top:120px; height:80px;
+}
+.bg .text{ color:#970101; font-size:18px; font-weight:bold; width:400px; text-shadow:1px 2px #e1e1e1; line-height:22px; text-align:center;margin:0px auto; padding-top:20px;}
+.bg .text .mess{font-size:12px; font-weight:normal; float:right;text-align: left;
+	overflow:hidden;width:400px; height:50;
+	}
+.bg .text .option{font-size:12px; font-weight:normal; float: left; text-align: left;
+	width:100px; }
+.bg .imgloading{ 
+		left: auto; right:auto; top: auto;  
+		}
+.bg .close a{position:absolute; right: 25px; bottom: 20px; text-decoration: none;
+			font-weight: bold;color: #ba0000  }
+.bg .close a:hover{text-decoration:underline;}
+
+.bg .text-left{ text-transform:uppercase; color:#400C11;  font-weight:bold; width:400px; text-shadow:1px 2px #e1e1e1; line-height:22px;text-align:center;margin:0px auto; padding-top:20px; }
+.bg .text-left span{ padding:0px 15px;}
+
+.bg .result{ width:550px; margin:0px auto; background-color:#FFFFFF; margin-top:10px;}
+.bg .result .title{ height: 31px; background:url(imgs/result.gif) no-repeat; }
+.bg .result-text{ line-height:17px; text-align:left ; padding:10px; border-bottom:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;}
+
+
+.invisible{display: none;}
+.visible{display: inherit}

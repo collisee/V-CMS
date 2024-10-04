@@ -1,0 +1,36 @@
+*{padding:0px;margin:0px;}
+body{font-family:Arial,Helvetica,sans-serif;font-size:12pt;margin:0px auto;background:#FFF;}
+a{color:#004276;text-decoration:none;}
+a:hover{text-decoration:underline;color:#aa0000;}
+img{border:0px;}
+ol, ul{list-style: none;}
+.table1{background-color:#fff;border-left:1px solid #254056;border-right:1px solid #254056;padding:0px 4px;text-align:center;}
+.qc-top{padding:2px 5px;}
+.table-menu{background-color:#254056;font-size:90%;}
+.menu-item{font-weight:bold;text-transform:uppercase;padding:3px;border-top:1px solid #415d74;border-bottom:1px solid #415d74;}
+.menu-item a,.menu-item2 a,.menu-item3 a{color:#FFFFFF;}
+.content-item{padding-top:10px;text-align:left;}
+.cate-text{/*padding-left:10px;*/}
+.cate-text a{font-weight:bold;color:#aa0000;font-size:110%;}
+.cate-intro{text-align:justify;}
+/*.cate-text img{margin:5px 10px 5px 0;}*/
+.cate-item{padding-top:3px;font-size:100%;background:transparent url(../images/icon.gif) no-repeat 1px 10px;padding-left:8px;text-align:left;}
+.cate-title{background-color:#e0e0e0;padding:3px 10px;font-size:95%;font-weight:bold;text-transform:uppercase;}
+.cate-title a{color:#545454;}
+.menu-item2{font-weight:bold;text-transform:uppercase;padding:3px 3px 3px 10px;border-top:1px solid #415d74;border-bottom:1px solid #415d74;background:transparent url(../images/home.gif) no-repeat right center;}
+.menu-item3{background:transparent url(../images/icon-menu.gif) no-repeat right bottom;font-weight:bold;text-transform:uppercase;padding:3px;border-top:1px solid #415d74;}
+.bt-menu{ font-weight:bold;text-transform:uppercase;text-align:left;padding:0px 0px 3px;}
+.bt-menu a{color:#545454;background:transparent url(../images/submn.gif) no-repeat 0px 6px;padding-left:7px;font-size:85%;}
+.fooster{border-top:2px solid #254056;}
+
+
+.article{}
+.article .article_title{font-size:100%;color:#A70005;font-weight:bold;}
+.article .article_time{font-size:smaller;color:#969696;}
+.article .article_content{border-bottom:solid 1px #969696;padding-bottom:10px;}
+
+.news-category{border-bottom:solid 1px #969696;padding:10px;font-weight:bold;text-transform:uppercase;font-family:Arial;}
+.none{display:none;}
+.clear{clear:both;}
+.img-top{padding:5px 10px 5px 0;}
+table.center{margin:0 auto;}

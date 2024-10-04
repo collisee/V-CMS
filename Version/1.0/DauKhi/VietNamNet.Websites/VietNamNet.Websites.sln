@@ -1,0 +1,130 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Websites.Core", "VietNamNet.Websites.Core\VietNamNet.Websites.Core.csproj", "{56001EEA-50C4-497C-BCAF-1C4CFF9B29F0}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Websites.HSBC", "VietNamNet.Websites.HSBC\VietNamNet.Websites.HSBC.csproj", "{47B552A8-E843-46C3-9494-EDE2244FED65}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Websites.Petro", "VietNamNet.Websites.Petro\VietNamNet.Websites.Petro.csproj", "{353C4416-B228-4ED1-83AE-713F178A0293}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Websites.V1", "VietNamNet.Websites.V1\VietNamNet.Websites.V1.csproj", "{380D1390-98EA-48B7-8E78-7E024536F43F}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.WebSites.Clip", "VietNamNet.WebSites.Clip\VietNamNet.WebSites.Clip.csproj", "{FDD867EB-E342-493A-929B-02109BEA9E30}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Websites.English", "VietNamNet.Websites.English\VietNamNet.Websites.English.csproj", "{39B4287C-3D6C-43AB-B7F4-CBF03AFC3DAE}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Layout.Mobile", "VietNamNet.Layout.Mobile\VietNamNet.Layout.Mobile.csproj", "{B6F3A474-8319-46EB-BAEA-C2A7B87DD67D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Websites.Sport", "VietNamNet.Websites.Sport\VietNamNet.Websites.Sport.csproj", "{6DC4E5F0-4173-4EFD-B8F0-C137119ACAAF}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Websites.Resources", "VietNamNet.Websites.Resources\VietNamNet.Websites.Resources.csproj", "{45F9DEB1-A664-4323-BEF2-FB1F79712E02}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Websites.Sports.Mobile", "VietNamNet.Websites.Sports.Mobile\VietNamNet.Websites.Sports.Mobile.csproj", "{073E2FD3-9583-42FF-A417-9157921A4807}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(VaultVsipSolution-v1) = preSolution
+		VaultHost = http://10.4.6.78/VaultService
+		VaultRepositoryID = 3
+		VaultRepositoryGUID = c1529b89-63e8-4cab-8ed5-d8d37f863347
+		ProjectCount = 10
+		ProjectRelativeDiskPath1 = VietNamNet.Websites.Core\VietNamNet.Websites.Core.csproj
+		ProjectRelativeDiskPath2 = VietNamNet.Websites.HSBC\VietNamNet.Websites.HSBC.csproj
+		ProjectRelativeDiskPath3 = VietNamNet.Websites.Petro\VietNamNet.Websites.Petro.csproj
+		ProjectRelativeDiskPath4 = VietNamNet.Websites.V1\VietNamNet.Websites.V1.csproj
+		ProjectRelativeDiskPath5 = VietNamNet.WebSites.Clip\VietNamNet.WebSites.Clip.csproj
+		ProjectRelativeDiskPath6 = VietNamNet.Websites.English\VietNamNet.Websites.English.csproj
+		ProjectRelativeDiskPath7 = VietNamNet.Layout.Mobile\VietNamNet.Layout.Mobile.csproj
+		ProjectRelativeDiskPath8 = VietNamNet.Websites.Sport\VietNamNet.Websites.Sport.csproj
+		ProjectRelativeDiskPath9 = VietNamNet.Websites.Resources\VietNamNet.Websites.Resources.csproj
+		ProjectRelativeDiskPath10 = VietNamNet.Websites.Sports.Mobile\VietNamNet.Websites.Sports.Mobile.csproj
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56001EEA-50C4-497C-BCAF-1C4CFF9B29F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56001EEA-50C4-497C-BCAF-1C4CFF9B29F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56001EEA-50C4-497C-BCAF-1C4CFF9B29F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56001EEA-50C4-497C-BCAF-1C4CFF9B29F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47B552A8-E843-46C3-9494-EDE2244FED65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B552A8-E843-46C3-9494-EDE2244FED65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B552A8-E843-46C3-9494-EDE2244FED65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B552A8-E843-46C3-9494-EDE2244FED65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{353C4416-B228-4ED1-83AE-713F178A0293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353C4416-B228-4ED1-83AE-713F178A0293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353C4416-B228-4ED1-83AE-713F178A0293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353C4416-B228-4ED1-83AE-713F178A0293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380D1390-98EA-48B7-8E78-7E024536F43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380D1390-98EA-48B7-8E78-7E024536F43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380D1390-98EA-48B7-8E78-7E024536F43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380D1390-98EA-48B7-8E78-7E024536F43F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD867EB-E342-493A-929B-02109BEA9E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD867EB-E342-493A-929B-02109BEA9E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD867EB-E342-493A-929B-02109BEA9E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD867EB-E342-493A-929B-02109BEA9E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39B4287C-3D6C-43AB-B7F4-CBF03AFC3DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B4287C-3D6C-43AB-B7F4-CBF03AFC3DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B4287C-3D6C-43AB-B7F4-CBF03AFC3DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B4287C-3D6C-43AB-B7F4-CBF03AFC3DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F3A474-8319-46EB-BAEA-C2A7B87DD67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F3A474-8319-46EB-BAEA-C2A7B87DD67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F3A474-8319-46EB-BAEA-C2A7B87DD67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F3A474-8319-46EB-BAEA-C2A7B87DD67D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DC4E5F0-4173-4EFD-B8F0-C137119ACAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DC4E5F0-4173-4EFD-B8F0-C137119ACAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DC4E5F0-4173-4EFD-B8F0-C137119ACAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DC4E5F0-4173-4EFD-B8F0-C137119ACAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F9DEB1-A664-4323-BEF2-FB1F79712E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F9DEB1-A664-4323-BEF2-FB1F79712E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F9DEB1-A664-4323-BEF2-FB1F79712E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F9DEB1-A664-4323-BEF2-FB1F79712E02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{073E2FD3-9583-42FF-A417-9157921A4807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073E2FD3-9583-42FF-A417-9157921A4807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073E2FD3-9583-42FF-A417-9157921A4807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073E2FD3-9583-42FF-A417-9157921A4807}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

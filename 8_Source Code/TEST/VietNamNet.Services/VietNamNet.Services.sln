@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietNamNet.Services", "VietNamNet.Services\VietNamNet.Services.csproj", "{B451DFEF-E75C-4A6A-A942-112A001469A5}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(VaultVsipSolution-v1) = preSolution
+		VaultHost = http://10.4.6.78/VaultService
+		VaultRepositoryID = 3
+		VaultRepositoryGUID = c1529b89-63e8-4cab-8ed5-d8d37f863347
+		ProjectCount = 1
+		ProjectRelativeDiskPath1 = VietNamNet.Services\VietNamNet.Services.csproj
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B451DFEF-E75C-4A6A-A942-112A001469A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B451DFEF-E75C-4A6A-A942-112A001469A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B451DFEF-E75C-4A6A-A942-112A001469A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B451DFEF-E75C-4A6A-A942-112A001469A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

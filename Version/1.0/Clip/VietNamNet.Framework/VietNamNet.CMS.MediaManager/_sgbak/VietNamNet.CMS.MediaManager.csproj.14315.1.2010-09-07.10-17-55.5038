@@ -1,0 +1,205 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86C978E7-B5F5-4C6A-8FB6-3AFF49C565B7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.CMS.MediaManager</RootNamespace>
+    <AssemblyName>VietNamNet.CMS.MediaManager</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="Telerik.Web.UI, Version=2009.2.701.20, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="vnConvert, Version=1.0.2723.36603, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libruary\vnConvert.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="UserControls\AuditTrail.ascx" />
+    <Content Include="UserControls\ErrorMessage.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\MediaManagerConstants.cs" />
+    <Compile Include="Common\MediaManagerUtils.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentManager.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DocumentManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentManager.aspx.designer.cs">
+      <DependentUpon>DocumentManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileExplorer.aspx.cs">
+      <DependentUpon>FileExplorer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileExplorer.aspx.designer.cs">
+      <DependentUpon>FileExplorer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>FileManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager.aspx.designer.cs">
+      <DependentUpon>FileManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popup.Master.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup.Master.designer.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToolBarButtonTemplate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VietNamNet.Framework.AJAX\VietNamNet.Framework.AJAX.csproj">
+      <Project>{5D2824D5-7977-4A9A-98AF-010B9E89FB04}</Project>
+      <Name>VietNamNet.Framework.AJAX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.Biz\VietNamNet.Framework.Biz.csproj">
+      <Project>{C658561E-AD12-4E11-973E-A834D74B96A9}</Project>
+      <Name>VietNamNet.Framework.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.Common\VietNamNet.Framework.Common.csproj">
+      <Project>{6616D57A-1C08-425C-8AAB-7437FC3BA800}</Project>
+      <Name>VietNamNet.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.DAO.MSSQL\VietNamNet.Framework.DAO.MSSQL.csproj">
+      <Project>{2ACFBF32-633C-4124-808C-41DBA5AAC536}</Project>
+      <Name>VietNamNet.Framework.DAO.MSSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.ImageUtility\VietNamNet.Framework.ImageUtility.csproj">
+      <Project>{145CB3CC-7A93-4C17-AC68-62A32B218545}</Project>
+      <Name>VietNamNet.Framework.ImageUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.Mobile\VietNamNet.Framework.Mobile.csproj">
+      <Project>{5205CD15-F70F-4B60-B782-81D9D454A779}</Project>
+      <Name>VietNamNet.Framework.Mobile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.Module\VietNamNet.Framework.Module.csproj">
+      <Project>{499104BB-A1EF-4EAB-9BB1-37171CCC09D0}</Project>
+      <Name>VietNamNet.Framework.Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VietNamNet.Framework.System\VietNamNet.Framework.System.csproj">
+      <Project>{273154BA-EC93-4EB8-A64C-ACEC4B0CAD96}</Project>
+      <Name>VietNamNet.Framework.System</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Message.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DocumentManager.aspx" />
+    <Content Include="FileExplorer.aspx" />
+    <Content Include="FileManager.aspx" />
+    <Content Include="Popup.Master" />
+    <Content Include="Scripts\Default.js" />
+    <Content Include="Scripts\swfobject.js" />
+    <Content Include="Styles\Classical.css" />
+    <Content Include="Styles\Common.css" />
+    <Content Include="Styles\Default.css" />
+    <Content Include="Styles\Standard.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documents\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61472</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

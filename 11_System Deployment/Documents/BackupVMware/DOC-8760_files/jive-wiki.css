@@ -1,0 +1,744 @@
+
+/*
+jive-home.css - v0.1 - October 12, 2006 
+styles for the community landing page.
+*/
+
+
+
+
+/* document styles */
+/* jive thread - original post styles */
+.jive-wiki {
+	background: #FFF9EA;
+	border: 1px solid #F0E7CD;
+	clear: both;
+	margin: 0 0 15px 0;
+	padding: 0;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+.jive-wiki-subject {
+    overflow: hidden;
+	clear: both;
+	padding: 15px 0 0 0;
+    margin: 0;
+    width: 100%;
+    }
+
+.jive-wiki-subject-content {
+	clear: both;
+    
+    margin: 0 15px;
+	padding: 0;
+    }
+.jive-wiki-subject-content-title {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0 -130px 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+.jive-wiki-subject-content-title div {
+    display: block;
+    float: left;
+    margin-right: 130px;
+}
+.jive-wiki-subject-content-title div h2 {
+    float: left;
+	margin: 0;
+	padding: 0 0 5px 30px;
+	font-size: 18pt;
+    line-height: 28px;
+    font-weight: normal;
+	font-family: Georgia, serif;
+	background: transparent url(../images/jive-icon-wiki-24x24.gif) no-repeat scroll left center;
+    }
+.jive-wiki-version {
+    display: block;
+    float: right;
+    padding: 0;
+    margin: 0;
+    font-size: 7pt;
+    line-height: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    overflow: hidden;
+    }
+.jive-wiki-version-details {
+   display: block;
+    clear: both;
+}
+.jive-wiki-version-details span {
+    display: block;
+    float: left;
+    }
+/* temp fix for document diff OOM bug */
+.jive-wiki-version-details a.jive-link-search-small,
+.jive-wiki-version-details a.jive-link-search-small:visited {
+    display: none;
+    }
+.jive-wiki-version span.jive-wiki-publishstate {
+    display: block;
+    clear: both;
+    font-size: 8pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+
+.jive-wiki-version .jive-wiki-edited-by {
+    font-weight: bold;
+    color: #777;
+    }
+.jive-wiki-version .jive-wiki-edited-by span {
+
+    padding-top: 3px;
+    display: block;
+    }
+.jive-wiki-version .jive-wiki-edited-by span img.jive-avatar {
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #999;
+    float: left;
+    margin-right: 6px;
+    }
+.jive-wiki-version .jive-wiki-edited-by span strong {
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 2px;
+    float: left;
+    }
+
+
+.jive-wiki-subject-content h3 {
+	float: left;
+    width: 100%;
+    margin: 0;
+	padding: 0 0 15px 30px;
+	color: #666;
+	font-size: 8pt;
+	font-weight: normal;
+	}
+.jive-wiki-subject-content h3 a {
+	color: #666;
+	}
+.jive-wiki-subject-content h3 span {
+	padding: 0 5px 0 5px;
+	}
+
+.jive-wiki-body {
+	clear: both;
+	display: inline-block;
+	margin: 0;
+	padding: 0 15px 15px 15px;
+	}
+html>body .jive-wiki-body {
+	display: block;
+	}
+.jive-wiki-body-content {
+	border-top: 1px solid #F0E7CD;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	padding: 10px 0 2px 0;
+}
+.jive-wiki-edit-action-notification {
+	padding: 2px 0 2px 22px;
+}
+.jive-wiki-body-summary {}
+/* binary document details */
+.jive-wiki-body-download {
+    display: block;
+    clear: both;
+    padding-top: 10px;
+    }
+.jive-wiki-body-thumbnail {
+    display: block;
+    float: left;
+    height: 30px;
+    margin-right: 10px;
+    }
+.jive-wiki-body-file {
+    display: block;
+    padding-bottom: 30px;
+    }
+.jive-wiki-body-file-info {
+    display: block;
+    color: #777;
+    }
+.jive-wiki-body-file-info a {
+    color: #333;
+    font-weight: bold;
+    font-size: 10pt;
+    padding-right: 5px;
+    text-decoration: none;
+    }
+.jive-wiki-body-file-info a:hover {
+    color: #666;
+    text-decoration: underline;
+    }
+.jive-wiki-body-file-actions {
+    display: block;
+    padding-top: 2px;
+    }
+
+
+
+.jive-wiki-details {
+	border-top: 1px solid #F0E7CD;
+	padding-top: 14px;
+    margin: 2px 0px 0px 0px;
+    }
+.jive-wiki-tags {
+	clear: both;
+	padding-left: 16px;
+	font-size: 8pt;
+	color: #666;
+	background: transparent url(../images/jive-icon-tag-12x12.gif) no-repeat left;
+	}
+.jive-wiki-details-container {
+}
+.jive-wiki-related {
+	/*float: left;*/
+	clear: both;
+    padding-left: 16px;
+    font-size: 8pt;
+	color: #666;
+	margin-top: 10px;
+	background: transparent url(../images/jive-icon-related-12x12.gif) no-repeat left top;
+	}
+.jive-wiki-related a {
+	font-size: 8pt;
+	/*clear: both;*/
+	/*float: left;*/
+	}
+.jive-wiki-related span.jive-wiki-related-blog {
+	background: transparent url(../images/jive-iconlabel-blog.gif) no-repeat right;
+	padding-right: 28px;
+	}
+.jive-wiki-related span.jive-wiki-related-forum {
+	background: transparent url(../images/jive-iconlabel-forum.gif) no-repeat right;
+	padding-right: 28px;
+	}
+.jive-wiki-related span.jive-wiki-related-wiki {
+	background: transparent url(../images/jive-iconlabel-wiki.gif) no-repeat right;
+	padding-right: 22px;
+	}
+.jive-wiki-related ul {
+    list-style-type: none;
+    margin-left: -25px;
+    margin-bottom: -10px;
+}
+
+
+.jive-wiki-info {
+	float: left;
+	font-size: 9pt;
+	margin: 0px;
+	padding: 8px 0px 5px 0px;
+	color: #505050;
+	}
+.jive-wiki-info h3 {
+	float: left;
+	font-size: 11pt;
+	font-weight: bold;
+	margin: 0px 0px 3px 0px;
+	padding: 4px 0px 4px 30px;
+	background: transparent url(../images/jive-icon-wiki-24x24.gif) no-repeat left;
+	}
+.jive-wiki-info strong {
+	float: left;
+	padding: 6px 0px 0px 15px;
+	color: #40871d;
+	}
+
+
+
+/* jive compose - title */
+#jive-compose-header h4 {
+    background: transparent url(../images/jive-icon-wiki-24x24.gif) no-repeat left;
+	padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#jive-compose-current-details {
+    /*border: 1px solid #fae4bf;
+	background-color: #f8f4e6;*/
+    border: 1px solid #f8f4e6;
+    background-color: #fefdf8;
+    }
+#jive-compose-current-details span {
+    display: block;
+    padding: 10px;
+    }
+#jive-compose-current-details span h4 {
+    font-size: 11pt;
+    margin: 0;
+    padding: 0 0 3px 0;
+    }
+#jive-compose-current-details span ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+#jive-compose-current-details span ul li {
+    padding-bottom: 3px;
+    }
+#jive-compose-current-details span ul li strong {
+    display: block;
+    float: left;
+    font-weight: normal;
+    width: 90px;
+    padding-right: 5px;
+    text-align: right;
+    color: #666;
+    text-transform: uppercase;
+    font-size: 8pt;
+    }
+#jive-compose-current-details span ul li em {
+    font-style: normal;
+    }
+#jive-compose-title span {}
+#jive-compose-description span {}
+/* jive compose - upload */
+#jive-compose-upload {}
+#jive-compose-upload span {
+    display: block;
+    padding: 5px;
+    }
+#jive-compose-upload span h4 {
+    display: inline;
+}
+/* jive compose - body */
+#jive-compose-body {}
+#jive-post-bodybox {
+	margin-bottom: 15px;
+}
+#editor-tabs {
+	background-color: #EBEBEB;    
+}
+/* jive compose - tags */
+#jive-compose-tags {}
+.jive-tag-selected {
+	background-color: #cccccc;
+}
+/* jive compose - options */
+#jive-compose-options {	
+	display: block;
+	float: left;
+}
+
+#jive-compose-options h4 a.jive-compose-hdr-opt {
+    background: transparent url(../images/jive-icon-minus.gif) no-repeat left;
+    }
+#jive-compose-options h4 a.jive-compose-hdr-opt-closed {
+    background: transparent url(../images/jive-icon-plus.gif) no-repeat left;
+    }
+#jive-compose-options h4 a:hover {
+    text-decoration: underline;
+    }
+
+
+
+#jive-approval-options {
+    border: 1px solid #fae4bf;
+    background-color: #f8f4e6;
+    }
+
+#jive-approval-options {
+    clear: both;
+    padding: 0px;
+    margin: 0px 0px 18px 0px;
+    width: 100%;
+    }
+
+#jive-approval-options span {
+    display: block;
+    padding: 5px;
+    }
+
+
+#jive-approval-options h4 {
+    margin: 0px 5px 5px 0px;
+    padding: 0px;
+    display: inline;
+    }
+#jive-approval-options h4 a {
+    color: #333;
+    text-decoration: none;
+    margin: 0px;
+    padding-left: 15px;
+    outline: none;
+    }
+#jive-approval-options h4 a.jive-compose-hdr-opt {
+    background: transparent url(../images/jive-icon-minus.gif) no-repeat left;
+    }
+#jive-approval-options h4 a.jive-compose-hdr-opt-closed {
+    background: transparent url(../images/jive-icon-plus.gif) no-repeat left;
+    }
+#jive-approval-options h4 a:hover {
+    text-decoration: underline;
+    }
+
+#jive-approval-status ul  {
+	background-color:#FFFFFF;
+	border: 1px solid #CCCCCC;
+	padding-left: 5px;
+    line-height: 1.5em;
+    padding-top: 5px;
+}
+
+#jive-approval-status ul a {
+	padding-left: 20px;
+	background-position: 0 50%;
+    font-size:1.25em;
+}
+
+#jive-approval-status .jive-approved {
+    background: url('../images/doc-approved-16x16.png') no-repeat;
+}
+
+#jive-approval-status .jive-notapproved {
+    background: url('../images/doc-notapproved-16x16.gif') no-repeat;
+}
+
+#jive-approval-status .jive-rejected {
+    background: url('../images/doc-rejected-16x16.png') no-repeat;
+}
+
+#jive-contributor-options {
+    border: 1px solid #fae4bf;
+    background-color: #f8f4e6;
+    }
+
+#jive-contributor-options {
+    clear: both;
+    padding: 0px;
+    margin: 0px 0px 18px 0px;
+    width: 100%;
+    }
+
+#jive-contributor-options span {
+    display: block;
+    padding: 5px;
+    }
+
+
+#jive-contributor-options h4 {
+    margin: 0px 5px 5px 0px;
+    padding: 0px;
+    display: inline;
+    }
+#jive-contributor-options h4 a {
+    color: #333;
+    text-decoration: none;
+    margin: 0px;
+    padding-left: 15px;
+    outline: none;
+    }
+#jive-contributor-options h4 a.jive-compose-hdr-opt {
+    background: transparent url(../images/jive-icon-minus.gif) no-repeat left;
+    }
+#jive-contributor-options h4 a.jive-compose-hdr-opt-closed {
+    background: transparent url(../images/jive-icon-plus.gif) no-repeat left;
+    }
+#jive-contributor-options h4 a:hover {
+    text-decoration: underline;
+    }
+
+#jive-extended-options {
+    border: 1px solid #fae4bf;
+    background-color: #f8f4e6;
+    }
+
+#jive-extended-options {
+    clear: both;
+    padding: 0px;
+    margin: 0px 0px 18px 0px;
+    width: 100%;
+    }
+
+#jive-extended-options span {
+    display: block;
+    padding: 5px;
+    }
+
+
+#jive-extended-options h4 {
+    margin: 0px 5px 5px 0px;
+    padding: 0px;
+    display: inline;
+    }
+#jive-extended-options h4 a {
+    color: #333;
+    text-decoration: none;
+    margin: 0px;
+    padding-left: 15px;
+    outline: none;
+    }
+#jive-extended-options h4 a.jive-compose-hdr-opt {
+    background: transparent url(../images/jive-icon-minus.gif) no-repeat left;
+    }
+#jive-extended-options h4 a.jive-compose-hdr-opt-closed {
+    background: transparent url(../images/jive-icon-plus.gif) no-repeat left;
+    }
+#jive-extended-options h4 a:hover {
+    text-decoration: underline;
+    }
+	
+#jive-wiki-state-message {
+	clear: both;
+	margin: 8px 0px 15px 0px;
+	padding: 0px 0px 10px 0px;
+	background-color: #fdfdef;
+	border: 1px solid #eae9e1;
+	-moz-border-radius: 5px;
+	}
+
+#jive-wiki-state-message h3 {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #666;
+    margin: 0px;
+	padding: 10px 0px 0px 10px;
+	}
+
+.doc-published-state {
+    font-size: 8pt;
+    color: #999;
+    white-space: nowrap;
+}
+
+.doc-draft-state {
+    font-size: 8pt;
+    color: #777;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.doc-approval-state {
+    font-size: 8pt;
+    color: #3089c7;
+    white-space: nowrap;
+}
+
+.doc-requires-review {
+    font-size: 8pt;
+    color: #d89615;
+    white-space: nowrap;
+}
+
+.doc-requires-approval {
+    font-size: 8pt;
+    color: #c90606;
+    white-space: nowrap;
+}
+
+.doc-archived-state {
+    font-size: 8pt;
+    color: #063;
+    white-space: nowrap;
+}
+
+.doc-rejected-state {
+    font-size: 8pt;
+    color: #c00;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+
+/* Doc versions */
+th.jive-table-head-checkbox,
+th.jive-table-head-version,
+th.jive-table-head-state,
+th.jive-table-head-changed,
+th.jive-table-head-by {
+    text-align: left !important;
+    }
+/* temp fix for document diff bug */
+th.jive-table-head-changes,
+td.jive-table-cell-changes,
+th.jive-table-head-restore,
+td.jive-table-cell-restore,
+th.jive-table-head-delete,
+td.jive-table-cell-delete {
+ display: none;
+    }
+
+
+/* temp fix for document diff bug */
+.jive-doc-versions-compare {
+    display: none;
+    }
+
+
+#jive-doc-needs-approval {
+    /*
+    border : 1px solid #ff0000;
+    padding : 10px;
+    font-weight : bold;
+    font-size : 14px;
+    */
+}
+#jive-doc-needs-approval div input {
+
+    }
+#jive-doc-needs-approval div span {
+    display: inline;
+    float: left;
+    padding-top: 2px;
+    padding-right: 5px;
+    }
+#jive-doc-needs-approval div input {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    }
+#jive-doc-needs-approval .jive-doc-rejectionNotes {
+    background: none;
+    display: block;
+    padding-left: 0;
+    }
+#jive-doc-needs-approval div.jive-doc-rejectionNotes input {
+    margin-top: 5px;
+    }
+
+
+#jive-revision-options {
+    display: block;
+    float: left;
+    width: 300px;
+    }
+#jive-revision-options table {
+    width: 100%;
+    }
+#jive-revision-options table td {
+    width: 33%;
+    }
+
+#jive-revision-key {
+    display: block;
+    float: right;
+    padding-top: 15px;
+    }
+.added-text {
+    background-color: #0f0;
+    }
+.deleted-text {
+    background-color: #f66;
+    text-decoration: line-through
+    }
+
+
+.jive-revision-table {
+    display: block;
+    clear: both;
+    padding-top: 10px;
+    }
+.jive-revision-table table {
+    border-top: 1px #999 solid;
+    border-right: 1px #999 solid;
+    margin-bottom: 5px;
+    }
+.jive-revision-table td, 
+.jive-revision-table th {
+    border-bottom: 1px #999 solid;
+    border-left: 1px #999 solid;
+    padding: 10px;
+    width: 50%;
+    }
+.jive-revision-table th strong {
+    font-size: 10pt;
+    }
+.jive-revision-table th span {
+    font-size: 8pt;
+    display: block;
+    clear: both;
+    padding-top: 10px;
+    }
+.jive-revision-table th span select {
+    font-size: 8pt;
+    margin-left: 5px;
+    }
+.jive-revision-table th span select option {
+    font-size: 8pt;
+    padding-right: 10px;
+    }
+.jive-revision-table td {
+    background-color: #f8f4e6;
+    }
+.jive-revision-table th.jive-revision-header,
+.jive-revision-table th.jive-revision-header-last {
+    background-color: #e9e5d7;
+    font-weight: normal;
+    font-size: 8pt;
+    }
+.jive-revision-table div.jive-wiki-body {
+    padding: 0;
+    }
+.jive-revision-table div.jive-wiki-body-content {
+    background: none;
+    padding-top: 5px;
+    }
+.jive-revision-table table tbody tr td div.jive-wiki-body-content {
+	background: none;
+	padding-top: 5px;
+    overflow: auto;
+    display: block;
+    float: left;
+    }
+.jive-revision-table div.jive-wiki-body-content pre {
+    width: 420px;
+    display: block;
+    float: left;
+    }
+.jive-revision-table div.jive-wiki-body-content pre code {
+    width: 380px;
+    display: block;
+    float: left;
+    white-space: pre;
+    }
+.jive-revision-table div.jive-wiki-body-content pre code font {
+    }
+
+
+
+/* manage collaboration (doc-collaborate.ftl) styles */
+.jive-table-collaborators table {
+    border: 1px solid #dedede;
+    border-bottom: none;
+    }
+.jive-table-collaborators .jive-table-head-user,
+.jive-table-collaborators .jive-table-cell-user {
+    text-align: left;
+    }
+.jive-table-collaborators .jive-table-cell-user a {
+    font-weight: bold;
+    }
+.jive-table-collaborators .jive-table-head-roll-reviewer,
+.jive-table-collaborators .jive-table-cell-roll-reviewer,
+.jive-table-collaborators .jive-table-head-roll-author,
+.jive-table-collaborators .jive-table-cell-roll-author,
+.jive-table-collaborators .jive-table-head-roll-approver,
+.jive-table-collaborators .jive-table-cell-roll-approver,
+.jive-table-collaborators .jive-table-head-remove,
+.jive-table-collaborators .jive-table-cell-remove {
+    text-align: center;
+    }
+.jive-table-collaborators tr td {
+    border-bottom: 1px solid #dedede;
+    padding: 5px;
+    }
+
+
+#jive-doc-comment-preview {
+    padding: 6px 6px 6px 30px;
+    border: 1px solid #85b4db;
+    background-color: #ddeefb;
+    -moz-border-radius: 4px;
+    margin:5px 0px 5px 0px;
+}

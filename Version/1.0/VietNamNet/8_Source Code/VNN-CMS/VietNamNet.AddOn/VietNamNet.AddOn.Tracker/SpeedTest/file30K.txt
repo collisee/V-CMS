@@ -1,0 +1,595 @@
+
+Unfortunately, you CANNOT use this trick to get weapon types that can't be
+thrown, like rods and staves.  Weapons exclusive to the multiplayer mode also
+can't be obtained this way since they also can't be thrown.
+
+
+---TACTICS FOR OBTAINING WEAPONS---
+There's no way to control what abilities an enemy Ninja has learned, so you
+can't change what TYPES of weapons they will throw.  However, you CAN
+change the enemy's levels.
+
+So, the best strategy if you want to acquire a particular weapon is to look
+for a Ninja that can throws the right weapon type.  Then, adjust his/her level
+until it matches what you want in the table above.  For example, if you want an
+Excalibur, find a Ninja that sometimes throws Knight's Swords.  Then level up or
+level down that Ninja until it is at level 96.
+
+To LEVEL UP the enemy ninjas, let them land successful attacks on you.  Chantage
+(or any Reraise/healing ability, really) can be helpful in surviving repeated
+attacks.
+
+To LEVEL DOWN the enemy ninjas, bring a Mindflayer monster and have it stand
+next to someone with the Beastmaster ability.  This will allow the Mindflayer
+to use its Level Drain ability, which reduces an enemy's level by 1.  (You'll
+only need the Mindflayer if the item you want is not thrown at level 99.)
+
+The Nagnarok may be particularly tricky to get since it has low attack power and
+even level 95 Ninjas may not throw it very often.  One possible solution is to 
+first inflict the Confuse status on a level 95 Ninja (e.g. by using the Mystic's
+Delirium or Beowulf's Confuse).
+
+Reader Piers* reports that Ninjas are more apt to throw powerful weapons when
+your HP is high.  When you're low on HP, the Ninjas will just try to finish you
+off with a throwing star/bomb or the Nagnarok.  So, keep your HP if you want to
+earn powerful weapons!
+
+%%%MISSABLE ITEMS AND EVENTS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%00miss
+
+This is a quick list of story events and unique items that you can "miss" over 
+the course of the game, and what you need to do to make sure you're able to
+see every story events and collect every item in the single-player mode.  This 
+is just a quick list of key points; for a more detailed treatment, see the 
+corresponding walkthrough section.
+
+Points marked ESSENTIAL *must* be completed to get an item or see an event.
+Points marked GOOD IDEA are not strictly necessary, but will make the process
+easier -- for example, stealing a rare item that otherwise can only be obtained
+through poaching a hard-to-find enemy.  Finally, I've pointed out some points
+that seem like they might be needed but are actually NOT IMPORTANT, so that you
+don't have to worry about them!
+
+---CHAPTER I--------------------------------------------------------------------
+
+* ESSENTIAL: At the start of the battle at Mandalia Plains, you'll be given a 
+choice whether to help Argath or directly attack the enemy.  Choosing the first 
+option lets you see a few extra lines of dialogue during the last battle of
+the chapter, but it does NOT affect your ability to see anything later on.
+
+---CHAPTER II-------------------------------------------------------------------
+
+* ESSENTIAL: At the very beginning of this chapter, you will be able to add 
+Alicia and Lavian to your roster.  Add them to your roster, and do NOT let them 
+leave until you have completed the Agrias's Birthday sidequest in Chapter IV.
+This means that you must not dismiss them, must not let them get turned into 
+crystals/chests, and must not let them abandon the party due to having a very 
+low Bravery or very high Faith.  It's OK if they're temporarily KOed.
+
+* NOT IMPORTANT: At this time, you will also be able to add Ladd to your 
+roster.  Ladd is basically just a generic male human.  He doesn't have any 
+special abilities and isn't needed for any sidequests.  So, you can take him or 
+leave him as you want.
+
+* GOOD IDEA: At the start of the story battle at Araguay Woods, you'll be given 
+a choice whether to help Boco.  Choose the second option to avoid losing
+Bravery.  However, your choice here does not affect anything else.
+
+* NOT IMPORTANT: After the Araguay Woods battle, you will be able to add Boco 
+the chocobo to your roster.  Like Ladd, Boco isn't really special; he's just a
+regular yellow Chocobo.  (He does have a unique message when you press Select
+and choose his name, but that's all.)  So, you don't have to take him along.
+
+* NOT TOO IMPORTANT: At the story battle at Tchigolith Fenlands, there's a 
+chance of encountering an enemy Pig.  Recruit it (using Entice or Time) if you
+see it, as you can breed it and poach the pigs for rare items.  If you don't see
+it, though, it's by no means essential to get here as you'll have many other
+chances to recruit them later.
+
+* ESSENTIAL: After completing the story battle at the Clockwork City of Goug, 
+you will be able to add Mustadio to your roster.  Mustadio is a unique story 
+character and is also needed for most of the sidequests in Chapter IV, so add 
+him to your roster and don't lose him.  (As with the other essential characters,
+it's fine if he's temporarily KOed as long as he doesn't die permanently.)
+
+* ESSENTIAL: After the battle at Balias Swale, you will be able to add Agrias 
+to your roster.  Agrias is another unique story character and is needed for two
+sidequests in Chapter IV, so add her to your team.
+
+* ESSENTIAL: Deploying Agrias during the battle at Golgollada Gallows will 
+allow you to see some extra dialogue between her and Ramza.  This dialogue is 
+not, however, needed to unlock anything else later.
+
+---CHAPTER III------------------------------------------------------------------
+
+* GOOD IDEA: When Alma joins the party, it's a good idea de-equip her Healing 
+Staff and Barette (as well as her Red Shoes) before you go to the Orbonne 
+Monastery.  This is not *required* as both these items can be poached later: 
+the Healing Staff is a rare poach from Dryads and the Barette is a rare poach 
+from Red Chocobos.
+
+* NOT IMPORTANT: During a story event, you will be asked whether or not you 
+have read the Scriptures of Germonique.  Your response here has no bearing on 
+anything, so don't worry about it :)
+
+* GOOD IDEA: The story battle at Zeklaus Desert features all three types of
+behemoths.  All three types of behemoth yield rare items when poached.  So, you
+may want to poach them, or recruit one or more onto your team (with Entice or 
+Tame) to breed more behemoths for poaching.  However, it is not necessary to
+poach/recruit them here as there are plenty of behemoths in random battles 
+later in the game.
+
+* ESSENTIAL: After the battle at Zeklaus Desert, you will be able to add Luso 
+to your roster.  This is your only opportunity to get this unique character on 
+your team, so add him.  (Luso is not needed to unlock any other events, 
+though.)
+
+* ESSENTIAL: At the very end of Chapter III, you will be given a chance to add
+Rapha and Marach to your roster.  Both are unique story characters and each has
+different abilities, so sign them up.  (They are not, however, very useful :P.)
+
+---CHAPTER IV-------------------------------------------------------------------
+
+The Gollund Colliery sidequest is available at the beginning of this chapter.
+Assuming you still have Mustadio, Agrias, Alicia, and Lavian on your roster, 
+the Agrias's Birthday sidequest is also available at this time.  Both of these 
+sidequests are available until completed and never disappear.  (See Walkthrough 
+- Sidequests for the full walkthroughs for these quests.)
+
+* GOOD IDEA: As a general note, the maximum roster size of 24 is just big enough
+to keep the 18 story characters (including Boco and Ladd) plus the 6 generic
+characters you start Chapter I with.  So, if you want to keep all those
+characters, finish breeding monsters to poach BEFORE you fill up the last two
+slots on your roster.  On the other hand, Boco, Ladd, and the initial 6 generics
+have no special characteristics and you don't miss anything if you delete them.
+
+---Agrias's Birthday---
+* ESSENTIAL: After completing the Agrias's Birthday sidequest, you will receive
+the Tynar Rouge accessory.  This is a one-of-a-kind item and cannot be 
+replaced, so don't throw it away, or let it get broken or stolen by an enemy.
+
+After completing the Agrias's Birthday event, Alicia and Lavian are not 
+strictly needed for any other events, although they will appear in Disorder in 
+the Order if you still have them along.
+
+---Gollund Colliery---
+* ESSENTIAL: Near the beginning of this quest (at the Tavern in Lesalia), 
+Beowulf will ask you to team up.  Choose the second option to agree to this.
+Otherwise, Beowulf will leave and the quest cannot be completed.
+
+* GOOD IDEA: In the third battle in this quest (Gollund Colliery Ridge), you
+will encounter an enemy Pig.  Entice or Tame the Pig so you can start breeding 
+monsters from the pig family.  Some rare items can only be obtained by poaching
+pig-family monsters -- including those from the Wild Boar monster, which can 
+ONLY be obtained by breeding!  If you do miss the Pig here, though, you can get 
+others later.
+
+* ESSENTIAL: After completing the last battle of this quest, Beowulf and Holy
+Dragon Reis will offer to join your team.  Both are unique story characters and
+both are needed for later quests, so sign them up.
+
+* ESSENTIAL: Upon return to the Clockwork City of Goug, Construct 8 will also 
+be offered as another character.  Construct 8 is another unique character, so
+recruit it.
+
+---Chapter IV Main Quest - Up to Bervenia Free City---
+* GOOD IDEA: During the story battle at Bervenia Free City, you may want to
+steal the Defender and Chantage from Meliadoul, especially since both are good
+items.  However, these can also be poached/stolen/caught later if you miss them.
+
+After completing the story battle at the Free City of Bervenia, the Recruiting 
+Balthier sidequest is now available.  It does not depend on any missable 
+factors.
+
+---Recruiting Balthier Quest---
+* ESSENTIAL: After you complete this quest, Balthier will offer to join.  
+Again, he is a unique story character, so sign him up.  He is not needed for 
+any other quests.
+
+* ESSENTIAL: Balthier's initial equipment includes the Ras Algethi gun and the 
+Mirage Vest body armor.  Both of these are unique items in single-player, so, 
+again, don't throw them away or let them get broken.  (Note that you must sign 
+up Balthier to get them.)  It is possible to get additional guns and vests in
+the multiplayer modes.
+
+---Chapter IV Main Quest - Finnath Creek to Sal Ghidos---
+* GOOD IDEA: During the story battle at Finnath Creek (NOT during the random
+battles), there's a random chance of encountering one more enemy Pigs.  If you 
+don't already have one, Entice or Tame a Pig so you can start breeding 
+monsters from the pig family.  Some rare items can only be obtained by poaching 
+pig-family monsters -- including those from the Wild Boar monster, which can 
+ONLY  be obtained by breeding!  If you don't get any Pigs here, you can get 
+others later.
+
+* GOOD IDEA: In the story battle at Beddha Sandwaste, you can steal a Glacial
+Gun from Barich.  This is a rare item that can't be bought in stores, but it's
+not unique and you can get an infinite supply from random battles later.
+
+* NOT IMPORTANT: At Fort Besselat, you'll have a choice of attacking either the
+south wall or north wall.  These are different battles, but neither has any
+special items and you'll end up in the same place eventually, so it doesn't
+matter which you choose.
+
+* ESSENTIAL: After completing the battles at Fort Besselat, Orlandeau will 
+offer to join.  Sign him up as he is another unique story character.
+
+* GOOD IDEA: Orlandeau's initial equipment includes the Excalibur knight's
+sword.  The Excalibur isn't unique (an infinite supply can be caught from high-
+level enemy Ninjas), but Excaliburs are hard to get, so hang on to it!
+
+* ESSENTIAL: When you first visit the Trade City of Sal Ghidos, you will see a
+cutscene in which Aerith offers you a flower.  Choose the SECOND option to buy
+the flower.  If you do not buy the flower, you will NOT be able to complete the
+Nelveska Temple & Recruiting Cloud subquests, and there is only ONE chance to
+get it!!
+
+Once you have the flower, you can complete the Nelveska Temple sidequest if you 
+also finished the Gollund Colliery quest and still have Beowulf and Reis on 
+your team.
+
+---Nelveska Temple Quest---
+* ESSENTIAL: Using the Treasure Hunter ability, move atop the left pillar to
+find the Escutcheon (II) shield.  You will need to use a large monster (such as
+Reis or Construct 8) as a stepping-stone to get up on top of the pillar.  You 
+may instead receive a crummy regular Escutcheon; the chance of getting this BAD 
+Escutcheon is equal to your Bravery.  So, a lower Bravery is better!  This is
+the ONLY chance to get the Escutcheon II in the game and you CANNOT come back 
+to this map afterwards, so you must pick it up here to get every item.
+
+* GOOD IDEA: The Javelin II, Sasuke's Blade, and Nagnarok weapons can also be
+found with Treasure Hunter and low Bravery here.  These, however, are not
+unique; Sasuke's Blade and the Javelin II can be caught from enemy Ninjas and
+the Nagnarok can be poached from Swine.
+
+* ESSENTIAL: After completing the events in this quest, Reis's new version will
+offer to rejoin your party.  She is another unique story character and needed
+for the Lionel's New Liege Lord quest, so sign her up.
+
+---Chapter IV Main Quest - Mount Germinas to Limberry---
+* ESSENTIAL: The Mount Germinas map contains an item, the Invisibility Cloak,
+that's one-of-a-kind in single-player.  It's found using Treasure Hunter atop 
+the mountain; see Battle 42 Tactics and Secrets for a map to its location.)  
+Again, the lower your Bravery, the better chance of getting the Invisibility 
+Cloak instead of just an Ether.  You only get to pick up ONE of these items, so 
+if you end up with the Ether, the Invisibility Cloak is gone for good!  Unlike 
+with the Nelveska Temple items, however, there's absolutely no need to get this 
+during the story battle here -- you can come back and get it in a random battle 
+at any time.  It's also possible to win Invisibility Cloaks in Rendezvous Mode.
+
+* GOOD IDEA: You may encounter another Pig in the story battle at Finnath 
+Creek.  (It's random whether or not you'll see it.)  If you missed the Pig in 
+the Gollund Colliery, try to recruit this one.  If you don't get one here, you 
+can still find an infinite supply in Dorvauldar Marsh or the last floor of 
+Midlight's Deep.
+
+* GOOD IDEA: At Limberry, you'll face a series of four battles.  In the first
+three battles, you'll want to learn Ultima by having one of the Assassins or
+Ultima Demons cast it on either Ramza in his Squire job, or Luso in his Game 
+Hunter job.  It is easiest by far to learn it in the first battle (at the
+gate).
+
+* NOT IMPORTANT: You can't steal Elmdore's equipment in this version of the
+game, so don't even try.
+
+* ESSENTIAL: After winning all the battles at Limberry, Meliadoul will offer to
+join you.  Sign her up; she is a unique character and is needed for another 
+couple story events.
+
+* GOOD IDEA: Meliadoul comes with a Save The Queen sword.  Again, the supply of
+these is actually unlimited (since they can be caught from enemy Ninjas), but 
+keeping this one as a good idea!
+
+The Recruiting Cloud quest is now available.
+
+---Recruiting Cloud Quest---
+* ESSENTIAL: When given the chance to sign up Cloud, add him.  He isn't needed
+for anything else, but IS a unique story character.
+
+* GOOD IDEA: Cloud's Materia Blade is found atop Mount Bervenia using Treasure
+Hunter.  Bravery is NOT important.  Try to hang onto it since Cloud needs it 
+for his Limit command, but if you lose it, you CAN get more from enemy Ninjas.
+
+---Chapter IV Main Quest - Eagrose to End---
+* ESSENTIAL: After Limberry, you will be directed back to Eagrose.  On your way
+back to Eagrose, enter Dorter Trade City for an optional battle.  (This battle
+will only trigger if you have Meliadoul on your roster.)  If you visit Eagrose
+before activated this battle, it will disappear.
+
+* GOOD IDEA: In the aforementioned Dorter battle, you can steal a Dragon Rod
+from Cletienne.  This weapon can also be found as a rare poach from Blue
+Dragons, but it's easiest to steal.
+
+* GOOD IDEA: The boss at Eagrose has a Defender sword you can steal, if you
+missed the one at Bervenia or want a second one.  Again, there's actually an
+unlimited supply of Defenders (from poaching Elder Treants), so you don't 
+*have* to get this one.
+
+* GOOD IDEA: Once you get to Mullonde, you'll face a series of three battles.
+In the first battle, the enemy Summoner has another Dragon Rod if you missed 
+the prior one.
+
+* ESSENTIAL: For the second battle at Mullonde, deploy Meliadoul for some
+additional mid-battle dialogue.  (This is not needed to unlock anything else,
+however.)
+
+* ESSENTIAL: If you have not yet learned the Ultima spell, the third battle at
+Mullonde is your last chance in the single-player mode to learn and keep it.
+You'll get the magick if Ultima Demons cast it on either Ramza in his Squire 
+job, or Luso in his Game Hunter job.
+
+Once you complete the battles at Mullonde, you will be able to complete the 
+last set of sidequests, as well as the last set of story battles.  You must 
+still have Beowulf, Reis, and Agrias to complete this final set of sidequests.
+
+* ESSENTIAL: After entering Orbonne Monastery for the final sequence of 
+battles, SAVE YOUR GAME IN A DIFFERENT SLOT.  You will NOT be able to get out 
+to the world map again.  So, if you want to be able to roam the map at all, you 
+must keep a separate save from BEFORE you went into the Monastery.
+
+---Lionel's New Liege Lord Quest---
+* NOT IMPORANT: Aliste has Safeguard, so you can't steal any of his Genji gear.
+Sorry.
+
+* ESSENTIAL: After completing the first battle of this quest, you will receive
+the Genji Armor as a battle trophy.  This is a unique item, so do not let get 
+it stolen or broken.
+
+* GOOD IDEA: You can steal the Masamune from one of the enemy samurai in the
+second battle of this quest.  The Masamune can only be otherwise obtained by
+catching it from enemy Ninjas (or winning it in Rendezvous Mode), so it's good 
+to get here.  (Be careful using the Masamune for Iaido; if it breaks, you'll 
+need Sticky Fingers to get a replacement!)
+
+* GOOD IDEA: You can also steal a Cachusha and Barette from the enemy Mystics 
+in the same battle.  These are also available from poaching.
+
+* ESSENTIAL: You will receive a Zeus Mace as a battle trophy after the second
+battle.  Keep it; this is one of only two in the game.
+
+---Disorder in the Order Quest---
+* GOOD IDEA: If you still have Alicia and Lavian in your roster, the story 
+event at Zeltennia Castle will include them in the background.  However, having 
+them here doesn't affect the actual event, nor your ability to do anything else
+later.  Note that once you've completed this event, Alicia and Lavian aren't
+used for anything else, so you could dismiss them if you want since they're 
+otherwise just generic characters.
+
+* ESSENTIAL: If you bring Orlandeau to the battle in this quest, you can see a
+little extra dialogue.  But, it's not needed for anything else.
+
+* ESSENTIAL: In the battle in this quest, you can steal Venetian and Kaiser
+Shields from the two Knights, and Ninja Gear from the enemy Monk.  There is 
+only other one copy of each of these items in the single-player mode, so be 
+sure to snag them.  (However, you can get an infinite supply in multiplayer.)
+
+* GOOD IDEA: You can also steal a Sasuke's Blade, Barette, Blaze Gun, and
+Glacial Gun in the same battle, although none of these are strictly necessary.
+
+---Midlight's Deep---
+All the floors of Midlight's Deep have items you can find with Treasure Hunter.
+Again, a lower Bravery increases your chance is needed to get these items;
+otherwise, you just get a Phoenix Down.  If you get the Phoenix Down, the 
+"good" item disappears, even if you leave the battle and re-enter.
+
+* GOOD IDEA: Good Treasure Hunter pickups on The Crevasse: Glacial Gun and 
+Blaze Gun.  (Both also obtainable in random battles, however.)
+
+* GOOD IDEA: Good Treasure Hunter pickups on The Stair: Save The Queen and 
+Blood Sword.
+
+* ESSENTIAL: Treasure Hunter pickup on The Hollow: Zeus Mace.  There are only
+two of these available in the game; the other comes from the Lionel's New Liege
+Lord quest.
+* GOOD IDEA: Treasure Hunter pickup on The Hollow: Yoichi Bow.
+
+* ESSENTIAL: Treasure Hunter pickup on The Catacombs: Rod of Faith.  Only
+available here.
+* ESSENTIAL: Treasure Hunter pickup on The Catacombs: Kaiser Shield.  One of
+only two in single-player; the other comes from Disorder in the Order.
+* GOOD IDEA: Treasure Hunter pickup on The Catacombs: Faerie Harp.
+
+* ESSENTIAL: Treasure Hunter pickup on The Oubliette: Iga Blade (the only one
+in the single-player game)
+* GOOD IDEA: Treasure Hunter pickup on The Oubliette: Excalibur.
+
+* ESSENTIAL: Treasure Hunter pickup on The Palings: Cursed Ring.  This is the
+only one in the game, and also pretty much essential for completing one of the
+Rendezvous Mode missions.
+* ESSENTIAL: Treasure Hunter pickup on The Palings: Ninja Gear (1 of 2 in the
+single-player game; the other from Disorder in the Order).
+* GOOD IDEA: Treasure Hunter pickup on The Palings: Blaster gun.
+
+* ESSENTIAL: Treasure Hunter pickup on The Crossing: Staff of the Magi (only 
+one in the game).
+* GOOD IDEA: Treasure Hunter pickup on The Crossing: Koga Blade.
+
+* ESSENTIAL: Treasure Hunter pickups on The Switchback: Perseus Bow and Lordly
+Robe (both only available here in single-player, but can be found in 
+Rendezvous).
+* GOOD IDEA: Treasure Hunter pickup on The Switchback: Excalibur.
+
+* ESSENTIAL: Treasure Hunter pickups on The Interstice: Maximillian and Grand 
+Helm (both unique), and Venetian Shield (1 of 2 in the single-player game; the 
+other is from Disorder in the Order)
+
+* ESSENTIAL: The first time you enter floor 10 (Terminus), you'll fight a story
+battle.  This is your only chance to obtain the Zodiark summon in the single-
+player game, by having it the boss cast it on a character using the Summoner 
+job.  Use Mana Shield to survive the spell.
+
+* ESSENTIAL: After defeating Elidibus, you will be able to sign up the Byblos.
+This is a unique monster/character, so add it.
+
+* GOOD IDEA: Treasure Hunter pickups on Terminus: Chaos Blade and Chirijiraden.
+(Be careful using the Chirijiraden for Iaido; if it breaks, you'll have to 
+catch a replacement!)
+
+********************************************************************************
+XII. ERRANDS
+********************************************************************************
+
+%%%GENERAL INFORMATION ABOUT ERRANDS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%00err0
+
+---Beginning and Ending an Errand-----------------------------------------------
+
+--THE BASICS--
+Errands are used to earn extra JP and gil.  When you accept an errand at a
+Tavern, you'll pay a small fee and can send 1-3 characters away on the errand.
+The characters will be gone for the number of days you chose; during this time,
+they can't fight or change jobs/equipment.  When the number of days of the
+errand has elapsed, return to the Tavern and choose Report.  (It has to be at
+the same town as where the Errand started.)  When you click Report, you'll hear 
+whether or not the Errand was successful.
+
+If the errand is successful, you'll earn some gil and the 1-3 characters sent 
+on the errand will gain some JP for their current job.  Some errands pay quite 
+well and can net you more than 20,000 gil, while others pay less than it costs
+to sign up for them!  
+
+Your earnings are largely based on:
+ > The particular errand
+ > Sending more characters nets you more gil)
+ > Deploying the characters for more days
+
+Your current job, experience level, and sometimes your Bravery/Faith values also
+play a small role in determining your pay; more details are below.
+
+Only generic human characters, not monsters or special story characters, may be
+sent on errands.  Ladd, Alicia, and Lavian are considered generic characters
+for this purpose.
+
+
+--ARTEFACTS AND WONDERS--
+Some errands reward you with Artefacts or Wonders of the Ancient World.  These
+prizes are displayed in your Chronicle menu, but otherwise have no impact on
+the game.
+
+See the Artefacts and Wonders section for a complete list of these.
+
+
+--WHEN DO NEW ERRANDS APPEAR?--
+Errands are not available until Chapter II.  Beginning in Chapter II, new 
+errands regularly appear in the Taverns as you progress through the game.  Each 
+town has its own set of errands.
+
+If you don't complete an errand during the Chapter in which it first appears,
+it will still be there in future chapters and you can always come back to it!
+
+Some errands are not available until you complete other errands first.
+
+There are also a few errands that are only available during specific months; 
+these appear at the bottom of the Errands list below.
+
+
+--ERRAND STATUS--
+Forget what Errands your characters are going?  Open the menu on the map screen
+and go to Chronicle -> Feats -> Present.  That shows all the errands you're
+currently working on, who's working on them, what town they're in, and how many
+days remain.
+
+
+--ABANDONING AN ERRAND--
+If you need to quickly get back your deployed characters, you can go to a 
+Tavern in any town (it does not have to be the one from which they embarked) 
+and choose Recall Units.
+
+After you choose Recall Units, the characters will give up on the errand and 
+head back home.  After another day has passed (i.e., one move on the world map),
+go to the Tavern from which you deployed the characters (this time, it MUST be 
+the same town) and choose Report to get them back.  The errand will have ended 
+in failure, but the characters will be returned to your active roster, and you
+can retry the errand next month.
+
+Of course, since it takes 1-2 days to get your characters back even after doing
+a Recall, there's no sense in abandoning an errand that only has 1-2 days left
+to finish!
+
+
+--MONTH-SPECIFIC ERRANDS--
+Four errands (the Contest errands) can only be begun during particular months
+of the Ivalician calendar, in addition to the other requirements.
+
+However, if you miss one of these errands during its month, you can wait until
+the calendar cycles around to the next year and you reach that month again.
+
+These errands are worth doing if you can catch them, since they yield high
+amounts of JP and gil!
+
+---Errand Success and Failure---------------------------------------------------
+
+The characters you deploy on an Errand (up to 3) work together to complete the
+errand.
+
+Each character contributes a number of "Work Points" based on three factors:
+ * Current job
+ * Bravery & Faith
+ * Exp Level
+(In the section below, I describe exactly how each of these 3 factors
+contributes Work Points.)
+
+Success is NOT affected by the number of days you deploy the characters, nor is
+it affected by a character's equipment, gender, Zodiac sign, current abilities,
+or stats aside from Bravery and Faith.
+
+
+(Note that you never actually *see* the Work Points number; the game calculates
+it invisibly.)
+
+---OUTCOME---
+The Work Points from ALL the deployed characters are then summed up to determine
+whether or not you complete the errand.
+
+WORK POINTS    RESULT          CHANGE IN JP       CHANGE IN GIL     BONUS GIVEN?
+--------------------------------------------------------------------------------
+ 0 - 59 total  EPIC FAILURE    Reduced to 1/20    Reduced to 1/20   No
+59 - 98 total  FAILURE         Reduced to 1/10    Reduced to 1/5    No
+99+ total      SUCCESS         Normal             Normal            Yes
+
+---CONSEQUENCES OF FAILURE---
+As you can see in the above chart, FAILUREs and EPIC FAILUREs greatly reduce the
+JP and gil you earn from a job.  They also prevent you from earning of the
+special bonuses described below.
+
+However, if you fail an errand, let the calendar advance to the next month and
+the errand should re-appear in the Tavern, and you get another chance.
+
+Note that failures really only tend to occur if ALL of the characters you send
+are totally ill-suited for the errand.  As long as you have at least one decent 
+character on the errand, you should succeed.
+
+Although characters can sometimes fail an errand, no harm ever comes to the
+characters.  You cannot lose characters or items on an errand.
+
+---SKILL SAVER JOBS---
+There's another way to achieve a SUCCESS on certain errands.
+
+Some errands have a particular job (e.g. Chemist) designated as the "Skill
+Saver" job.  Deploying 1 or more characters in that job will give you a random
+chance to turn a FAILURE/EPIC FAILURE into a SUCCESS regardless of the Work
+Points you earned.  (This is where the "The skills of the Archer were a great
+boon to us!"-type messages appear.)
+
+1 character has Skill Saver job  : 61.00% chance to turn failure into SUCCESS
+2 characters has Skill Saver job : 76.21% chance to turn failure into SUCCESS
+3 characters has Skill Saver job : 97.02% chance to turn failure into SUCCESS
+
+EXAMPLE: The Skill Saver job for "Lake Poescas Depths" is Samurai.  If you
+deploy 2 Samurai on the errand, you'll have a 76% chance of achieving a SUCCESS
+on the errand even if you scored fewer than 99 Work Points.
+
+Of course, if you score 99 or more Work Points on an errand, you always have a
+100% chance of SUCCESS.  The Skill Saver jobs only come into play if you would
+otherwise get a FAILURE or EPIC FAILURE.
+
+Skill Saver jobs do not directly increase the JP/gil you earn.  Moreover, in
+many cases, they aren't the jobs that will actually maximize your JP/gil intake!
+So, you probably don't need to use them as it's pretty easy to get a SUCCESS on
+most errands anyway.
+
+But, just in case, the Skill Saver job for each errand is displayed in the
+Errand List below.  (Not all errands have one.)
+
+---Work Points------------------------------------------------------------------
+
+As noted above, the Work Points scored by each character determine whether or
+not you succeed at the Errand, and how much gil/JP you earn as a result.
+END END ENDEND END ENDEND END ENDEND END ENDEND END ENDEND END ENDEND END END

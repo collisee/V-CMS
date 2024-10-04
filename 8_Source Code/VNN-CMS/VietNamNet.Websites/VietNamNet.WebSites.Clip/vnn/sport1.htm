@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Thể thao VietNamNet</title>
+    <link href="css/sport1.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/lib-min.js"></script>    
+</head>
+<body>
+
+    <div class="sport_player_box">
+        <div class="sport_player">
+            <div id='mediaplayer'>
+                Bạn cần cài đặt Flash Player để xem Video - Audio!!!
+            </div>
+        </div>
+        <div class="clip-group scroll-pane" id="video-list">
+            <div class="clip-items" id="clip-items">
+            </div>
+        </div>
+    </div><!-- [sport_tv] -->
+        
+        <script type="text/javascript">
+            var video = {
+            url: '/ajax/getTopMedia/get.html',
+            data: {CateAlias: 'thethao-vnn', MediaType: 'Video'}
+            }
+            
+            $(function(){                        
+                $('#video-list').jScrollPane({
+                    wheelSpeed: 26                    
+                });                                                
+            });
+        </script>  
+        
+        <script type="text/javascript" src="js/sport1.js"></script>
+</body>
+</html>

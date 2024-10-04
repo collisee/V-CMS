@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Codebehind="Default.master.cs" Inherits="VietNamNet.Layout.Mobile.V1.Default" %>
+<%@ Register Src="~/UserControls/PanelUerInterface.ascx" TagName="PanelUerInterface" TagPrefix="uc" %>
+<%@ Register Src="UserControls/Header.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="UserControls/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<%@ Register Src="UserControls/PanelTopMenu.ascx" TagName="PanelTopMenu" TagPrefix="uc" %>
+<%@ Register Src="UserControls/PanelBottomMenu.ascx" TagName="PanelBottomMenu" TagPrefix="uc" %>
+<%@ Register Src="UserControls/PanelMenu.ascx" TagName="PanelMenu" TagPrefix="uc" %>
+<%@ Register Src="~/UserControls/GA.ascx" TagName="GA" TagPrefix="uc" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>VietNamNet - Mobile</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="robots" content="index, follow, all" />
+    <meta name="language" content="Vietnamese, Vietnam" />
+    <meta name="description" content="Xem, chia sẻ & download video clip hài hước, vui nhộn và rất nhiều video clip độc đáo: clip bóng đá, trailer phim, clip Võ lâm, video game, clip quảng cáo... tại video VietNamNet!" />
+    <meta name="keywords" content="mobile, dien thoai, điện thoại, vietnamnet, vui, hay, funny, hai, hai huoc, haihuoc, vuinhon, vui nhon, download, dowload, moi, new, hot, fun, free, mien phi, mienphi, upload, dang, tai, clipvui, clip vui, VIETNAMNET, VIET NAM NET, VNN, Vietnam, Viet Nam, Vietnam News, Daily News, Online Internet Magazine, Portal, Thoi su, Bao Dien tu, VietNews, Hanoi, Ha Noi, Saigon, Sai gon, Tin tuc, Tintuc,news, tin tức, tin tuc, fashion, tin, online, newspaper, vietnam, viet, hình sự, đời sông, ảnh đẹp, photo, ttol, tin tức online, tintuconline, vietnamnet, thông tin, hotnews, tin nóng, giật gân, lá cải, việt nam, du lịch, xem, giải trí, relax, ảnh đẹp, showbiz, hậu trường, kinh tế, thể thao, vn, báo, đọc báo" />
+    <meta name="abstract" content="Video website" />
+    <meta name="distribution" content="Global" />
+    <meta name="author" content="support@vietnamnet.vn" />
+    <meta name="copyright" content="VietNamNet, Ha Noi, Viet nam" />
+    <meta content="600" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="Pragma" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="document-rating" content="General" />
+    <meta name="document-distribution" content="Global" />
+    <meta name="distribution" content="Global" />
+    <meta name="area" content="News" />
+    <meta name="placename" content="vietnam" />
+    <meta name="resource-type" content="Document" />
+    <meta name="owner" content="clip.vietnamnet.vn" />
+    <meta name="classification" content="Vietnam" />
+    <meta name="rating" content="All" />
+    <link href="/V1/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <uc:PanelUerInterface ID="PanelUerInterface1" runat="server" />
+    <table cellpadding="0" cellspacing="0" width="100%" class="table1">
+        <tr>
+            <td align="center" valign="middle">
+                <uc:Header ID="Header1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <uc:PanelTopMenu ID="PanelTopMenu1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <asp:ContentPlaceHolder ID="cplhContainer" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <uc:PanelBottomMenu ID="PanelBottomMenu2" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td class="content-item">
+                <uc:PanelMenu ID="PanelMenu1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td class="fooster">
+                <uc:Footer ID="Footer1" runat="server" />
+            </td>
+        </tr>
+    </table>
+    <uc:GA ID="GA1" runat="server" />
+</body>
+</html>

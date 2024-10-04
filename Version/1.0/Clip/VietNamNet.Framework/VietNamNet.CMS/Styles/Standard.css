@@ -1,0 +1,14 @@
+body{margin:0;padding:0;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:13px;color:#000;}
+img{border:0;}
+a{text-decoration:none;color:#3A66CC;}
+a:hover{text-decoration:underline;}
+p{text-align:justify;}
+
+#VietNamNet_header{text-align:right;padding:10px;}
+
+#VietNamNet_container{margin:10px 0px;overflow-x:hidden;}
+
+#VietNamNet_footer{text-align:center;font-size:11px;padding:15px 0;}
+#VietNamNet_footer a{font-weight:bold;}
+
+div.RadToolBar{width:100%;}

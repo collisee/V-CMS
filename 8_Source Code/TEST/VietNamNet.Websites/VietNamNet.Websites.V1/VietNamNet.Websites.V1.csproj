@@ -1,0 +1,939 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{380D1390-98EA-48B7-8E78-7E024536F43F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietNamNet.Websites.V1</RootNamespace>
+    <AssemblyName>VietNamNet.Websites.V1</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SubSonic, Version=2.1.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.AddOn.Survey, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.AddOn.Survey.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.CMS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.CMS.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Common, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.Module, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="VietNamNet.Framework.System, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\VietNamNet.Framework.System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Categories.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetailEmail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>NewsDetailEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetailEmail.aspx.designer.cs">
+      <DependentUpon>NewsDetailEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetailPrint.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>NewsDetailPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetailPrint.aspx.designer.cs">
+      <DependentUpon>NewsDetailPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popup.Master.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Survey\ServicesSurveyGet.aspx.cs">
+      <DependentUpon>ServicesSurveyGet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\ServicesSurveyGet.aspx.designer.cs">
+      <DependentUpon>ServicesSurveyGet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\ServicesSurveyGet2.aspx.cs">
+      <DependentUpon>ServicesSurveyGet2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\ServicesSurveyGet2.aspx.designer.cs">
+      <DependentUpon>ServicesSurveyGet2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\ServicesSurveyPost.aspx.cs">
+      <DependentUpon>ServicesSurveyPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\ServicesSurveyPost.aspx.designer.cs">
+      <DependentUpon>ServicesSurveyPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\ServicesSurveyResult.aspx.cs">
+      <DependentUpon>ServicesSurveyResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\ServicesSurveyResult.aspx.designer.cs">
+      <DependentUpon>ServicesSurveyResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\UserControls\SurveyDisplay.ascx.cs">
+      <DependentUpon>SurveyDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\UserControls\SurveyDisplay.ascx.designer.cs">
+      <DependentUpon>SurveyDisplay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\UserControls\SurveyViewResult.ascx.cs">
+      <DependentUpon>SurveyViewResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\UserControls\SurveyViewResult.ascx.designer.cs">
+      <DependentUpon>SurveyViewResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\ViewResult.aspx.cs">
+      <DependentUpon>ViewResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\ViewResult.aspx.designer.cs">
+      <DependentUpon>ViewResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\3g\Category.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\3g\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\3g\Detail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\3g\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\3g\PanelArticlePlaylist.ascx.cs">
+      <DependentUpon>PanelArticlePlaylist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ui\3g\PanelArticlePlaylist.ascx.designer.cs">
+      <DependentUpon>PanelArticlePlaylist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\3g\PanelCategoryPlaylist.ascx.cs">
+      <DependentUpon>PanelCategoryPlaylist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ui\3g\PanelCategoryPlaylist.ascx.designer.cs">
+      <DependentUpon>PanelCategoryPlaylist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\chinhtri\Category.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\chinhtri\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\chinhtri\Detail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\chinhtri\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\xahoi\Category.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\xahoi\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\xahoi\Detail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ui\xahoi\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelAdvB_1.ascx.cs">
+      <DependentUpon>PanelAdvB_1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelAdvB_1.ascx.designer.cs">
+      <DependentUpon>PanelAdvB_1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelAdvC_1_3.ascx.cs">
+      <DependentUpon>PanelAdvC_1_3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelAdvC_1_3.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_1_3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelAdvC_4_5.ascx.cs">
+      <DependentUpon>PanelAdvC_4_5.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelAdvC_4_5.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_4_5.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelAdvC_6_14.ascx.cs">
+      <DependentUpon>PanelAdvC_6_14.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelAdvC_6_14.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_6_14.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCate3gContent.ascx.cs">
+      <DependentUpon>PanelCate3gContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCate3gContent.ascx.designer.cs">
+      <DependentUpon>PanelCate3gContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateCenterPoint.ascx.cs">
+      <DependentUpon>PanelCateCenterPoint.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateCenterPoint.ascx.designer.cs">
+      <DependentUpon>PanelCateCenterPoint.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateContent.ascx.cs">
+      <DependentUpon>PanelCateContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateContent.ascx.designer.cs">
+      <DependentUpon>PanelCateContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateContentViewDate.ascx.cs">
+      <DependentUpon>PanelCateContentViewDate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateContentViewDate.ascx.designer.cs">
+      <DependentUpon>PanelCateContentViewDate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateHotNews.ascx.cs">
+      <DependentUpon>PanelCateHotNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateHotNews.ascx.designer.cs">
+      <DependentUpon>PanelCateHotNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateHotSlide.ascx.cs">
+      <DependentUpon>PanelCateHotSlide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateHotSlide.ascx.designer.cs">
+      <DependentUpon>PanelCateHotSlide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateLargeBox.ascx.cs">
+      <DependentUpon>PanelCateLargeBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateLargeBox.ascx.designer.cs">
+      <DependentUpon>PanelCateLargeBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCatePoll.ascx.cs">
+      <DependentUpon>PanelCatePoll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCatePoll.ascx.designer.cs">
+      <DependentUpon>PanelCatePoll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateSmallBox.ascx.cs">
+      <DependentUpon>PanelCateSmallBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateSmallBox.ascx.designer.cs">
+      <DependentUpon>PanelCateSmallBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateTicker.ascx.cs">
+      <DependentUpon>PanelCateTicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelCateTicker.ascx.designer.cs">
+      <DependentUpon>PanelCateTicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelMostRead.ascx.cs">
+      <DependentUpon>PanelMostRead.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelMostRead.ascx.designer.cs">
+      <DependentUpon>PanelMostRead.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelOtherNews.ascx.cs">
+      <DependentUpon>PanelOtherNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelOtherNews.ascx.designer.cs">
+      <DependentUpon>PanelOtherNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelTamdiem3g.ascx.cs">
+      <DependentUpon>PanelTamdiem3g.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Categories\PanelTamdiem3g.ascx.designer.cs">
+      <DependentUpon>PanelTamdiem3g.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdCenter.ascx.cs">
+      <DependentUpon>PanelAdCenter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdCenter.ascx.designer.cs">
+      <DependentUpon>PanelAdCenter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvA.ascx.cs">
+      <DependentUpon>PanelAdvA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvA.ascx.designer.cs">
+      <DependentUpon>PanelAdvA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvB_1.ascx.cs">
+      <DependentUpon>PanelAdvB_1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvB_1.ascx.designer.cs">
+      <DependentUpon>PanelAdvB_1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvB_2.ascx.cs">
+      <DependentUpon>PanelAdvB_2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvB_2.ascx.designer.cs">
+      <DependentUpon>PanelAdvB_2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvB_3.ascx.cs">
+      <DependentUpon>PanelAdvB_3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvB_3.ascx.designer.cs">
+      <DependentUpon>PanelAdvB_3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvC_17.ascx.cs">
+      <DependentUpon>PanelAdvC_17.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvC_17.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_17.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvC_1_4.ascx.cs">
+      <DependentUpon>PanelAdvC_1_4.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvC_1_4.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_1_4.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvC_5.ascx.cs">
+      <DependentUpon>PanelAdvC_5.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvC_5.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_5.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvC_6_7.ascx.cs">
+      <DependentUpon>PanelAdvC_6_7.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvC_6_7.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_6_7.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvC_8_16.ascx.cs">
+      <DependentUpon>PanelAdvC_8_16.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelAdvC_8_16.ascx.designer.cs">
+      <DependentUpon>PanelAdvC_8_16.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCateBox.ascx.cs">
+      <DependentUpon>PanelCateBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCateBox.ascx.designer.cs">
+      <DependentUpon>PanelCateBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCateBox1.ascx.cs">
+      <DependentUpon>PanelCateBox1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCateBox1.ascx.designer.cs">
+      <DependentUpon>PanelCateBox1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCateBoxTuan.ascx.cs">
+      <DependentUpon>PanelCateBoxTuan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCateBoxTuan.ascx.designer.cs">
+      <DependentUpon>PanelCateBoxTuan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCateBoxVNR.ascx.cs">
+      <DependentUpon>PanelCateBoxVNR.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCateBoxVNR.ascx.designer.cs">
+      <DependentUpon>PanelCateBoxVNR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCategory.ascx.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCategory.ascx.designer.cs">
+      <DependentUpon>PanelCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCategory1.ascx.cs">
+      <DependentUpon>PanelCategory1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelCategory1.ascx.designer.cs">
+      <DependentUpon>PanelCategory1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelInfo.ascx.cs">
+      <DependentUpon>PanelInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelInfo.ascx.designer.cs">
+      <DependentUpon>PanelInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelLeft.ascx.cs">
+      <DependentUpon>PanelLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelLeft.ascx.designer.cs">
+      <DependentUpon>PanelLeft.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelMoinong.ascx.cs">
+      <DependentUpon>PanelMoinong.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelMoinong.ascx.designer.cs">
+      <DependentUpon>PanelMoinong.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelMostRead.ascx.cs">
+      <DependentUpon>PanelMostRead.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelMostRead.ascx.designer.cs">
+      <DependentUpon>PanelMostRead.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelPoll.ascx.cs">
+      <DependentUpon>PanelPoll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelPoll.ascx.designer.cs">
+      <DependentUpon>PanelPoll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelRadio.ascx.cs">
+      <DependentUpon>PanelRadio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelRadio.ascx.designer.cs">
+      <DependentUpon>PanelRadio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelRight.ascx.cs">
+      <DependentUpon>PanelRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelRight.ascx.designer.cs">
+      <DependentUpon>PanelRight.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelTopNews.ascx.cs">
+      <DependentUpon>PanelTopNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Homepage\PanelTopNews.ascx.designer.cs">
+      <DependentUpon>PanelTopNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\News\PanelContentMoinong.ascx.cs">
+      <DependentUpon>PanelContentMoinong.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\News\PanelContentMoinong.ascx.designer.cs">
+      <DependentUpon>PanelContentMoinong.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\News\PanelContentPoll.ascx.cs">
+      <DependentUpon>PanelContentPoll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\News\PanelContentPoll.ascx.designer.cs">
+      <DependentUpon>PanelContentPoll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\News\PanelContentRight.ascx.cs">
+      <DependentUpon>PanelContentRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\News\PanelContentRight.ascx.designer.cs">
+      <DependentUpon>PanelContentRight.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\News\PanelNewsDetail.ascx.cs">
+      <DependentUpon>PanelNewsDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\News\PanelNewsDetail.ascx.designer.cs">
+      <DependentUpon>PanelNewsDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\News\PanelNewsFeedback.ascx.cs">
+      <DependentUpon>PanelNewsFeedback.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\News\PanelNewsFeedback.ascx.designer.cs">
+      <DependentUpon>PanelNewsFeedback.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\News\PanelOtherNews.ascx.cs">
+      <DependentUpon>PanelOtherNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\News\PanelOtherNews.ascx.designer.cs">
+      <DependentUpon>PanelOtherNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvAddcode.ascx.cs">
+      <DependentUpon>PanelAdvAddcode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvAddcode.ascx.designer.cs">
+      <DependentUpon>PanelAdvAddcode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvD.ascx.cs">
+      <DependentUpon>PanelAdvD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvD.ascx.designer.cs">
+      <DependentUpon>PanelAdvD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvertisement.ascx.cs">
+      <DependentUpon>PanelAdvertisement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelAdvertisement.ascx.designer.cs">
+      <DependentUpon>PanelAdvertisement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelCateBoxHoptac.ascx.cs">
+      <DependentUpon>PanelCateBoxHoptac.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelCateBoxHoptac.ascx.designer.cs">
+      <DependentUpon>PanelCateBoxHoptac.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelFooter.ascx.cs">
+      <DependentUpon>PanelFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelFooter.ascx.designer.cs">
+      <DependentUpon>PanelFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelGa.ascx.cs">
+      <DependentUpon>PanelGa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelGa.ascx.designer.cs">
+      <DependentUpon>PanelGa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelHeader.ascx.cs">
+      <DependentUpon>PanelHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelHeader.ascx.designer.cs">
+      <DependentUpon>PanelHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelHoptac.ascx.cs">
+      <DependentUpon>PanelHoptac.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelHoptac.ascx.designer.cs">
+      <DependentUpon>PanelHoptac.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelMenu.ascx.cs">
+      <DependentUpon>PanelMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelMenu.ascx.designer.cs">
+      <DependentUpon>PanelMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelMostRead.ascx.cs">
+      <DependentUpon>PanelMostRead.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelMostRead.ascx.designer.cs">
+      <DependentUpon>PanelMostRead.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelTamdiem.ascx.cs">
+      <DependentUpon>PanelTamdiem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelTamdiem.ascx.designer.cs">
+      <DependentUpon>PanelTamdiem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelTicker.ascx.cs">
+      <DependentUpon>PanelTicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelTicker.ascx.designer.cs">
+      <DependentUpon>PanelTicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Search\PanelSearchContent.ascx.cs">
+      <DependentUpon>PanelSearchContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Search\PanelSearchContent.ascx.designer.cs">
+      <DependentUpon>PanelSearchContent.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Categories.aspx" />
+    <Content Include="css\ad.css" />
+    <Content Include="css\blank.gif" />
+    <Content Include="css\iepngfix.htc" />
+    <Content Include="css\vnn.css" />
+    <Content Include="Default.Master" />
+    <Content Include="Images\arrow.gif" />
+    <Content Include="Images\audio.gif" />
+    <Content Include="Images\audiob.gif" />
+    <Content Include="Images\back.gif" />
+    <Content Include="Images\baovenguoitieudung.jpg" />
+    <Content Include="Images\bg_menu.gif" />
+    <Content Include="Images\bg_menu1.gif" />
+    <Content Include="Images\blank.gif" />
+    <Content Include="Images\blue_line.gif" />
+    <Content Include="Images\box_BVKH.gif" />
+    <Content Include="Images\box_TTOL.gif" />
+    <Content Include="Images\btn-slide.gif" />
+    <Content Include="Images\button1.gif" />
+    <Content Include="Images\button2.gif" />
+    <Content Include="Images\button2b.gif" />
+    <Content Include="Images\button_search.gif" />
+    <Content Include="Images\bvtd_bg.gif" />
+    <Content Include="Images\cattitle.gif" />
+    <Content Include="Images\cattitle2sao.gif" />
+    <Content Include="Images\cattitleTVN.gif" />
+    <Content Include="Images\cat_sub_line.jpg" />
+    <Content Include="Images\cat_title1.gif" />
+    <Content Include="Images\cat_title2.gif" />
+    <Content Include="Images\cat_title3.gif" />
+    <Content Include="Images\cat_title4.gif" />
+    <Content Include="Images\cat_title_bg.gif" />
+    <Content Include="Images\favicon-vnn.ico" />
+    <Content Include="Images\favicon_vnn.ico" />
+    <Content Include="Images\fb_icon.gif" />
+    <Content Include="Images\giavang.jpg" />
+    <Content Include="Images\header.jpg" />
+    <Content Include="Images\header_goc.jpg" />
+    <Content Include="Images\hl1.gif" />
+    <Content Include="Images\hoctac3.gif" />
+    <Content Include="Images\hoptac1.gif" />
+    <Content Include="Images\hoptac2.gif" />
+    <Content Include="Images\hoptac4.gif" />
+    <Content Include="Images\hoptac_bg1.gif" />
+    <Content Include="Images\hoptac_bg2.gif" />
+    <Content Include="Images\hotline.gif" />
+    <Content Include="Images\icon_mobi.gif" />
+    <Content Include="Images\icon_mobi.jpg" />
+    <Content Include="Images\icon_thethao.gif" />
+    <Content Include="Images\icon_truyenhinh.gif" />
+    <Content Include="Images\line.gif" />
+    <Content Include="Images\list_img_bg.jpg" />
+    <Content Include="Images\logoBBC.gif" />
+    <Content Include="Images\logovnn.png" />
+    <Content Include="Images\mail.gif" />
+    <Content Include="Images\menu1.gif" />
+    <Content Include="Images\menu1.jpg" />
+    <Content Include="Images\menu1a.gif" />
+    <Content Include="Images\menu1a.jpg" />
+    <Content Include="Images\menu1b.gif" />
+    <Content Include="Images\menu1bb.gif" />
+    <Content Include="Images\menu2.gif" />
+    <Content Include="Images\menu2a.gif" />
+    <Content Include="Images\menu2b.gif" />
+    <Content Include="Images\menu2bb.gif" />
+    <Content Include="Images\menubt_line.gif" />
+    <Content Include="Images\mn_cham.gif" />
+    <Content Include="Images\mn_cham2.gif" />
+    <Content Include="Images\mostread.gif" />
+    <Content Include="Images\most_fb.gif" />
+    <Content Include="Images\muiten.gif" />
+    <Content Include="Images\muonmaucuocsong.jpg" />
+    <Content Include="Images\new_boder1.gif" />
+    <Content Include="Images\new_boder2.gif" />
+    <Content Include="Images\next.gif" />
+    <Content Include="Images\noibat3.png" />
+    <Content Include="Images\other.gif" />
+    <Content Include="Images\photo.gif" />
+    <Content Include="Images\photob.gif" />
+    <Content Include="Images\photo_r.gif" />
+    <Content Include="Images\popup_logo.gif" />
+    <Content Include="Images\print.gif" />
+    <Content Include="Images\radio_bg.jpg" />
+    <Content Include="Images\radio_buttom.jpg" />
+    <Content Include="Images\radio_cham.gif" />
+    <Content Include="Images\red_line.gif" />
+    <Content Include="Images\right_bg.gif" />
+    <Content Include="Images\rss.gif" />
+    <Content Include="Images\sprite_sheet.gif" />
+    <Content Include="Images\tab_right_bg.gif" />
+    <Content Include="Images\tdsk.gif" />
+    <Content Include="Images\tinanh-bg.gif" />
+    <Content Include="Images\tinanh_n.gif" />
+    <Content Include="Images\tinanh_p.gif" />
+    <Content Include="Images\tinkhac.gif" />
+    <Content Include="Images\title_vnr500.gif" />
+    <Content Include="Images\tw_icon.gif" />
+    <Content Include="Images\video.gif" />
+    <Content Include="Images\videob.gif" />
+    <Content Include="Images\vietnamnet.png" />
+    <Content Include="Images\vietnamnet1.png" />
+    <Content Include="Images\vnn_image.gif" />
+    <Content Include="Images\vnn_image2.gif" />
+    <Content Include="Images\vnn_image3.gif" />
+    <Content Include="Images\vnn_png.png" />
+    <Content Include="Images\vnn_slide.gif" />
+    <Content Include="Images\white-arrow.gif" />
+    <Content Include="js\default.js" />
+    <Content Include="js\lib.js" />
+    <Content Include="js\menu.js" />
+    <Content Include="js\poll.js" />
+    <Content Include="js\VietNamNet.Framework.JS.Advertisement.js" />
+    <Content Include="NewsDetail.aspx" />
+    <Content Include="css\Style.css" />
+    <Content Include="Survey\ServicesSurveyGet.aspx" />
+    <Content Include="Survey\ServicesSurveyGet2.aspx" />
+    <Content Include="Survey\ServicesSurveyPost.aspx" />
+    <Content Include="Survey\ServicesSurveyResult.aspx" />
+    <Content Include="Survey\UserControls\SurveyDisplay.ascx" />
+    <Content Include="Survey\UserControls\SurveyViewResult.ascx" />
+    <Content Include="Survey\ViewResult.aspx" />
+    <Content Include="UserControls\Categories\PanelCateCenterPoint.ascx" />
+    <Content Include="UserControls\Categories\PanelCateContent.ascx" />
+    <Content Include="UserControls\Categories\PanelCateContentViewDate.ascx" />
+    <Content Include="UserControls\Categories\PanelCateHotNews.ascx" />
+    <Content Include="UserControls\Categories\PanelCateHotSlide.ascx" />
+    <Content Include="UserControls\Categories\PanelCateLargeBox.ascx" />
+    <Content Include="UserControls\Categories\PanelCatePoll.ascx" />
+    <Content Include="UserControls\Categories\PanelCateSmallBox.ascx" />
+    <Content Include="UserControls\Categories\PanelMostRead.ascx" />
+    <Content Include="UserControls\Homepage\PanelAdCenter.ascx" />
+    <Content Include="UserControls\PanelAdvA.ascx" />
+    <Content Include="UserControls\Homepage\PanelAdvB_1.ascx" />
+    <Content Include="UserControls\Homepage\PanelAdvB_2.ascx" />
+    <Content Include="UserControls\Homepage\PanelAdvB_3.ascx" />
+    <Content Include="UserControls\Homepage\PanelAdvC_17.ascx" />
+    <Content Include="UserControls\Homepage\PanelAdvC_1_4.ascx" />
+    <Content Include="UserControls\Homepage\PanelAdvC_5.ascx" />
+    <Content Include="UserControls\Homepage\PanelAdvC_6_7.ascx" />
+    <Content Include="UserControls\Homepage\PanelAdvC_8_16.ascx" />
+    <Content Include="UserControls\Homepage\PanelCateBox.ascx" />
+    <Content Include="UserControls\Homepage\PanelCateBox1.ascx" />
+    <Content Include="UserControls\Homepage\PanelCateBoxTuan.ascx" />
+    <Content Include="UserControls\Homepage\PanelCateBoxVNR.ascx" />
+    <Content Include="UserControls\Homepage\PanelCategory.ascx" />
+    <Content Include="UserControls\Homepage\PanelCategory1.ascx" />
+    <Content Include="UserControls\Homepage\PanelInfo.ascx" />
+    <Content Include="UserControls\Homepage\PanelLeft.ascx" />
+    <Content Include="UserControls\Homepage\PanelMoinong.ascx" />
+    <Content Include="UserControls\Homepage\PanelMostRead.ascx" />
+    <Content Include="UserControls\Homepage\PanelPoll.ascx" />
+    <Content Include="UserControls\Homepage\PanelRadio.ascx" />
+    <Content Include="UserControls\Homepage\PanelRight.ascx" />
+    <Content Include="UserControls\Homepage\PanelTopNews.ascx" />
+    <Content Include="UserControls\News\PanelContentMoinong.ascx" />
+    <Content Include="UserControls\News\PanelContentPoll.ascx" />
+    <Content Include="UserControls\News\PanelContentRight.ascx" />
+    <Content Include="UserControls\News\PanelNewsDetail.ascx" />
+    <Content Include="UserControls\News\PanelNewsFeedback.ascx" />
+    <Content Include="UserControls\News\PanelOtherNews.ascx" />
+    <Content Include="UserControls\PanelAdvD.ascx" />
+    <Content Include="UserControls\PanelAdvertisement.ascx" />
+    <Content Include="UserControls\PanelCateBoxHoptac.ascx" />
+    <Content Include="UserControls\PanelFooter.ascx" />
+    <Content Include="UserControls\PanelGa.ascx" />
+    <Content Include="UserControls\PanelHeader.ascx" />
+    <Content Include="UserControls\PanelHoptac.ascx" />
+    <Content Include="UserControls\PanelMenu.ascx" />
+    <Content Include="UserControls\PanelMostRead.ascx" />
+    <Content Include="UserControls\PanelTamdiem.ascx" />
+    <Content Include="UserControls\PanelTicker.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VietNamNet.Websites.Core\VietNamNet.Websites.Core.csproj">
+      <Project>{56001EEA-50C4-497C-BCAF-1C4CFF9B29F0}</Project>
+      <Name>VietNamNet.Websites.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\ad_min.css" />
+    <Content Include="css\jScrollPane.css" />
+    <Content Include="css\style_min.css" />
+    <Content Include="css\vnn_min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\antoan190x75.jpg" />
+    <Content Include="Images\bg_3cate.gif" />
+    <Content Include="Images\clip_img.gif" />
+    <Content Include="Images\clip_most.gif" />
+    <Content Include="Images\clip_play1.png" />
+    <Content Include="Images\clip_play16x16.png" />
+    <Content Include="Images\clip_play2.png" />
+    <Content Include="Images\clip_play3.png" />
+    <Content Include="Images\clip_play30x30.png" />
+    <Content Include="Images\clip_sent.gif" />
+    <Content Include="Images\clip_slide.gif" />
+    <Content Include="Images\clip_title.gif" />
+    <Content Include="Images\giaitri.jpg" />
+    <Content Include="Images\hoavanvnn.gif" />
+    <Content Include="Images\mobile.jpg" />
+    <Content Include="Images\quangcao.gif" />
+    <Content Include="Images\sentfb.gif" />
+    <Content Include="Images\sentfile.gif" />
+    <Content Include="Images\sports.gif" />
+    <Content Include="Images\star_small.png" />
+    <Content Include="Images\thoisu.jpg" />
+    <Content Include="Images\vnn_image4.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\lib-min.js" />
+    <Content Include="js\video-min.js" />
+    <Content Include="js\video.js" />
+    <Content Include="lib\player.swf" />
+    <Content Include="NewsDetailEmail.aspx" />
+    <Content Include="NewsDetailPrint.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="Popup.Master" />
+    <Content Include="Templates\TemplateSendEmailArticle.xslt" />
+    <Content Include="ui\3g\Category.aspx" />
+    <Content Include="ui\3g\Detail.aspx" />
+    <Content Include="ui\3g\PanelArticlePlaylist.ascx" />
+    <Content Include="ui\3g\PanelCategoryPlaylist.ascx" />
+    <Content Include="ui\chinhtri\Category.aspx" />
+    <Content Include="ui\chinhtri\Detail.aspx" />
+    <Content Include="ui\xahoi\Category.aspx" />
+    <Content Include="ui\xahoi\Detail.aspx" />
+    <Content Include="UserControls\Categories\PanelAdvB_1.ascx" />
+    <Content Include="UserControls\Categories\PanelAdvC_1_3.ascx" />
+    <Content Include="UserControls\Categories\PanelAdvC_4_5.ascx" />
+    <Content Include="UserControls\Categories\PanelAdvC_6_14.ascx" />
+    <Content Include="UserControls\Categories\PanelCate3gContent.ascx" />
+    <Content Include="UserControls\Categories\PanelCateTicker.ascx" />
+    <Content Include="UserControls\Categories\PanelOtherNews.ascx" />
+    <Content Include="UserControls\Categories\PanelTamdiem3g.ascx" />
+    <Content Include="UserControls\PanelAdvAddcode.ascx" />
+    <Content Include="UserControls\Search\PanelSearchContent.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\vnn.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ui\cntt\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2525</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
